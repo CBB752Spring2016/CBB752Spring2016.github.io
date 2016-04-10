@@ -5,10 +5,325 @@
         <description>CBB752Spring2016 - Mark Gerstein</description>
         <link>CBB752Spring2016.github.io</link>
         <link>CBB752Spring2016.github.io</link>
-        <lastBuildDate>2016-04-10T16:14:04-04:00</lastBuildDate>
-        <pubDate>2016-04-10T16:14:04-04:00</pubDate>
+        <lastBuildDate>2016-04-10T16:52:00-04:00</lastBuildDate>
+        <pubDate>2016-04-10T16:52:00-04:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Categories of Knowledge for Bioinformatics Education</title>
+                <description>
+&lt;p&gt;U = Undergrad. level
+G = Grad. level&lt;/p&gt;
+
+&lt;p&gt;C = CS
+S = Stats/Math
+B = Bio/Chem/Phys&lt;/p&gt;
+
+&lt;p&gt;I = Intro. Bioinformatics Topic (i.e., in a class like CBB752)
+A = Advanced Bioinformatics Topic (i.e., maybe beyond CBB752)&lt;/p&gt;
+
+&lt;p&gt;Combining Abbreviations - viz:
+UC, GC, US, GS, GI, GA, GB, UB&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/venn.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;prerequisites-for-bioinformatics-stats--cs&quot;&gt;Prerequisites for Bioinformatics: Stats &amp;amp; CS&lt;/h3&gt;
+&lt;p&gt;These go beyond Basic Math (calculus), Biology, Chemistry &amp;amp; Physics taught in pre-medical education and in undergraduate majors such as Yale MB&amp;amp;B&lt;/p&gt;
+
+&lt;h4 id=&quot;programming-topics-uc&quot;&gt;Programming Topics [UC]&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Interpretative lang. &amp;amp; compiled lang.&lt;/li&gt;
+  &lt;li&gt;Recursion&lt;/li&gt;
+  &lt;li&gt;Data structures - lists, arrays, hashes, stacks&lt;/li&gt;
+  &lt;li&gt;Computational complexity - related to operations as sorting&lt;/li&gt;
+  &lt;li&gt;Basics of computer architecture (caches, disks, bottlenecks)&lt;/li&gt;
+  &lt;li&gt;Practical Programming: modularization (OOP), version control, debugging, APIs &amp;amp; libraries, software carpentry, reproducible research/coding&lt;/li&gt;
+  &lt;li&gt;Basics of web programming - stateless access, web protocols&lt;/li&gt;
+  &lt;li&gt;Databases
+    &lt;ul&gt;
+      &lt;li&gt;Basics of SQL, with concept of indices &amp;amp; joining, schema&lt;/li&gt;
+      &lt;li&gt;non-relational architectures - NoSQL&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Regular expression &amp;amp; string processing&lt;/li&gt;
+  &lt;li&gt;Numeric computing issues: FP arith &amp;amp; random numbers&lt;/li&gt;
+  &lt;li&gt;Encryption &amp;amp; compression&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;programming-topics-gc&quot;&gt;Programming Topics [GC]&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;VMs &amp;amp; cloud computing&lt;/li&gt;
+  &lt;li&gt;Optimization &amp;amp; integration of functions [US]&lt;/li&gt;
+  &lt;li&gt;Relational Database Concepts and how they interface with Biological Information&lt;/li&gt;
+  &lt;li&gt;DB interoperation&lt;/li&gt;
+  &lt;li&gt;Privacy and security issues&lt;/li&gt;
+  &lt;li&gt;Ontologies&lt;/li&gt;
+  &lt;li&gt;Distributed and high-performance computing (parallel computing) [XH: I think this part is pretty important especially when dealing with large data and it should be included as GC since some of the techniques (like random number generation, MCMC, and running with GPU) is quite complicate in the parallel mode.]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;statistical-topics-us&quot;&gt;Statistical Topics [US]&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Knowledge of distributions, hypothesis testing &amp;amp; inference (includes mult. testing, T-test)&lt;/li&gt;
+  &lt;li&gt;Permutation Testing (bootstrapping, cross-validation)&lt;/li&gt;
+  &lt;li&gt;Regression&lt;/li&gt;
+  &lt;li&gt;Power analysis (Type 1 &amp;amp; 2 errors)&lt;/li&gt;
+  &lt;li&gt;Non-parametric vs. Parametric methods&lt;/li&gt;
+  &lt;li&gt;Bayes Rule&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;statistical-topics-gs&quot;&gt;Statistical Topics [GS]&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Regularization&lt;/li&gt;
+  &lt;li&gt;Unsupervised Methods (PCA, clustering)&lt;/li&gt;
+  &lt;li&gt;Supervised Methods (SVM, Kernels)&lt;/li&gt;
+  &lt;li&gt;Bayesian Analysis&lt;/li&gt;
+  &lt;li&gt;Graphical Models&lt;/li&gt;
+  &lt;li&gt;Causal inference&lt;/li&gt;
+  &lt;li&gt;Missing data, imputation &amp;amp; EM algorithm&lt;/li&gt;
+  &lt;li&gt;Hierarchical Modelling&lt;/li&gt;
+  &lt;li&gt;Information theory - mut. information, complexity &amp;amp; entropy&lt;/li&gt;
+  &lt;li&gt;Hidden Markov Models, Viterbi, Forward and Backward Algorithms, MCMC&lt;/li&gt;
+  &lt;li&gt;Feature Selection&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;prominent-statcs-topics-not-included&quot;&gt;Prominent Stat/CS Topics NOT included&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Interrupts&lt;/li&gt;
+  &lt;li&gt;Machine language&lt;/li&gt;
+  &lt;li&gt;Compiler design&lt;/li&gt;
+  &lt;li&gt;Computer Graphics&lt;/li&gt;
+  &lt;li&gt;Crypto&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;specific-bioinformatics-topics&quot;&gt;Specific Bioinformatics Topics&lt;/h3&gt;
+&lt;p&gt;#### Classical Sequence Analysis 
+- String Matching
+	- Pairwise Alignment via Dynamic Programming [GI]
+	- Local vs. Global Alignment &amp;amp; Suboptimal Alignment [GI]
+	- Hashing &amp;amp; Indexing to increase speed (BLAST, FASTA) [GI]
+		- Suffix arrays &amp;amp; BWT
+	- Substitution scoring matrices (e.g., for amino acids) [GI]
+	- Scoring schemes &amp;amp;  Matching statistics
+		- Score Distributions (e.g., EVD)
+- Multiple Alignment and Consensus Patterns
+	- Identifying genomic regions such as genes &amp;amp; promoters with various statistical methods (e.g., HMMs) [GI]
+	- HMMs, Profiles, Position dependent subst. matrices [GI]
+	- Motifs	 [GI]
+	- Expectation Maximization &amp;amp; Gibbs Sampling [GI]
+	- Finding Structural RNAs	
+- Whole-Genome analysis
+	- Genome Assembly [GA]
+		- De Bruijn graph
+	- Characterizing Repeats in Genomic DNA [GA] 
+	- Identification Duplications in the Genome [GA]
+	- Whole-Genome Comparisons &amp;amp; large scale genomic alignments [GA]
+		- Synteny
+		- Function Classification &amp;amp; Orthologs
+	- Genome Annotation
+		- Gene Prediction
+		- Regulatory site and network prediction
+		- miRNA prediction and targeting site prediction
+		- Pseudogene prediction and functional prediction&lt;/p&gt;
+
+&lt;h4 id=&quot;next-gen-sequencing-data-processing&quot;&gt;Next-Gen Sequencing Data Processing&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Variant Calling
+    &lt;ul&gt;
+      &lt;li&gt;Germline&lt;/li&gt;
+      &lt;li&gt;Somatic&lt;/li&gt;
+      &lt;li&gt;Structural variation &amp;amp; rearrangements&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;RNA-seq
+    &lt;ul&gt;
+      &lt;li&gt;Recognizing and correcting batch effects&lt;/li&gt;
+      &lt;li&gt;Transcript assembly &amp;amp; splicing&lt;/li&gt;
+      &lt;li&gt;Quantification [GI]&lt;/li&gt;
+      &lt;li&gt;eQTLs &amp;amp; allelic transcription&lt;/li&gt;
+      &lt;li&gt;Normalization&lt;/li&gt;
+      &lt;li&gt;Expression Analysis
+        &lt;ul&gt;
+          &lt;li&gt;Time Courses clustering/longitudinal clustering (which is more common in human clinical visits data)&lt;/li&gt;
+          &lt;li&gt;Measuring differences&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;DNA methylation &amp;amp; epigenetic gene regulation
+    &lt;ul&gt;
+      &lt;li&gt;ChIP-seq&lt;/li&gt;
+      &lt;li&gt;Peak calling&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Metagenomics (microbiome) [GA]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;statistical-genetics-ga&quot;&gt;Statistical Genetics [GA]&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Population Genetics &amp;amp; Allele Freq.&lt;/li&gt;
+  &lt;li&gt;Genotype-Phenotype Associations
+    &lt;ul&gt;
+      &lt;li&gt;Case-control &amp;amp; GWAS&lt;/li&gt;
+      &lt;li&gt;Correlation vs. causality&lt;/li&gt;
+      &lt;li&gt;QTLs&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Survival Analysis&lt;/li&gt;
+  &lt;li&gt;Evolutionary Issues
+    &lt;ul&gt;
+      &lt;li&gt;Rates of mutation and change&lt;/li&gt;
+      &lt;li&gt;Clustering &amp;amp; Trees [GI]
+        &lt;ul&gt;
+          &lt;li&gt;Distance vs. maximum likelihood tree methods&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;processing-other-big-data-sets&quot;&gt;Processing Other Big Data Sets&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Flow Cytometry &amp;amp; CyTOF data analysis&lt;/li&gt;
+  &lt;li&gt;Proteomics (Mass Spec)&lt;/li&gt;
+  &lt;li&gt;Metabolomics [GA]&lt;/li&gt;
+  &lt;li&gt;Literature Mining&lt;/li&gt;
+  &lt;li&gt;Structural Genomics&lt;/li&gt;
+  &lt;li&gt;Non-Image processing&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;data-integration--mining&quot;&gt;Data Integration &amp;amp; Mining&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Information integration and fusion
+    &lt;ul&gt;
+      &lt;li&gt;Dealing with heterogeneous data&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Ensemble Learning&lt;/li&gt;
+  &lt;li&gt;Dimensionality Reduction (PCA etc.)&lt;/li&gt;
+  &lt;li&gt;Assessing Predictions
+    &lt;ul&gt;
+      &lt;li&gt;Training and testing data&lt;/li&gt;
+      &lt;li&gt;Cross validation&lt;/li&gt;
+      &lt;li&gt;ROC curves&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Network Analysis
+    &lt;ul&gt;
+      &lt;li&gt;Pathway analysis&lt;/li&gt;
+      &lt;li&gt;Topology Analysis (Hubs &amp;amp; Bottlenecks)&lt;/li&gt;
+      &lt;li&gt;Prediction of linkages&lt;/li&gt;
+      &lt;li&gt;Global structure vs. local network motifs&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Meta-analysis
+    &lt;ul&gt;
+      &lt;li&gt;Fisher’s Method for combining p-values&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;sequence-to-structure&quot;&gt;Sequence to Structure&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Secondary Structure Prediction
+    &lt;ul&gt;
+      &lt;li&gt;via Propensities&lt;/li&gt;
+      &lt;li&gt;TM-helix finding&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Tertiary Structure Prediction
+    &lt;ul&gt;
+      &lt;li&gt;Homology Modeling &amp;amp; Protein Threading (Fold Recognition)&lt;/li&gt;
+      &lt;li&gt;Ab initio&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Direct Function Prediction
+    &lt;ul&gt;
+      &lt;li&gt;Active site identification&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Structure Prediction: Protein vs. RNA&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;d-structure-analysis&quot;&gt;3D Structure Analysis&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Molecular Geometry
+    &lt;ul&gt;
+      &lt;li&gt;Distances, Angles, Axes, Rotations
+        &lt;ul&gt;
+          &lt;li&gt;Calculating a helix axis in 3D via fitting a line&lt;/li&gt;
+          &lt;li&gt;Molecular Graphics&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Calculation of Volume and Surface
+        &lt;ul&gt;
+          &lt;li&gt;Hinge prediction&lt;/li&gt;
+          &lt;li&gt;Packing Measurement&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Structural Comparison &amp;amp; Alignment
+    &lt;ul&gt;
+      &lt;li&gt;Basic Protein Geometry and Least-Squares Fitting&lt;/li&gt;
+      &lt;li&gt;Aligning sequences on the basis of 3D structure&lt;/li&gt;
+      &lt;li&gt;Fold Library&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Docking and Drug Design [GA]&lt;/li&gt;
+  &lt;li&gt;EM image analysis&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;simulation--modelling&quot;&gt;Simulation &amp;amp; Modelling&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Molecular Mechanics
+    &lt;ul&gt;
+      &lt;li&gt;Basic interactions, potential energy functions
+        &lt;ul&gt;
+          &lt;li&gt;Geometry =&amp;gt; Energy =&amp;gt; Forces&lt;/li&gt;
+          &lt;li&gt;Covalent
+            &lt;ul&gt;
+              &lt;li&gt;Bonds &amp;amp; Angles (as springs)&lt;/li&gt;
+              &lt;li&gt;Dihedral&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Noncovalent
+            &lt;ul&gt;
+              &lt;li&gt;Electrostatics&lt;/li&gt;
+              &lt;li&gt;VDW Forces&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Energy Minimization
+        &lt;ul&gt;
+          &lt;li&gt;Steepest Descent &amp;amp; Conjugate Gradient&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Molecular Dynamics &amp;amp; MC&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Simplifications
+    &lt;ul&gt;
+      &lt;li&gt;Poisson-Boltzmann Equation&lt;/li&gt;
+      &lt;li&gt;Lattice Models &amp;amp; Progressive Simplification&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Signaling &amp;amp; Pathway Modeling
+    &lt;ul&gt;
+      &lt;li&gt;Population Dynamics w/ ODEs&lt;/li&gt;
+      &lt;li&gt;Regulatory network modeling via Boolean networks, ODEs&lt;/li&gt;
+      &lt;li&gt;Flux-balance calculations&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Viral Dynamics&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+                <link>CBB752Spring2016.github.io/2016/04/10/Categories-of-knowledge-for-bioinformatics-education</link>
+                <guid>CBB752Spring2016.github.io/2016/04/10/Categories-of-knowledge-for-bioinformatics-education</guid>
+                <pubDate>2016-04-10T00:00:00-04:00</pubDate>
+        </item>
 
 
 </channel>

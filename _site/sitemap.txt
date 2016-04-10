@@ -4,3 +4,5 @@ CBB752Spring2016.github.io/atom.xml
 CBB752Spring2016.github.io/
 CBB752Spring2016.github.io/rss.xml
 CBB752Spring2016.github.io/sitemap.txt
+
+CBB752Spring2016.github.io/2016/04/10/Categories-of-knowledge-for-bioinformatics-education
