@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Parallel Computating With R And Hpc</title>
+    
+    
+    <link rel="stylesheet" href="assets/css/tipsy.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
+    <!-- bxSlider Javascript file -->
+    <script src="/assets/js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/assets/css/jquery.bxslider.css" rel="stylesheet" />
+    
+    <script src="assets/js/jquery.tipsy.js"></script>
+   
+    
+    <meta name="author" content="Xiu Huang">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes//bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes//css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Xiu Huang</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/About%20me">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/Interests">Interests</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/Publication">Publication</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/Research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Parallel Computating With R And Hpc </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>25 April 2013</span>
+    </div>
+    <div class="content">
+      
+<p>Generally, there are two ways to realize R parallel computation on HPC. The first way is to encode parallel computation in the code so that each runing of the script will be significantly faster than runing on a single thread. One can use Rmpi package with OpenMPI to code as well as submit to HPC to run it. The second way is to submit multiple single thread jobs to clusters to run concurrently. One can take advantage of the SimpleQueue submition script to submit their jobs. Below lists several resources to get references to.</p>
+
+<h2 id="mpi-under-pbs">MPI under PBS</h2>
+<p>A good Rmpi tutorial with sample code and submition examples: <a href="http://math.acadiau.ca/ACMMaC/Rmpi/index.html">Link</a>. 
+Specific guidance of runing MPI under PBS on Yale HPC systems:
+<a href="http://maguro.cs.yale.edu/mediawiki/index.php/MPI_under_PBS">Link</a>. (Note that the directory of openmpi is actually not locating under the directory that the web page suggests. Openmpi is right now located at /usr/local/cluster/software/installation/openmpi/. Add this line to your .bash_profile file: PATH=/usr/local/cluster/software/installation/openmpi/openmpi-gcc-1.6.3/bin:$PATH)</p>
+
+<h2 id="simplequeue-submition">SimpleQueue submition</h2>
+<p>Detailed information about SimpleQueue is available at <a href="http://maguro.cs.yale.edu/mediawiki/index.php/SimpleQueue">Link</a>. The advantage of SimpleQueue is that you can reuse a script and resubmit it to multiple runs on the cluster without the need to duplicate the code. One way to save workspace of each run to a distinct file is possible by using R command line arguments. A good reference for passing arguments to R code in command line is <a href="http://quantitative-ecology.blogspot.com/2007/08/including-arguments-in-r-cmd-batch-mode.html">here</a>.</p>
+
+
+    </div>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#R-ref">
+    		R <span>6</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/tags.html#R-ref">R <span>6</span></a></li>
+     
+    	<li><a href="/tags.html#computing-ref">computing <span>2</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/r/2013/03/28/From-mark-down-to-everything" title="From Mark Down To Everything">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/r/2013/05/08/Hook-for-pdf-image-insertion" title="Hook For Pdf Image Insertion">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1594362434137587";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-href="xiu-huang.com" data-num-posts="5" data-width="580" data-colorscheme="light"></div>
+
+
+
+  </div>
+</div>
+
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2016 Xiu Huang
+        </p>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

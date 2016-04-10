@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Work With Rstudio And Wordpress Blogs</title>
+    
+    
+    <link rel="stylesheet" href="assets/css/tipsy.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
+    <!-- bxSlider Javascript file -->
+    <script src="/assets/js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/assets/css/jquery.bxslider.css" rel="stylesheet" />
+    
+    <script src="assets/js/jquery.tipsy.js"></script>
+   
+    
+    <meta name="author" content="Xiu Huang">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes//bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes//css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Xiu Huang</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/About%20me">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/Interests">Interests</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/Publication">Publication</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/Research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Work With Rstudio And Wordpress Blogs </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>22 March 2013</span>
+    </div>
+    <div class="content">
+      
+<p>After some exploration, I finally got it work to publish blogs directly from Rstudio Rmarkdown file, thanks to the direction <a href="http://wkmor1.wordpress.com/2012/07/01/rchievement-of-the-day-3-bloggin-from-r-14/">here</a> and <a href="http://yihui.name/knitr/demo/wordpress/">here</a>. I have also wrapped up my own function to run the whole process automatically.</p>
+
+<pre><code>post_to_wp &lt;- function (file, title) {    
+  library(RWordPress)    
+  options(WordpressLogin = c(hoyden0329 = 'password'),      
+  WordpressURL = 'http://hoyden0329.wordpress.com/  xmlrpc.php')    
+  getUsersBlogs()    
+  library(knitr)    
+  opts_knit$set(base.url = 'https://dl.dropbox.com/u/11830378/wp/',    
+  base.dir = '/Users/xiuhuang/Dropbox/Public/wp/')    
+  knit2wp(file, title = title)    
+}    
+</code></pre>
+
+<p>Basically, after I got the .Rmd file ready, I can just run</p>
+
+<pre><code>post_to_wp(file="Work_with_Rstudio_and_Wordpress_blogs.Rmd", title="Work with Rstudio and Wordpress blogs")
+</code></pre>
+
+<p>And the blog will then magically show itself inside my blog site! Cool!</p>
+
+
+    </div>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#R-ref">
+    		R <span>6</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/tags.html#R-ref">R <span>6</span></a></li>
+     
+    	<li><a href="/tags.html#blog-ref">blog <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/r/2013/03/22/Reproducible-research" title="Reproducible Research">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/computation/2013/03/23/Working-with-louise-interactively" title="Working With Louise Interactively">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1594362434137587";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-href="xiu-huang.com" data-num-posts="5" data-width="580" data-colorscheme="light"></div>
+
+
+
+  </div>
+</div>
+
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2016 Xiu Huang
+        </p>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

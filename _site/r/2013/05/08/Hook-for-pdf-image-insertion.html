@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hook For Pdf Image Insertion</title>
+    
+    
+    <link rel="stylesheet" href="assets/css/tipsy.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
+    <!-- bxSlider Javascript file -->
+    <script src="/assets/js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/assets/css/jquery.bxslider.css" rel="stylesheet" />
+    
+    <script src="assets/js/jquery.tipsy.js"></script>
+   
+    
+    <meta name="author" content="Xiu Huang">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes//bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes//css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Xiu Huang</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/About%20me">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/Interests">Interests</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/Publication">Publication</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/Research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Hook For Pdf Image Insertion </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>08 May 2013</span>
+    </div>
+    <div class="content">
+      
+<p>Simple insertion of multiple-page pdf figures in Rmd file can be realized using <a href="http://yihui.name/knitr/hooks">hooks</a> and <a href="http://www.imagemagick.org/script/index.php">ImageMagick</a>.</p>
+
+<p>Here is a hook function that I wrote to implement this function:</p>
+
+<pre><code>knit_hooks$set(pdf = function(before, options, envir) {
+	if (before) {
+		cmd = paste("convert -density 150 ", options$fig.pdf, " ./", options$label,".png", sep='')
+		system(cmd)
+	}})
+</code></pre>
+
+<p>Say to insert the 3rd page of a pdf file into the Rmd file to both generate png image file for html report and high quality pdf image file for beamer report and pdf report, one can use the following code chunk:</p>
+
+<pre><code>```{r testfig1, pdf=TRUE, fig.pdf="simu2_plot.pdf[3]", fig.cap="Third page of pdf file simu2_plot.pdf."}
+library(png)
+library(grid)
+img &lt;- readPNG("./testfig1.png")
+grid.raster(img)
+```
+</code></pre>
+
+
+    </div>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#R-ref">
+    		R <span>6</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/tags.html#R-ref">R <span>6</span></a></li>
+     
+    	<li><a href="/tags.html#markdown-ref">markdown <span>3</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/r/2013/04/25/Parallel-computating-with-R-and-HPC" title="Parallel Computating With R And Hpc">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/computation/2014/03/28/How-to-hack-markdownhere-for-postbox" title="How To Hack Markdownhere For Postbox">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1594362434137587";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-href="xiu-huang.com" data-num-posts="5" data-width="580" data-colorscheme="light"></div>
+
+
+
+  </div>
+</div>
+
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2016 Xiu Huang
+        </p>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

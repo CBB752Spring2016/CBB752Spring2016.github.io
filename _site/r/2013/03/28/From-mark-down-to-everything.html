@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>From Mark Down To Everything</title>
+    
+    
+    <link rel="stylesheet" href="assets/css/tipsy.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
+    <!-- bxSlider Javascript file -->
+    <script src="/assets/js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="/assets/css/jquery.bxslider.css" rel="stylesheet" />
+    
+    <script src="assets/js/jquery.tipsy.js"></script>
+   
+    
+    <meta name="author" content="Xiu Huang">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes//bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes//css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Xiu Huang</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/About%20me">About</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/Interests">Interests</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/Publication">Publication</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/Research">Research</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive">Blog</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>From Mark Down To Everything </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>28 March 2013</span>
+    </div>
+    <div class="content">
+      
+<p>Markdown is definitely easier and more friendly than latex and other languages. The question is: can we just use markdown and get everything done? The answer is simply, Pandoc! Yes. There is an existing tool available for transfering mardown file .md to latex document, beamer slides, word, ppt and so on. This is pandoc and this tool is cool. 
+Some details are not so perfect though. After hands on pandoc and play with it for one day, I found several little defects. For example, you can’t insert a table into markdown conveniently using xtable package in R and being able to translate it into both latex and html. You can do both of course. But just not at the same time, on the same file. Also, sometimes you won’t be able to get a very nice format when trying to stuck lots of information into one slide, which needs manual modification and separation of slides. Another two minor issues are with png figure quality and beamer level construction. So I wrote several little scripts to help pandoc make things right and adapt to my specific needs.</p>
+
+<!-- more -->
+
+<p>So here is my workflow to start with markdown and get html, a latex report in pdf, and a beamer report at the same time:</p>
+
+<ul>
+  <li>
+    <p>I firstly start writing a markdown file from a customized template file. You can set up your own template .Rmd file in Rstudio at <code>/Applications/RStudio.app/Contents/Resources/resources/templates/r_markdown.Rmd</code>. My template file is customized like this:</p>
+
+    <pre><code>  % Data Analysis Report
+  % Author 
+  % Date
+  ``` {r setup, cache=FALSE, include=FALSE}
+  opts_knit$set(root.dir = gsub("report", "data", getwd())) % set working directory to where data is saved
+  opts_knit$set(aliases=c(h='fig.height', w='fig.width',                                                                         
+                  cap='fig.cap', scap='fig.scap'))                                                                               
+  opts_knit$set(eval.after = c('fig.cap','fig.scap'))   
+  knit_hooks$set(document = function(x) {                                                                                        
+    gsub('(\\\\end\\{knitrout\\}[\n]+)', '\\1\\\\noindent ', x)                                                               
+  })   
+  opts_chunk$set(fig.height=5, fig.width=8, dev=c('png','pdf')) % produce both png figure and pdf figure
+  options(width=60)
+  library(xtable)
+  library(gplots)
+  library(ggplot2)
+  ```
+  # Motivation
+
+  # Reference
+
+  ```{r pandoc, echo=FALSE}
+  setwd(gsub("data", "report", getwd())) % set working directory back to report directory
+  system("perl ~/my/directory/to/latextabletransfer.pl this_report.Rmd") % automatically call a perl script to generate latex report and beamer slides
+  ```
+</code></pre>
+  </li>
+  <li>
+    <p>The script used in the above script is written in perl and pasted below.</p>
+
+    <pre><code>  ##############################################
+  ## latextabletransfer.pl
+  ## Depends on allowframebreaks.pl 
+  ## and beamerleveladd.pl
+  ## The main function is to solve xtable 
+  ## generating both html and latex type 
+  ## document problem and calling all the 
+  ## following processing steps to automatically
+  ## generate html, report, and beamer slides.
+  ##############################################
+  #!perl
+  $file = $ARGV[0];
+  # print "$file\n";
+  open FILE, $file;
+  while(&lt;FILE&gt;){
+      $line = $_;
+  #     print "$line";
+  	if($line =~ /print\(xtable\(.*\).*\)/){
+  		$line =~ s/type\=\"html\"/comment\=F/;
+  	}
+  	if($line =~ /\`\`\`\{r pandoc.*\}/){
+  		$line = "";
+  		@IN = &lt;FILE&gt;;
+  	}
+  	$res = $res.$line;
+  }
+  close FILE;
+  $file =~ s/\./2\./;
+  # print "$file\n";
+  open RES, "&gt;$file";
+  print RES $res;
+  close RES;
+  system("Rscript -e \"library(knitr); knit('$file')\"");
+  $file =~ s/\.Rmd/\.md/;
+  $in = $file;
+  $file =~ s/2\.md/\.tex/;
+  $out1 = $file;
+  $file =~ s/\.tex/\_talk\.tex/;
+  $out2 = $file;
+  system("pandoc -s '$in' -o '$out1' --bibli ref.bib");
+  system("perl ~/directory/to/allowframebreaks.pl '$out1'");
+    
+  system("perl ~/directory/to/beamerleveladd.pl '$in'");
+  system("pandoc -s '$in' -t beamer --slide-level 3 -o '$out2' --bibli ref.bib");
+  system("perl ~/directory/to/allowframebreaks.pl '$out2'");
+    
+    
+  ##############################################
+  ## allowframebreaks.pl 
+  ## Used in latextabletransfer.pl
+  ## Main function is to auto beamer slides
+  ## frame break, scale table font size 
+  ## and use pdf figure format for
+  ## report and beamer slides.
+  ##############################################
+  #!perl
+  $file = $ARGV[0];
+  # print "$file\n";
+  open FILE, $file;
+  # $file =~ s/\./2\./;
+  # print "$file\n";
+  $res = "";
+  while(&lt;FILE&gt;){
+      $line = $_;
+  	print "$line";
+  	if($line =~ /.*\\begin\{frame\}.*\\frametitle.*/){
+  		$line =~ s/\\begin\{frame\}/\\begin\{frame\}\[allowframebreaks\]/;
+  	}
+  	if($line =~ /\\includegraphics\{.*\.png\}/){
+  		$line =~ s/png/pdf/;
+  	}
+  	if($line =~ /\\begin\{table\}.*/){
+  		$line = $line."\\small\n";
+  	}
+  	$res = $res.$line;
+  }
+  close FILE;
+  open RES, "&gt;$file";
+  print RES $res;
+  close RES;
+    
+    
+  ##############################################
+  ## beamerleveladd.pl 
+  ## Used in latextabletransfer.pl
+  ## Main function is to automatically solve 
+  ## slide level issue when formating beamer.
+  ##############################################
+  #!perl
+  $file = $ARGV[0];
+  # print "$file\n";
+  open FILE, $file;
+  @IN = &lt;FILE&gt;;
+  @res = ();
+  for($i=0; $i&lt;=$#IN; $i++){
+      $temp = substr($IN[$i], 0, 3);
+  #	print "$temp\n";
+  	if($temp =~ /\#\s./){
+  		$temp2 = substr($IN[$i+1], 0, 3);
+  		if($temp2 =~ /\#\#./){
+  			push(@res, $IN[$i]);
+  		}
+  		else{
+  			push(@res, $IN[$i]);
+  			push(@res, "\#\#".$IN[$i]);
+  		}
+  	}
+  	elsif($temp =~ /\#\#\s/){
+  		$temp2 = substr($IN[$i+1], 0, 3);
+  		if($temp2 =~ /\#\#\#/){
+  			push(@res, $IN[$i]);
+  		}
+  		else{
+  			push(@res, $IN[$i]);
+  			push(@res, "\#".$IN[$i]);
+  		}
+  	}
+  	else{
+  		push(@res, $IN[$i]);
+  	}
+  }
+  close FILE;
+  open RES, "&gt;$file";
+  print RES @res;
+  close RES;
+  open FILE, $file;
+  @res = &lt;FILE&gt;;
+  for($i=0; $i&lt;=$#res; $i++){
+  	$temp = substr($res[$i], 0, 3);
+  	print "$temp\n";
+  }
+  close FILE;
+</code></pre>
+  </li>
+  <li>The scripts above are mainly to solve the following three issues:
+    <ul>
+      <li>Knit xtable to both html compatible format and pdf compatible format.</li>
+      <li>Generate png format figure for html, and pdf format figure for high quality printing in reports and slides.</li>
+      <li>Automatically break frames into separate slides when there are too many contents inside one frame.</li>
+      <li>Scale table font size to small in pdf reports and slides.</li>
+    </ul>
+  </li>
+  <li>After finishing your .Rmd file, you can just use the <em>Knit HTML</em> buttom to automatically knit the document to html, pdf report, and pdf beamer slides. <a href="https://dl.dropbox.com/u/11830378/wp/files/sample_report.Rmd">Here</a> is the link to a sample .Rmd file (some of the code is borrowed from <a href="http://aliquote.org/pub/rmd/demo-rmd-pandoc.html">A little demonstration of R Markdown and Pandoc</a>). And <a href="http://hoyden0329.wordpress.com/2013/03/29/a-sample-report-generate-by-rmarkdown/">this</a> is the link to the generated html report that I published in my blog. And these two are the links to the generated <a href="https://dl.dropbox.com/u/11830378/wp/files/sample_report.pdf">pdf report</a> and <a href="https://dl.dropbox.com/u/11830378/wp/files/sample_report_talk.pdf">beamer slides</a>. If you are interested, you can also download the template files for pandoc that I customized to generate the pdf files (for <a href="https://dl.dropbox.com/u/11830378/wp/files/default.latex">reports</a> and <a href="https://dl.dropbox.com/u/11830378/wp/files/default.beamer">beamer slides</a>). The default template files are under the directory <code>/usr/local/share/pandoc-1.11.1/data/templates/</code>.</li>
+</ul>
+
+<p>After playing with pandoc for these days, I found it a great tool to integrate various formats of documents. Hope you find this post helpful and can customize your own pandoc workflow for reproducible research.</p>
+
+
+    </div>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#R-ref">
+    		R <span>6</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/tags.html#R-ref">R <span>6</span></a></li>
+     
+    	<li><a href="/tags.html#markdown-ref">markdown <span>3</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/computation/2013/03/23/Working-with-louise-interactively" title="Working With Louise Interactively">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/r/2013/04/25/Parallel-computating-with-R-and-HPC" title="Parallel Computating With R And Hpc">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1594362434137587";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-href="xiu-huang.com" data-num-posts="5" data-width="580" data-colorscheme="light"></div>
+
+
+
+  </div>
+</div>
+
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2016 Xiu Huang
+        </p>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+
