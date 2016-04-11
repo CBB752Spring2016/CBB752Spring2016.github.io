@@ -23,7 +23,7 @@ layout: page
 
 - **When:** Will be released officially at 14th April, and will be due at 5th May. 
 
-- **How:** Each student will be coorporate with classmates to work on three different projects. The generated codes and documents will be published on this website to be resources for later students and researches.
+- **How:** Each student will coorporate with classmates to work on three different projects. The generated codes and documents will be published on this website to be resources for later students and researches.
 
 - **What:** Projects that are serving a main topic will be released at 14th April. Students can choose their favorite projects to work on. 
 
