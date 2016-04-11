@@ -1,40 +1,39 @@
-# Jekyll-Bootstrap
+This is final project website constructed using Jekyll-Bootstrap for CBB752
+===========================================================================
 
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
+Website URL
+-----------
 
-## Usage
+The website is available at
+[http://CBB752Spring2016.github.io](<http://CBB752Spring2016.github.io>)
 
-For all usage and documentation please see: <http://jekyllbootstrap.com>
+Usage
+-----
 
-## Version
+For all usage and documentation for Jekyll-Bootstrap please see:
+<http://jekyllbootstrap.com>
 
-0.3.0 - stable and versioned using [semantic versioning](http://semver.org/).
+Contributing
+------------
 
-**NOTE:** 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't _look_ like the old version.
-However, the actual API has not changed at all.
-You might want to run 0.3.0 in a branch to make sure you are ok with the theme design changes.
+To contribute to the framework simply edit the .md file in the repository:
 
-## Contributing
+-   To edit the index page, directly edit the index.md file.
 
+-   To add a new page to the website, construct a new .md file with the file
+    name being “page name.md" at the root directory of the repository.
 
-To contribute to the framework please make sure to checkout your branch based on `jb-development`!!
-This is very important as it allows me to accept your pull request without having to publish a public version release.
+-   To add a new post in the blog, construct a new .md file with the file name
+    following the structure  “2016-month-day-name-of-the-post.md” in the
+    “\_posts” directory.
 
-Small, atomic Features, bugs, etc.
-Use the `jb-development` branch but note it will likely change fast as pull requests are accepted.
-Please rebase as often as possible when working.
-Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.
+After the modifications, you can check the result website locally at your
+computer using Jekyll server following the instructions
+[here](<https://jekyllrb.com/docs/usage/>). If everything seems right, commit
+the changes with appropriate annotations and sync the modification to the github
+server, and make sure to visit
+[http://CBB752Spring2016.github.io](<http://CBB752Spring2016.github.io>) to
+check if everything goes on as desired.
 
-For Big Features or major API extensions/edits:
-This is the one case where I'll accept pull-requests based off the master branch.
-This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
-Translation : it might take a bit longer so please be patient! (but sincerely thank you).
-
-**Jekyll-Bootstrap Documentation Website.**
-
-The documentation website at <http://jekyllbootstrap.com> is maintained at https://github.com/plusjade/jekyllbootstrap.com
-
-
-## License
-
-[MIT](http://opensource.org/licenses/MIT)
+ 
+-
