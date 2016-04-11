@@ -1,5 +1,5 @@
-This is final project website constructed using Jekyll-Bootstrap for CBB752
-===========================================================================
+This is the final project website constructed using Jekyll-Bootstrap for CBB752
+===============================================================================
 
 Website URL
 -----------
