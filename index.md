@@ -44,13 +44,13 @@ About the Final Project
 
 ### For all sub-projects, your group will have to provide
 
-1.  sample input and output files
+1.  R card: sample input, source code in R, sample output, and documentation on
+    how to execute your code
 
-2.  source code and output
+2.  Python card: sample input, source code in Python, sample output, and
+    documentation on how to execute your code
 
-3.  documentation on how to execute your code
-
-4.  methodology
+3.  English card: methodology and background introduction
 
 ### Available Topics
 
