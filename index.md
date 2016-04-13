@@ -74,7 +74,7 @@ given SAM and GTF files.
 2.4 Propose a tool that calls SNVs from pileup file, and generate the output in
 VCF format.
 
-2.5 Propose a tool that calculates differentially expressed genes from gtf file
+2.5 Propose a tool that calculates differentially expressed genes from GCT file
 of gene expressions.
 
 2.6 Propose a tool that finds k-mer motif enrichment from a given nucleotide
@@ -82,7 +82,7 @@ sequence.
 
 #### 3. Network Analysis
 
-3.1 Propose a tool that calculates co-expressed gene network from gtf file of
+3.1 Propose a tool that calculates co-expressed gene network from GCT file of
 gene expressions.
 
 3.2 Propose a tool that calculate their degree centrality and betweenness
