@@ -1,4 +1,4 @@
-This is the final project website constructed using Jekyll-Bootstrap for CBB752
+Welcome to CBB 752 Spring 2016 Final Project Website
 ===============================================================================
 
 Website URL
