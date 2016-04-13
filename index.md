@@ -104,3 +104,14 @@ coordinates.
 
 4.3 Propose a tool that calculate the dihedral angle based on the input of four
 points’ xyz coordinates in PDB format.
+
+### Next Steps to Do
+
+-   Edit this pages! Fix this page and make it better and better!
+
+-   Pick your topics!
+
+-   Form your groups!
+
+-   Make specs for topics you are interested in! You can even modify the topic
+    if you find it too difficult.
