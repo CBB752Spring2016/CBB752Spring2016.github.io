@@ -99,7 +99,8 @@ given pre-defined gene sets
 file. (The program should output a distance between two atoms in angstroms)
 
 4.2 Propose a tool that calculate the Lennard-Jones potential based on the input
-of a PDB file and a query point’s xyz coordinates.
+of a PDB file consisting of just alpha carbons and a query point’s xyz
+coordinates.
 
 4.3 Propose a tool that calculate the dihedral angle based on the input of four
-points’ xyz coordinates.
+points’ xyz coordinates in PDB format.
