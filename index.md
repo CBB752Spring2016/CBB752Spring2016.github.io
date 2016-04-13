@@ -52,7 +52,7 @@ About the Final Project
 
 3.  English card: methodology and background introduction
 
-### Available Topics
+### Available Topics (Note that this is a draft and if you see an issue come to us and we would edit it accordingly)
 
 #### 1. QC steps
 
