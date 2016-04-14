@@ -1,4 +1,8 @@
 
+CBB752Spring2016.github.io/Network
+CBB752Spring2016.github.io/QCStep
+CBB752Spring2016.github.io/Sequence
+CBB752Spring2016.github.io/Structure
 CBB752Spring2016.github.io/archive
 CBB752Spring2016.github.io/atom.xml
 CBB752Spring2016.github.io/
