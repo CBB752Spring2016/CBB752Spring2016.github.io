@@ -1,4 +1,4 @@
-Welcome to CBB 752 Spring 2016 Final Project Website
+CBB 752 Spring 2016 Final Project Website
 ===============================================================================
 
 Website URL
