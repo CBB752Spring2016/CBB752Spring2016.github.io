@@ -75,23 +75,23 @@ given SAM and GTF files.
 VCF format.
 
 2.5 Propose a tool that calculates differentially expressed genes from GCT file
-of gene expressions.
+of gene expressions.(Edmond Dantes)
 
 2.6 Propose a tool that finds k-mer motif enrichment from a given nucleotide
-sequence.
+sequence.(Edmond Dantes)
 
 #### 3. Network Analysis
 
 3.1 Propose a tool that calculates co-expressed gene network from GCT file of
-gene expressions.
+gene expressions.(Edmond Dantes)
 
 3.2 Propose a tool that calculate their degree centrality and betweenness
 centrality from PPI file. PPI data can be downloaded from DIP, BIND, MIPS, MINT,
-and InAct databases.
+and InAct databases.(Edmond Dantes)
 
 3.3 Propose a tool that calculates enrichment level of gene expression data
 given pre-defined gene sets
-([http://software.broadinstitute.org/gsea/msigdb](<https://urldefense.proofpoint.com/v2/url?u=http-3A__software.broadinstitute.org_gsea_msigdb&d=AwMFaQ&c=-dg2m7zWuuDZ0MUcV7Sdqw&r=PnTFVO2L44pkkv9ojQ0IMDygcpAI3ijI-U1aZXdN85Y&m=0qYw2y8MqbEaBguyXvxmBwvTb67SzblG5ILDT9kuscI&s=ah6gw5_TiY43zaFez-Xxusu-JRdMKObrVsokKQOUCyw&e=>)).
+([http://software.broadinstitute.org/gsea/msigdb](<https://urldefense.proofpoint.com/v2/url?u=http-3A__software.broadinstitute.org_gsea_msigdb&d=AwMFaQ&c=-dg2m7zWuuDZ0MUcV7Sdqw&r=PnTFVO2L44pkkv9ojQ0IMDygcpAI3ijI-U1aZXdN85Y&m=0qYw2y8MqbEaBguyXvxmBwvTb67SzblG5ILDT9kuscI&s=ah6gw5_TiY43zaFez-Xxusu-JRdMKObrVsokKQOUCyw&e=>)).(Edmond Dantes)
 
 #### 4. Structure Analysis
 
