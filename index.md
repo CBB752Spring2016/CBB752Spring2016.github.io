@@ -83,24 +83,24 @@ sequence.
 #### 3. Network Analysis
 
 3.1 Propose a tool that calculates co-expressed gene network from GCT file of
-gene expressions.
+gene expressions. (ELK)
 
 3.2 Propose a tool that calculate their degree centrality and betweenness
 centrality from PPI file. PPI data can be downloaded from DIP, BIND, MIPS, MINT,
-and InAct databases.
+and InAct databases. (ELK)
 
 3.3 Propose a tool that calculates enrichment level of gene expression data
-given pre-defined gene sets
+given pre-defined gene sets (ELK)
 ([http://software.broadinstitute.org/gsea/msigdb](<https://urldefense.proofpoint.com/v2/url?u=http-3A__software.broadinstitute.org_gsea_msigdb&d=AwMFaQ&c=-dg2m7zWuuDZ0MUcV7Sdqw&r=PnTFVO2L44pkkv9ojQ0IMDygcpAI3ijI-U1aZXdN85Y&m=0qYw2y8MqbEaBguyXvxmBwvTb67SzblG5ILDT9kuscI&s=ah6gw5_TiY43zaFez-Xxusu-JRdMKObrVsokKQOUCyw&e=>)).
 
 #### 4. Structure Analysis
 
-4.1 Propose a tool that calculate distance between two alpha carbons from a PDB
-file. (The program should output a distance between two atoms in angstroms)
+4.1 Propose a tool that calculate distance between two alpha carbons from a PDB 
+file. (The program should output a distance between two atoms in angstroms) (ELK)
 
 4.2 Propose a tool that calculate the Lennard-Jones potential based on the input
 of a PDB file consisting of just alpha carbons and a query point’s xyz
-coordinates.
+coordinates. (ELK)
 
 4.3 Propose a tool that calculate the dihedral angle based on the input of four
 points’ xyz coordinates in PDB format.
