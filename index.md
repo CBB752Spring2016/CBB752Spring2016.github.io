@@ -60,14 +60,14 @@ About the Final Project
 
 1.2 Propose a tool that generates “quality control statistics” from FastQ file.
 
-1.3 Propose a tool that trims reads based on quality score from FastQ filee.
+1.3 Propose a tool that trims reads based on quality score from FastQ file.
 
 #### 2. Sequence Analysis
 
 2.1 Propose a tool that generates pileup format from SAM file.
 
 2.2 Propose a tool that calculates FPKM (or TPM, and justify your choice) from
-given SAM and GTF files.
+given SAM and GTF files. (Julian)
 
 2.3 Propose a tool that calculates intersection between two BED files.
 
@@ -75,19 +75,19 @@ given SAM and GTF files.
 VCF format.
 
 2.5 Propose a tool that calculates differentially expressed genes from GCT file
-of gene expressions.(Edmond Dantes)
+of gene expressions.(Edmond Dantes; Julian)
 
 2.6 Propose a tool that finds k-mer motif enrichment from a given nucleotide
-sequence.(Edmond Dantes)
+sequence.(Edmond Dantes; Julian)
 
 #### 3. Network Analysis
 
 3.1 Propose a tool that calculates co-expressed gene network from GCT file of
-gene expressions.(Edmond Dantes)
+gene expressions.(Edmond Dantes; Julian)
 
 3.2 Propose a tool that calculate their degree centrality and betweenness
 centrality from PPI file. PPI data can be downloaded from DIP, BIND, MIPS, MINT,
-and InAct databases.(Edmond Dantes)
+and InAct databases.(Edmond Dantes; Julian)
 
 3.3 Propose a tool that calculates enrichment level of gene expression data
 given pre-defined gene sets
