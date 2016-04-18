@@ -56,7 +56,7 @@ About the Final Project
 
 #### 1. QC steps
 
-1.1 Propose a tool that removes barcode or sequence identifier from FastQ file.(Kevin)
+1.1 Propose a tool that removes barcode or sequence identifier from FastQ file.(Kevin, Calvin)
 
 1.2 Propose a tool that generates “quality control statistics” from FastQ file.
 
@@ -64,7 +64,7 @@ About the Final Project
 
 #### 2. Sequence Analysis
 
-2.1 Propose a tool that generates pileup format from SAM file.(Kevin)
+2.1 Propose a tool that generates pileup format from SAM file.(Kevin, Calvin)
 
 2.2 Propose a tool that calculates FPKM (or TPM, and justify your choice) from
 given SAM and GTF files. (Julian)
@@ -75,7 +75,7 @@ given SAM and GTF files. (Julian)
 VCF format.
 
 2.5 Propose a tool that calculates differentially expressed genes from GCT file
-of gene expressions.(Edmond Dantes; Julian)
+of gene expressions.(Edmond Dantes; Julian; Calvin)
 
 2.6 Propose a tool that finds k-mer motif enrichment from a given nucleotide
 sequence.(Edmond Dantes; Julian)
@@ -91,12 +91,12 @@ and InAct databases.(Edmond Dantes; Julian; Kevin)
 
 3.3 Propose a tool that calculates enrichment level of gene expression data
 given pre-defined gene sets
-([http://software.broadinstitute.org/gsea/msigdb](<https://urldefense.proofpoint.com/v2/url?u=http-3A__software.broadinstitute.org_gsea_msigdb&d=AwMFaQ&c=-dg2m7zWuuDZ0MUcV7Sdqw&r=PnTFVO2L44pkkv9ojQ0IMDygcpAI3ijI-U1aZXdN85Y&m=0qYw2y8MqbEaBguyXvxmBwvTb67SzblG5ILDT9kuscI&s=ah6gw5_TiY43zaFez-Xxusu-JRdMKObrVsokKQOUCyw&e=>)).(Edmond Dantes)
+([http://software.broadinstitute.org/gsea/msigdb](<https://urldefense.proofpoint.com/v2/url?u=http-3A__software.broadinstitute.org_gsea_msigdb&d=AwMFaQ&c=-dg2m7zWuuDZ0MUcV7Sdqw&r=PnTFVO2L44pkkv9ojQ0IMDygcpAI3ijI-U1aZXdN85Y&m=0qYw2y8MqbEaBguyXvxmBwvTb67SzblG5ILDT9kuscI&s=ah6gw5_TiY43zaFez-Xxusu-JRdMKObrVsokKQOUCyw&e=>)).(Edmond Dantes, Calvin)
 
 #### 4. Structure Analysis
 
 4.1 Propose a tool that calculate distance between two alpha carbons from a PDB
-file. (The program should output a distance between two atoms in angstroms) (Gawain)
+file. (The program should output a distance between two atoms in angstroms) (Gawain, Calvin)
 
 4.2 Propose a tool that calculate the Lennard-Jones potential based on the input
 of a PDB file consisting of just alpha carbons and a query point’s xyz
