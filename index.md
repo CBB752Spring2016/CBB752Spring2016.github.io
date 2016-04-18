@@ -96,14 +96,14 @@ given pre-defined gene sets
 #### 4. Structure Analysis
 
 4.1 Propose a tool that calculate distance between two alpha carbons from a PDB
-file. (The program should output a distance between two atoms in angstroms)
+file. (The program should output a distance between two atoms in angstroms) (Gawain)
 
 4.2 Propose a tool that calculate the Lennard-Jones potential based on the input
 of a PDB file consisting of just alpha carbons and a query point’s xyz
-coordinates.
+coordinates. (Gawain)
 
 4.3 Propose a tool that calculate the dihedral angle based on the input of four
-points’ xyz coordinates in PDB format.(Kevin)
+points’ xyz coordinates in PDB format.(Kevin, Gawain)
 
 ### Next Steps to Do
 
