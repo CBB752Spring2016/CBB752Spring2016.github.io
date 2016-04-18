@@ -56,7 +56,7 @@ About the Final Project
 
 #### 1. QC steps
 
-1.1 Propose a tool that removes barcode or sequence identifier from FastQ file.
+1.1 Propose a tool that removes barcode or sequence identifier from FastQ file.(Kevin)
 
 1.2 Propose a tool that generates “quality control statistics” from FastQ file.
 
@@ -64,7 +64,7 @@ About the Final Project
 
 #### 2. Sequence Analysis
 
-2.1 Propose a tool that generates pileup format from SAM file.
+2.1 Propose a tool that generates pileup format from SAM file.(Kevin)
 
 2.2 Propose a tool that calculates FPKM (or TPM, and justify your choice) from
 given SAM and GTF files. (Julian)
@@ -83,11 +83,11 @@ sequence.(Edmond Dantes; Julian)
 #### 3. Network Analysis
 
 3.1 Propose a tool that calculates co-expressed gene network from GCT file of
-gene expressions.(Edmond Dantes; Julian)
+gene expressions.(Edmond Dantes; Julian; Kevin)
 
 3.2 Propose a tool that calculate their degree centrality and betweenness
 centrality from PPI file. PPI data can be downloaded from DIP, BIND, MIPS, MINT,
-and InAct databases.(Edmond Dantes; Julian)
+and InAct databases.(Edmond Dantes; Julian; Kevin)
 
 3.3 Propose a tool that calculates enrichment level of gene expression data
 given pre-defined gene sets
@@ -103,7 +103,7 @@ of a PDB file consisting of just alpha carbons and a query point’s xyz
 coordinates.
 
 4.3 Propose a tool that calculate the dihedral angle based on the input of four
-points’ xyz coordinates in PDB format.
+points’ xyz coordinates in PDB format.(Kevin)
 
 ### Next Steps to Do
 
