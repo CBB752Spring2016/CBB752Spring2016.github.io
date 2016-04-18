@@ -58,7 +58,7 @@ About the Final Project
 
 1.1 Propose a tool that removes barcode or sequence identifier from FastQ file.(Kevin, Calvin)
 
-1.2 Propose a tool that generates “quality control statistics” from FastQ file. (Peter)
+1.2 Propose a tool that generates “quality control statistics” from FastQ file. (Peter, Aparna)
 
 1.3 Propose a tool that trims reads based on quality score from FastQ file. (Nathan,Peter)
 
@@ -75,7 +75,7 @@ given SAM and GTF files. (Julian)
 VCF format.
 
 2.5 Propose a tool that calculates differentially expressed genes from GCT file
-of gene expressions.(Edmond Dantes; Julian; Calvin)
+of gene expressions.(Edmond Dantes; Julian; Calvin, Aparna)
 
 2.6 Propose a tool that finds k-mer motif enrichment from a given nucleotide
 sequence.(Edmond Dantes; Julian, Nathan)
@@ -83,7 +83,7 @@ sequence.(Edmond Dantes; Julian, Nathan)
 #### 3. Network Analysis
 
 3.1 Propose a tool that calculates co-expressed gene network from GCT file of
-gene expressions.(Edmond Dantes; Julian; Kevin)
+gene expressions.(Edmond Dantes; Julian; Kevin, Aparna)
 
 3.2 Propose a tool that calculate their degree centrality and betweenness
 centrality from PPI file. PPI data can be downloaded from DIP, BIND, MIPS, MINT,
@@ -91,7 +91,7 @@ and InAct databases.(Edmond Dantes; Julian; Kevin)
 
 3.3 Propose a tool that calculates enrichment level of gene expression data
 given pre-defined gene sets
-([http://software.broadinstitute.org/gsea/msigdb](<https://urldefense.proofpoint.com/v2/url?u=http-3A__software.broadinstitute.org_gsea_msigdb&d=AwMFaQ&c=-dg2m7zWuuDZ0MUcV7Sdqw&r=PnTFVO2L44pkkv9ojQ0IMDygcpAI3ijI-U1aZXdN85Y&m=0qYw2y8MqbEaBguyXvxmBwvTb67SzblG5ILDT9kuscI&s=ah6gw5_TiY43zaFez-Xxusu-JRdMKObrVsokKQOUCyw&e=>)).(Edmond Dantes, Calvin)
+([http://software.broadinstitute.org/gsea/msigdb](<https://urldefense.proofpoint.com/v2/url?u=http-3A__software.broadinstitute.org_gsea_msigdb&d=AwMFaQ&c=-dg2m7zWuuDZ0MUcV7Sdqw&r=PnTFVO2L44pkkv9ojQ0IMDygcpAI3ijI-U1aZXdN85Y&m=0qYw2y8MqbEaBguyXvxmBwvTb67SzblG5ILDT9kuscI&s=ah6gw5_TiY43zaFez-Xxusu-JRdMKObrVsokKQOUCyw&e=>)).(Edmond Dantes, Calvin, Aparna)
 
 #### 4. Structure Analysis
 
@@ -103,7 +103,7 @@ of a PDB file consisting of just alpha carbons and a query point’s xyz
 coordinates. (Gawain, Nathan,Peter)
 
 4.3 Propose a tool that calculate the dihedral angle based on the input of four
-points’ xyz coordinates in PDB format.(Kevin, Gawain, Nathan,Peter)
+points’ xyz coordinates in PDB format.(Kevin, Gawain, Nathan,Peter, Aparna)
 
 ### Next Steps to Do
 
