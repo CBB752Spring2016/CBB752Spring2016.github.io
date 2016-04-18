@@ -103,7 +103,7 @@ of a PDB file consisting of just alpha carbons and a query point’s xyz
 coordinates. (Gawain)
 
 4.3 Propose a tool that calculate the dihedral angle based on the input of four
-points’ xyz coordinates in PDB format.(Kevin, Gawain)
+points’ xyz coordinates in PDB format.(Kevin, Gawain, Nathan)
 
 ### Next Steps to Do
 
