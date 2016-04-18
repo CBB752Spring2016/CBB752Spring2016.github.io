@@ -58,9 +58,9 @@ About the Final Project
 
 1.1 Propose a tool that removes barcode or sequence identifier from FastQ file.(Kevin, Calvin)
 
-1.2 Propose a tool that generates “quality control statistics” from FastQ file.
+1.2 Propose a tool that generates “quality control statistics” from FastQ file. (Peter)
 
-1.3 Propose a tool that trims reads based on quality score from FastQ file. (Nathan)
+1.3 Propose a tool that trims reads based on quality score from FastQ file. (Nathan,Peter)
 
 #### 2. Sequence Analysis
 
@@ -96,14 +96,14 @@ given pre-defined gene sets
 #### 4. Structure Analysis
 
 4.1 Propose a tool that calculate distance between two alpha carbons from a PDB
-file. (The program should output a distance between two atoms in angstroms) (Gawain, Calvin, Nathan)
+file. (The program should output a distance between two atoms in angstroms) (Gawain, Calvin, Nathan,Peter)
 
 4.2 Propose a tool that calculate the Lennard-Jones potential based on the input
 of a PDB file consisting of just alpha carbons and a query point’s xyz
-coordinates. (Gawain, Nathan)
+coordinates. (Gawain, Nathan,Peter)
 
 4.3 Propose a tool that calculate the dihedral angle based on the input of four
-points’ xyz coordinates in PDB format.(Kevin, Gawain, Nathan)
+points’ xyz coordinates in PDB format.(Kevin, Gawain, Nathan,Peter)
 
 ### Next Steps to Do
 
