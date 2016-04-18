@@ -60,7 +60,7 @@ About the Final Project
 
 1.2 Propose a tool that generates “quality control statistics” from FastQ file.
 
-1.3 Propose a tool that trims reads based on quality score from FastQ file.
+1.3 Propose a tool that trims reads based on quality score from FastQ file. (Nathan)
 
 #### 2. Sequence Analysis
 
@@ -78,7 +78,7 @@ VCF format.
 of gene expressions.(Edmond Dantes; Julian; Calvin)
 
 2.6 Propose a tool that finds k-mer motif enrichment from a given nucleotide
-sequence.(Edmond Dantes; Julian)
+sequence.(Edmond Dantes; Julian, Nathan)
 
 #### 3. Network Analysis
 
@@ -96,11 +96,11 @@ given pre-defined gene sets
 #### 4. Structure Analysis
 
 4.1 Propose a tool that calculate distance between two alpha carbons from a PDB
-file. (The program should output a distance between two atoms in angstroms) (Gawain, Calvin)
+file. (The program should output a distance between two atoms in angstroms) (Gawain, Calvin, Nathan)
 
 4.2 Propose a tool that calculate the Lennard-Jones potential based on the input
 of a PDB file consisting of just alpha carbons and a query point’s xyz
-coordinates. (Gawain)
+coordinates. (Gawain, Nathan)
 
 4.3 Propose a tool that calculate the dihedral angle based on the input of four
 points’ xyz coordinates in PDB format.(Kevin, Gawain, Nathan)
