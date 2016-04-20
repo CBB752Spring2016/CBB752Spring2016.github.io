@@ -115,3 +115,28 @@ points’ xyz coordinates in PDB format.(Kevin, Gawain, Nathan,Peter, Aparna)
 
 -   Make specs for topics you are interested in! You can even modify the topic
     if you find it too difficult.
+
+
+
+### Grouping Assignment
+
+
+| Name          | Primary | 1.1 | 1.2 | 1.3 | 2.1 | 2.2 | 2.3 | 2.4 | 2.5 | 2.6 | 3.1 | 3.2 | 3.3 | 4.1 | 4.2 | 4.3 |
+|---------------|---------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| Julian        | R       |     |     |     |     | R   |     |     |     | R   |     | R   |     |     |     |     |
+| Kevin         | P/R     |     |     |     |     | P   |     |     |     |     |     |     | P   |     |     | R   |
+| Edmond Dantes | E       |     |     |     |     | E   |     |     | E   |     |     | E   |     |     |     |     |
+| ELK           | P/E     |     |     |     |     |     |     |     |     | P   | P   | P   |     |     |     |     |
+| Aparna        | E       |     | E   |     |     |     |     |     |     |     | E   |     | E   |     |     |     |
+| Dan           | R       |     | R   | R   |     |     |     |     |     |     | R   |     |     |     |     |     |
+| Nathan        | E       |     |     | E   |     |     |     |     |     | E   |     |     |     |     | E   |     |
+| Heather       | P/E     |     |     | P   |     |     |     |     | P   |     |     |     |     |     | P   |     |
+| Peter         | P/E     |     | P   |     |     |     |     |     |     |     |     |     |     | P   |     | P   |
+| Calvin        | R/E     |     |     |     |     |     |     |     | R   |     |     |     | R   | R   |     |     |
+| Gawain        | R/E     |     |     |     |     |     |     |     |     |     |     |     |     | E   | R   | E   |
+
+
+
+Feel free to contact the TAs if you have any concerns about the assignment! 
+Otherwise start garthering your group members and having your first discussion!!!
+
