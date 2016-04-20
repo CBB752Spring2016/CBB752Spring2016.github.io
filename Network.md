@@ -7,50 +7,56 @@ title: Network Analysis
 
 
 
-# Sub-Project 1: calculate co-expressed gene network from GCT file of
-gene expressions
+## Sub-Project 1: calculate co-expressed gene network from GCT file of gene expressions
 
-## Python Card
-### Bring by ELK
+### Python Card
 
-
-## R Card
-### Bring by Dan
+#### Bring by ELK
 
 
-## English Card
-### Bring by Aparna
+### R Card
+
+#### Bring by Dan
 
 
+### English Card
 
-
-# Sub-Project 2: calculate their degree centrality and betweenness
-centrality from PPI file
-
-## Python Card
-### Bring by ELK
-
-
-## R Card
-### Bring by Julian
-
-
-## English Card
-### Bring by Edmond Dantes
+#### Bring by Aparna
 
 
 
 
-# Sub-Project 3: calculate enrichment level of gene expression data
-given pre-defined gene sets
+## Sub-Project 2: calculate their degree centrality and betweenness centrality from PPI file
 
-## Python Card
-### Bring by Kevin
+### Python Card
 
-
-## R Card
-### Bring by Calvin
+#### Bring by ELK
 
 
-## English Card
-### Bring by Aparna
+### R Card
+
+#### Bring by Julian
+
+
+### English Card
+
+#### Bring by Edmond Dantes
+
+
+
+
+## Sub-Project 3: calculate enrichment level of gene expression data given pre-defined gene sets
+
+### Python Card
+
+#### Bring by Kevin
+
+
+### R Card
+
+#### Bring by Calvin
+
+
+### English Card
+
+#### Bring by Aparna
