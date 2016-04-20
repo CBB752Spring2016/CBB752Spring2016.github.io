@@ -11,17 +11,17 @@ title: Network Analysis
 
 ### Python Card
 
-#### Bring by ELK
+#### Brought by ELK
 
 
 ### R Card
 
-#### Bring by Dan
+#### Brought by Dan
 
 
 ### English Card
 
-#### Bring by Aparna
+#### Brought by Aparna
 
 
 
@@ -30,17 +30,17 @@ title: Network Analysis
 
 ### Python Card
 
-#### Bring by ELK
+#### Brought by ELK
 
 
 ### R Card
 
-#### Bring by Julian
+#### Brought by Julian
 
 
 ### English Card
 
-#### Bring by Edmond Dantes
+#### Brought by Edmond Dantes
 
 
 
@@ -49,14 +49,14 @@ title: Network Analysis
 
 ### Python Card
 
-#### Bring by Kevin
+#### Brought by Kevin
 
 
 ### R Card
 
-#### Bring by Calvin
+#### Brought by Calvin
 
 
 ### English Card
 
-#### Bring by Aparna
+#### Brought by Aparna

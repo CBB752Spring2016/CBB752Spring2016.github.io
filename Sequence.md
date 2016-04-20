@@ -10,17 +10,17 @@ title: Sequence Analysis
 
 ### Python Card
 
-#### Bring by Kevin
+#### Brought by Kevin
 
 
 ### R Card
 
-#### Bring by Julian
+#### Brought by Julian
 
 
 ### English Card
 
-#### Bring by Edmond Dantes
+#### Brought by Edmond Dantes
 
 
 
@@ -29,17 +29,17 @@ title: Sequence Analysis
 
 ### Python Card
 
-#### Bring by Heather
+#### Brought by Heather
 
 
 ### R Card
 
-#### Bring by Calvin
+#### Brought by Calvin
 
 
 ### English Card
 
-#### Bring by Edmond Dantes
+#### Brought by Edmond Dantes
 
 
 
@@ -47,14 +47,14 @@ title: Sequence Analysis
 
 ### Python Card
 
-#### Bring by ELK
+#### Brought by ELK
 
 
 ### R Card
 
-#### Bring by Julian
+#### Brought by Julian
 
 
 ### English Card
 
-#### Bring by Nathan
+#### Brought by Nathan

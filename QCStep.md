@@ -9,17 +9,17 @@ title: QC Step
 
 ### Python Card
 
-#### Bring by Peter
+#### Brought by Peter
 
 
 ### R Card
 
-#### Bring by Dan
+#### Brought by Dan
 
 
 ### English Card
 
-#### Bring by Aparna
+#### Brought by Aparna
 
 
 
@@ -28,15 +28,15 @@ title: QC Step
 
 ### Python Card
 
-#### Bring by Heather
+#### Brought by Heather
 
 
 ### R Card
 
-#### Bring by Dan
+#### Brought by Dan
 
 
-### English Card
+### Engli'sh Card
 
-#### Bring by Nathan
+#### Brought by Nathan
 

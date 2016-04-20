@@ -10,17 +10,17 @@ title: Structure Analysis
 
 ### Python Card
 
-#### Bring by Peter
+#### Brought by Peter
 
 
 ### R Card
 
-#### Bring by Cavin
+#### Brought by Cavin
 
 
 ### English Card
 
-#### Bring by Gawain
+#### Brought by Gawain
 
 
 
@@ -29,18 +29,18 @@ title: Structure Analysis
 
 ### Python Card
 
-#### Bring by Heather
+#### Brought by Heather
 
 
 
 ### R Card
 
-#### Bring by Gawain
+#### Brought by Gawain
 
 
 ### English Card
 
-#### Bring by Nathan
+#### Brought by Nathan
 
 
 
@@ -49,14 +49,14 @@ title: Structure Analysis
 
 ### Python Card
 
-#### Bring by Peter
+#### Brought by Peter
 
 
 ### R Card
 
-#### Bring by Kevin
+#### Brought by Kevin
 
 
 ### English Card
 
-#### Bring by Gawain
+#### Brought by Gawain
