@@ -56,69 +56,60 @@ About the Final Project
 
 #### 1. QC steps
 
-1.1 Propose a tool that removes barcode or sequence identifier from FastQ file.(Kevin, Calvin)
+1.1 Propose a tool that removes barcode or sequence identifier from FastQ file.(Discard)
 
-1.2 Propose a tool that generates “quality control statistics” from FastQ file. (Peter, Aparna)
+1.2 Propose a tool that generates “quality control statistics” from FastQ file. (P:Peter, E:Aparna, R:Dan)
 
-1.3 Propose a tool that trims reads based on quality score from FastQ file. (Nathan,Peter)
+1.3 Propose a tool that trims reads based on quality score from FastQ file. (E:Nathan, P:Heather, R:Dan)
 
 #### 2. Sequence Analysis
 
-2.1 Propose a tool that generates pileup format from SAM file.(Kevin, Calvin)
+2.1 Propose a tool that generates pileup format from SAM file.(Discard)
 
 2.2 Propose a tool that calculates FPKM (or TPM, and justify your choice) from
-given SAM and GTF files. (Julian)
+given SAM and GTF files. (R:Julian, P:Kevin, E:Edmond Dantes)
 
-2.3 Propose a tool that calculates intersection between two BED files.
+2.3 Propose a tool that calculates intersection between two BED files. (Discard)
 
 2.4 Propose a tool that calls SNVs from pileup file, and generate the output in
-VCF format.
+VCF format. (Discard)
 
 2.5 Propose a tool that calculates differentially expressed genes from GCT file
-of gene expressions.(Edmond Dantes; Julian; Calvin, Aparna)
+of gene expressions.(E:Edmond Dantes, P:Heather, R:Calvin)
 
 2.6 Propose a tool that finds k-mer motif enrichment from a given nucleotide
-sequence.(Edmond Dantes; Julian, Nathan)
+sequence.(E:Edmond Dantes, R:Julian, P:ELK)
 
 #### 3. Network Analysis
 
 3.1 Propose a tool that calculates co-expressed gene network from GCT file of
-gene expressions.(Edmond Dantes; Julian; Kevin, Aparna)
+gene expressions.(R:Dan, P:ELK, E:Aparna)
 
 3.2 Propose a tool that calculate their degree centrality and betweenness
 centrality from PPI file. PPI data can be downloaded from DIP, BIND, MIPS, MINT,
-and InAct databases.(Edmond Dantes; Julian; Kevin)
+and InAct databases.(E:Edmond Dantes, R:Julian, P:ELK)
 
 3.3 Propose a tool that calculates enrichment level of gene expression data
 given pre-defined gene sets
-([http://software.broadinstitute.org/gsea/msigdb](<https://urldefense.proofpoint.com/v2/url?u=http-3A__software.broadinstitute.org_gsea_msigdb&d=AwMFaQ&c=-dg2m7zWuuDZ0MUcV7Sdqw&r=PnTFVO2L44pkkv9ojQ0IMDygcpAI3ijI-U1aZXdN85Y&m=0qYw2y8MqbEaBguyXvxmBwvTb67SzblG5ILDT9kuscI&s=ah6gw5_TiY43zaFez-Xxusu-JRdMKObrVsokKQOUCyw&e=>)).(Edmond Dantes, Calvin, Aparna)
+([http://software.broadinstitute.org/gsea/msigdb](<https://urldefense.proofpoint.com/v2/url?u=http-3A__software.broadinstitute.org_gsea_msigdb&d=AwMFaQ&c=-dg2m7zWuuDZ0MUcV7Sdqw&r=PnTFVO2L44pkkv9ojQ0IMDygcpAI3ijI-U1aZXdN85Y&m=0qYw2y8MqbEaBguyXvxmBwvTb67SzblG5ILDT9kuscI&s=ah6gw5_TiY43zaFez-Xxusu-JRdMKObrVsokKQOUCyw&e=>)).(P:Kevin, R:Calvin, E:Aparna)
 
 #### 4. Structure Analysis
 
 4.1 Propose a tool that calculate distance between two alpha carbons from a PDB
-file. (The program should output a distance between two atoms in angstroms) (Gawain, Calvin, Nathan,Peter)
+file. (The program should output a distance between two atoms in angstroms) (P:Peter, R:Cavin, E:Gawain)
 
 4.2 Propose a tool that calculate the Lennard-Jones potential based on the input
 of a PDB file consisting of just alpha carbons and a query point’s xyz
-coordinates. (Gawain, Nathan,Peter)
+coordinates. (R:Gawain, E:Nathan, P:Heather)
 
 4.3 Propose a tool that calculate the dihedral angle based on the input of four
-points’ xyz coordinates in PDB format.(Kevin, Gawain, Nathan,Peter, Aparna)
-
-### Next Steps to Do
-
--   Edit this pages! Fix this page and make it better and better!
-
--   Pick your topics!
-
--   Form your groups!
-
--   Make specs for topics you are interested in! You can even modify the topic
-    if you find it too difficult.
+points’ xyz coordinates in PDB format.(R:Kevin, E:Gawain, P:Peter)
 
 
 
-### Grouping Assignment
+
+
+## Grouping Assignment
 
 
 <style type="text/css">
@@ -357,6 +348,10 @@ points’ xyz coordinates in PDB format.(Kevin, Gawain, Nathan,Peter, Aparna)
     <td class="tg-yw4l">E</td>
   </tr>
 </table>
+
+
+
+
 
 Feel free to contact the TAs if you have any concerns about the assignment! 
 Otherwise start garthering your group members and having your first discussion!!!
