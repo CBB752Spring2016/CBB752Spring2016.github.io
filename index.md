@@ -52,11 +52,11 @@ About the Final Project
 
 3.  English card: methodology and background introduction
 
-### Available Topics (Note that this is a draft and if you see an issue come to us and we would edit it accordingly)
+### Topics and Grouping Assignment
 
 #### 1. QC steps
 
-1.1 Propose a tool that removes barcode or sequence identifier from FastQ file.(Discard)
+1.1 ~~Propose a tool that removes barcode or sequence identifier from FastQ file~~.(Discard)
 
 1.2 Propose a tool that generates “quality control statistics” from FastQ file. (P:Peter, E:Aparna, R:Dan)
 
@@ -64,21 +64,21 @@ About the Final Project
 
 #### 2. Sequence Analysis
 
-2.1 Propose a tool that generates pileup format from SAM file.(Discard)
+2.1 ~~Propose a tool that generates pileup format from SAM file~~.(Discard)
 
 2.2 Propose a tool that calculates FPKM (or TPM, and justify your choice) from
 given SAM and GTF files. (R:Julian, P:Kevin, E:Edmond Dantes)
 
-2.3 Propose a tool that calculates intersection between two BED files. (Discard)
+2.3 ~~Propose a tool that calculates intersection between two BED files~~. (Discard)
 
-2.4 Propose a tool that calls SNVs from pileup file, and generate the output in
-VCF format. (Discard)
+2.4 ~~Propose a tool that calls SNVs from pileup file, and generate the output in
+VCF format~~. (Discard)
 
 2.5 Propose a tool that calculates differentially expressed genes from GCT file
 of gene expressions.(E:Edmond Dantes, P:Heather, R:Calvin)
 
 2.6 Propose a tool that finds k-mer motif enrichment from a given nucleotide
-sequence.(E:Edmond Dantes, R:Julian, P:ELK)
+sequence.(E:Nathan, R:Julian, P:ELK)
 
 #### 3. Network Analysis
 
@@ -109,7 +109,7 @@ points’ xyz coordinates in PDB format.(R:Kevin, E:Gawain, P:Peter)
 
 
 
-## Grouping Assignment
+## Grouping Assignment Table
 
 
 <style type="text/css">
@@ -353,6 +353,8 @@ points’ xyz coordinates in PDB format.(R:Kevin, E:Gawain, P:Peter)
 
 
 
-Feel free to contact the TAs if you have any concerns about the assignment! 
+Feel free to contact the TAs if you have any concerns about the assignment!   
+
+
 Otherwise start garthering your group members and having your first discussion!!!
 
