@@ -23,7 +23,7 @@ About the Course
 -   Check out our [awsome course website](<http://cbb752b16.gersteinlab.org>).
 
 -   Check out [this awsome post of related bioinformatics
-    topics](<%7B%%20post_url%202016-4-10-Categories-of-knowledge-for-bioinformatics-education%20%%7D>).
+    topics](<{%post_url 2016-4-10-Categories-of-knowledge-for-bioinformatics-education %}>).
 
 About the Final Project
 -----------------------
