@@ -14,7 +14,7 @@ Bioinformatics Topic (i.e., maybe beyond CBB752)
 
 Combining Abbreviations - viz: UC, GC, US, GS, GI, GA, GB, UB
 
-![](%7B%7B%20site.url%20%7D%7D/assets/images/venn.png)
+![]({{site.url}}/assets/images/venn.png)
 
 ### Prerequisites for Bioinformatics: Stats & CS
 

@@ -4,7 +4,7 @@
  <title>CBB752Spring2016</title>
  <link href="CBB752Spring2016.github.io/" rel="self"/>
  <link href="CBB752Spring2016.github.io"/>
- <updated>2016-04-21T10:37:24-04:00</updated>
+ <updated>2016-04-21T10:39:17-04:00</updated>
  <id>CBB752Spring2016.github.io</id>
  <author>
    <name>Mark Gerstein</name>
@@ -27,7 +27,7 @@ Bioinformatics Topic (i.e., maybe beyond CBB752)&lt;/p&gt;
 
 &lt;p&gt;Combining Abbreviations - viz: UC, GC, US, GS, GI, GA, GB, UB&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;%7B%7B%20site.url%20%7D%7D/assets/images/venn.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/venn.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;prerequisites-for-bioinformatics-stats--cs&quot;&gt;Prerequisites for Bioinformatics: Stats &amp;amp; CS&lt;/h3&gt;
 
