@@ -15,6 +15,7 @@ title: Structure Analysis
 
 
 #### English Card, Brought by Gawain
+Use PDB File 1G4I
 
 
 
