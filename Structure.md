@@ -15,16 +15,7 @@ See repository at: https://github.com/peter-mm-williams/CBB752_Final_Project_4.1
 
 
 #### English Card, Brought by Gawain
-Sample pdb file is named sample-output.txt. In addition, feel free to use the other pdb files listed in the collection.
-
-This information is crucial for understanding the relationship between atoms in space. The spatial and atomic information stored in the PDB file is derived from crystallization of the purified protein, followed by LALA.
-	
-After extracting the x,y,z coordinates for two given alpha carbons from the PDB file, we use the following formula to calculate the distance between them:
-
-d=√((x_1-x_2 )^2+〖(y_1-y_2 )^2+(z_1-z_2 )〗^2 )
-
-
-
+Something here in a moment just give me a sec
 
 
 ### Sub-Project 2: calculate the Lennard-Jones potential based on the input of a PDB file consisting of just alpha carbons and a query point’s xyz coordinates
