@@ -23,6 +23,7 @@ title: QC Step
 
 #### Python Card, Brought by Heather
 
+See project repository: https://github.com/dspak/CBB752_Final_Project_1.3.git
 
 #### R Card, Brought by Dan
 
