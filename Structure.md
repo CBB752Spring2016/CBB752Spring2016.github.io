@@ -37,7 +37,7 @@ Sample pdb file is named sample-output.txt. In addition, feel free to use the ot
 ### Sub-Project 3: calculate the dihedral angle based on the input of four points’ xyz coordinates in PDB format
 
 #### Python Card, Brought by Peter
-
+See repository at https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git
 
 #### R Card, Brought by Kevin
 
