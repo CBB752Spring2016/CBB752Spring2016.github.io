@@ -9,13 +9,13 @@ title: Structure Analysis
 ### Sub-Project 1: calculate distance between two alpha carbons from a PDB file
 
 #### Python Card, Brought by Peter
-
+See repository at: https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git
 
 #### R Card, Brought by Cavin
 
 
 #### English Card, Brought by Gawain
-Use PDB File 1G4I
+Sample pdb file is named sample-output.txt. In addition, feel free to use the other pdb files listed in the collection.
 
 
 
