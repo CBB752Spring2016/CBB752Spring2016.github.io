@@ -34,7 +34,7 @@ Below we propose two tools that allow the calculation of TPM from given SAM and 
 Source code and readme file available [here](https://github.com/jqz752/cbb752_2.2_R).
 
 ## Python Card, Brought by Kevin
-Source code and readme file[here](https://github.com/kevkid/cbb752_2.2_py)
+Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 
 # Sub-Project 2: calculate differentially expressed genes from GCT file of gene expressions
 
