@@ -8,7 +8,7 @@ title: QC Step
 ### Sub-Project 1: generates “quality control statistics” from FastQ file
 
 #### Python Card, Brought by Peter
-
+See project repository: https://github.com/peter-mm-williams/CBB752_Final_Project_1.2
 
 #### R Card, Brought by Dan
 
