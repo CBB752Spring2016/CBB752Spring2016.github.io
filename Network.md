@@ -9,7 +9,7 @@ title: Network Analysis
 
 ### Sub-Project 1: calculate co-expressed gene network from GCT file of gene expressions
 
-#### Python Card, Brought by ELK
+#### [Python Card](https://github.com/dspak/CBB752_Final_Project_3.1/blob/master/GCT_to_net.py), Brought by ELK
 
 
 #### [R Card](https://github.com/CBB752Spring2016/CBB752Spring2016.github.io/blob/master/Networks/GCT_to_net.R), Brought by Dan
