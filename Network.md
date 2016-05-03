@@ -12,7 +12,7 @@ title: Network Analysis
 #### Python Card, Brought by ELK
 
 
-#### [R Card](CBB752Spring2016.github.io/Networks/GCT_to_net.R), Brought by Dan
+#### [R Card](https://github.com/CBB752Spring2016/CBB752Spring2016.github.io/blob/master/Networks/GCT_to_net.R), Brought by Dan
 
 
 #### English Card, Brought by Aparna
