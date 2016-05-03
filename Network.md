@@ -41,13 +41,13 @@ We present new software designed to complete the isolated task of constructing a
 The program requires gene expression data as an input, and also accepts a significance threshold and output file name as optional inputs. If a significance threshold is not provided, 0.05 is used as a default. If an output file name is not provided, “output.csv” is used as a default.
 Gene expression data must be provided in Gene Cluster Text (GCT) file format. This tab-delimited format can be easily parsed, and offers just the required information: gene name, gene description, expression in each sample. It is important that the correct input file format is used for accurate parsing. For example, RES file format — an alterative for gene expression data — would not be parsed correctly because it also contains extra columns for labeling each gene as absent or present in each sample.
 For consistency, data files should be pre-processed. This is not within the specifications for our software but can be easily accomplished with outside tools. The sample input provided (all_aml_train.preprocessed.gct) has been pre-processed with the GenePattern PreProcessDataset module.[3] The parameters are as follows:
-•	Apply floor, ceiling and variation filter: yes
-•	Value for floor threshold: 20
-•	Value for ceiling threshold: 20000
-•	Minimum fold change for variation filter: 3
-•	Minimum delta for variation filter: 100
-•	Number of outliers per row to ignore when calculating row min and max for variation filterrow normalization: 0
-•	Perform row normalization: no
+* Apply floor, ceiling and variation filter: yes
+* Value for floor threshold: 20
+* Value for ceiling threshold: 20000
+* Minimum fold change for variation filter: 3
+* Minimum delta for variation filter: 100
+* Number of outliers per row to ignore when calculating row min and max for variation filterrow normalization: 0
+* Perform row normalization: no
 
 ###### Co-expression calculations
 
