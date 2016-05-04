@@ -1,5 +1,6 @@
 ---
 group: navigation
+weight: 2
 layout: page
 title: Sequence Analysis
 ---
