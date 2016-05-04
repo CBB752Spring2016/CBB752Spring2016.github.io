@@ -1,7 +1,8 @@
 ---
-group: navigation
 layout: page
 title: Structure Analysis
+group: navigation
+weight: 4
 ---
 
 
