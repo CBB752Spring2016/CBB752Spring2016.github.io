@@ -1,7 +1,8 @@
 ---
-group: navigation
 layout: page
 title: QC Step
+group: navigation
+weight: 1
 ---
 
 
