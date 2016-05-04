@@ -1,8 +1,8 @@
 ---
-group: navigation
-weight: 2
 layout: page
 title: Sequence Analysis
+group: navigation
+weight: 2
 ---
 
 # Sub-Project 1: calculate FPKM from given SAM and GTF files
