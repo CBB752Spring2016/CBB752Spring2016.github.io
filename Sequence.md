@@ -57,7 +57,7 @@ Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 
 
 
-# Assessing k-mer Enrichment of FASTA Sequence(s)
+# Assessing k-mer Enrichment of FASTA Sequences
 
 ## Python Card, Brought by ELK
 
