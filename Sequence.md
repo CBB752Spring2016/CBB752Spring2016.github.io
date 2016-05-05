@@ -5,7 +5,10 @@ group: navigation
 weight: 2
 ---
 
-# Sub-Project 1: calculate FPKM from given SAM and GTF files
+~~# Sub-Project 1: calculate FPKM from given SAM and GTF files~~
+
+> Please carefully read through and follow the formatting guideline found in [Project 1.2](http://cbb752spring2016.github.io/QCStep)
+
 
 ## English Card, Brought by Edmond Dantes
 
