@@ -9,6 +9,7 @@ weight: 2
 
 > Please carefully read through and follow the formatting guideline found in [Project 1.2](http://cbb752spring2016.github.io/QCStep)
 
+# Quantifying RNA-seq Using RPKM/FPKM/TPM Based on SAM & GTF Files
 
 ## English Card, Brought by Edmond Dantes
 
@@ -56,7 +57,7 @@ Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 
 
 
-# Sub-Project 3: find k-mer motif enrichment from a given nucleotide sequence
+# Assessing k-mer Enrichment of FASTA Sequence(s) Using Empirical p-values
 
 ## Python Card, Brought by ELK
 
