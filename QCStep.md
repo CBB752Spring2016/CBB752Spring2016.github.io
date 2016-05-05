@@ -32,11 +32,11 @@ See project repository: https://github.com/peter-mm-williams/CBB752_Final_Projec
 
 ## Sequence Read Trimming
 
-| Contribution  | By                                      |
-| ------------- |:---------------------------------------:|
-| Documentation | [Nathan](https://github.com/NathanNN)   |
-| Python        | [Heather](https://github.com/wellshl)   |
-| R             | [Dan](https://github.com/dspak)         | 
+#### Contribution By
+
+- Documentation: [Nathan](https://github.com/NathanNN)
+- Python: [Heather](https://github.com/wellshl)
+- R: [Dan](https://github.com/dspak)
 
 ~~#### Python Card, Brought by Heather~~
 
