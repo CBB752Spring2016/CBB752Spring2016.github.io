@@ -19,8 +19,8 @@ See repository at: https://github.com/peter-mm-williams/CBB752_Final_Project_4.1
 
 ##### Acquisition of the spatial data in PDB files
  In proteins, structure and function are tightly linked, such that biochemical understanding of the protein is often contingent on understanding the relationship between atoms in space. The spatial and atomic information stored in a PDB file is derived from crystallization and diffraction of the purified protein, followed by phase reconstruction and model refinement. Although there are other methods for obtaining spatial information about proteins, including NMR, SAXS and, more recently, electron cryo-microscopy, protein crystal diffraction remains the gold standard for atomic resolution of structure. Thus, the majority of PDB files deposited in the RCSB database were obtained by this method.
- 
- ##### Calculating the distance between alpha carbons
+
+##### Calculating the distance between alpha carbons
 	
  Here, we generate a tool which can identify the distance between any two alpha carbons in a protein. We ask the user to input the PDB file of interest and the indices of the alpha carbons. These indices correspond to the residue number of the alpha carbon's associated amino acid in the primary sequence of the protein. After extracting the x,y,z coordinates for two given alpha carbons from the PDB file, we use the following formula to calculate the distance between them:
 
