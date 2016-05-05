@@ -52,7 +52,7 @@ Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 ## Python Card, Brought by ELK
 
 
-## R Card, Brought by Julian
+## [R Card](https://github.com/jqz752/cbb752_2.6_R), Brought by Julian
 
 
 ## English Card, Brought by Nathan
