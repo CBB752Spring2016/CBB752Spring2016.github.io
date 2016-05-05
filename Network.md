@@ -86,6 +86,8 @@ Figure 1: Visualization of co-expression network. Cytoscape was run on output fi
 
 ![Figure 1](https://github.com/dspak/CBB752_Final_Project_3.1/blob/master/output_coexpressed.jpeg "Figure 1")
 
+> figure is not showing from [final project website](http://cbb752spring2016.github.io/Network) can you check?
+
 ---
 
 ### Sub-Project 2: calculate their degree centrality and betweenness centrality from PPI file
