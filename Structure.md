@@ -51,3 +51,21 @@ See repository at https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.
 
 
 #### English Card, Brought by Gawain
+
+# Protein Backbone Dihedral Angles
+The phi and psi protein backbone dihedral angles define the two degrees of freedom of the backbone and sterically determine much of the protein’s local folding structure. Because dihedral angles characterize the angle of rotation between two planes, they are defined by four spatial points. The phi angle measures the angle around the N-Cα bond in the consecutive sequence C’-N-Cα-C. The first C’ in this definition comes from the prior amino acid residue. The psi angle measures the angle around the Cα-C bond in the sequence N-Cα-C-N’, where the last N’ comes from the next amino acid residue. The final possible dihedral angle is omega (Cα’-C’-N-Cα), the peptide bond, which is fixed at (0, 180°) because the partial double bond character of the peptide bond does not allow rotation around the C’-N bond. 
+
+![Dihedral angles schematic](https://i.imgsafe.org/1527d6a.png)
+
+Phi and psi dihedral angles are restricted to certain values, because many angles will produce steric clashes between the backbone and the side chains in the polypeptide sequence. Sterically allowable phi/psi combinations were calculated in the 1963 by G.N. Ramachandran and colleagues using first a hard sphere model and then a reduced radius model. Their findings are presented below in the Ramachandran plot, a phi/psi map which plots regions of allowed dihedral angles. Larger atom sizes produce narrower Ramachandran limits (dark blue regions), while smaller atoms have some more flexibility (light blue regions). In addition, we also note that certain secondary structures have characteristic phi/psi angles. For example, right-handed alpha helices are found in the region around Φ=+45°, Ψ=-45°, while beta sheets are found in the top left-hand corner of the plot. Recent advances in data mining and protein simulation have verified the allowable phi/psi angles predicted by the Ramachandran plot. Studies by Zhou et al. have found that sterics alone can account for the range of phi/psi angles observed in Protein Data Bank structures [1]. Likewise, simulations of coarse-grained hard-sphere models which incorporate only steric interactions have been sufficient recapitulate the biologically observed range of dihedral angles in both backbones and side chains [2]. 
+
+![Ramachandran plot](https://i.imgsafe.org/af879a9.png)
+
+# Calculating Dihedral Angles
+
+TBC
+
+# References
+
+[1] Zhou, AQ, O'Hern, CS, Regan, L (2011). Revisiting the Ramachandran plot from a new angle. Protein Sci., 20, 7:1166-71
+[2] Zhou, AQ, O'Hern CS, and Regan, L (2014). Predicting the side-chain dihedral angle distributions of non-polar, aromatic, and polar amino acids using hard-sphere models. Proteins: Structure, Function, and Bioinformatics, 82, 2574.
