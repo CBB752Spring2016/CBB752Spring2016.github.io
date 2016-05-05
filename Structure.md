@@ -57,7 +57,7 @@ The phi and psi protein backbone dihedral angles define the two degrees of freed
 
 ![Dihedral angles schematic](https://i.imgsafe.org/1527d6a.png)
 
-Phi and psi dihedral angles are restricted to certain values, because many angles will produce steric clashes between the backbone and the side chains in the polypeptide sequence. Sterically allowable phi/psi combinations were calculated in the 1963 by G.N. Ramachandran and colleagues using first a hard sphere model and then a reduced radius model. Their findings are presented below in the Ramachandran plot, a phi/psi map which plots regions of allowed dihedral angles. Larger atom sizes produce narrower Ramachandran limits (dark blue regions), while smaller atoms have some more flexibility (light blue regions). In addition, we also note that certain secondary structures have characteristic phi/psi angles. For example, right-handed alpha helices are found in the region around Φ=+45°, Ψ=-45°, while beta sheets are found in the top left-hand corner of the plot. Recent advances in data mining and protein simulation have verified the allowable phi/psi angles predicted by the Ramachandran plot. Studies by Zhou et al. have found that sterics alone can account for the range of phi/psi angles observed in Protein Data Bank structures [1]. Likewise, simulations of coarse-grained hard-sphere models which incorporate only steric interactions have been sufficient recapitulate the biologically observed range of dihedral angles in both backbones and side chains [2]. 
+Phi and psi dihedral angles are restricted to certain values, because many angles will produce steric clashes between the backbone and the side chains in the polypeptide sequence. Sterically allowable phi/psi combinations were calculated in the 1963 by G.N. Ramachandran and colleagues using first a hard sphere model and then a reduced radius model. Their findings are presented below in the Ramachandran plot, a phi/psi map which plots regions of allowed dihedral angles. Larger atom sizes produce narrower Ramachandran limits (dark blue regions), while smaller atoms have some more flexibility (light blue regions). In addition, we also note that certain secondary structures have characteristic phi/psi angles. For example, right-handed alpha helices are found in the region around Φ=+45°, Ψ=-45°, while beta sheets are found in the top left-hand corner of the plot. Recent advances in data mining and protein simulation have verified the allowable phi/psi angles predicted by the Ramachandran plot. Studies by Zhou et al. have found that sterics alone can account for the range of phi/psi angles observed in Protein Data Bank structures [1]. Likewise, simulations of coarse-grained hard-sphere models which incorporate only steric interactions have been sufficient recapitulate the biologically observed range of dihedral angles in both backbones and side chains [2]. Thus, when modeling protein folding, backbone dihedral angles are incredibly important constraints on the structure and behavior of the protein. In addition, we can assess the quality of a proposed protein structure by ensuring that its backbone dihedral angles all fall within allowable phi/psi ranges. 
 
 ![Ramachandran plot](https://i.imgsafe.org/af879a9.png)
 
@@ -67,13 +67,17 @@ Given the spatial coordinates (x,y,z) of the four points which define two planes
 
 ![planes definition](http://i.imgsafe.org/b513c1e.png)
 
-The cosine of the dihedral angle theta is defined as the dot product of the normal vectors n1 and n2. For a Cartesian definition, this is extremely simple to calculate: 
+In vector notation, we can find the normal vectors by taking the cross-product of two non-collinear vectors on that plane. The cosine of the dihedral angle theta is defined as the dot product of the normal vectors n1 and n2. For a Cartesian definition, this is extremely simple to calculate: 
 
 ![cosines definition](http://i.imgsafe.org/408dc73.png)
 
-In vector notation, however, TBC
+Likewise, in vector notation, the dihedral angle (indicated as phi) defined by points i,j,k,l, the dot product of the normalized vectors can be used to calculate cosine and sine using the same vector definition as shown above:
 
-![Atan2 definition](https://upload.wikimedia.org/math/4/2/d/42d30262c5209765eebba1a0fb04105e.png)
+![vector cosines sines definition](http://i.imgsafe.org/e84f542.png)
+
+In vector notation, because the arccosine and arccsine functions are limited in range from 0 to π and -π/2 to π/2 radians respectively, implementing this definition to calculate the dihedral angle produces problems of signage. The atan2 function maintains signage information from the cosine and sine angles and and outputs a dihedral angle value in the range (-180°, 180°]. To calculate the dihedral angle phi with this function, we input the x coordinate as cos(phi) and the y coordinate as sin(phi). 
+
+![Atan2 definition](https://upload.wikimedia.org/math/c/8/1/c81848e82ad6e45e9e14f81cb38895a2.png)
 
 ##### References
 
