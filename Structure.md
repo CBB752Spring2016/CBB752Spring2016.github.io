@@ -5,26 +5,38 @@ group: navigation
 weight: 4
 ---
 
+~~### Sub-Project 1: calculate distance between two alpha carbons from a PDB file~~
 
-
-### Sub-Project 1: calculate distance between two alpha carbons from a PDB file
+> You should assign a proper title
+> Please carefully read through and follow the formatting guideline found in [Project 1.2](http://cbb752spring2016.github.io/QCStep)
 
 #### Python Card, Brought by Peter
 See repository at: https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git
 
+> Good use of example, instructions on input parameters. I would make a minor edit on formatting. Give a project unified name and use it in your readme section.
+
 #### R Card, Brought by Cavin
 See repository at: https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git
+
+> Good use of example, instructions on input parameters. Ideally, it would be preferred to have a seperate repository for R (for cleaner look), but this is minor and debatable. I would also work on formatting of readme a little more.
+
+I would make a minor edit on formatting. Give a project unified name and use it in your readme section.
 
 #### English Card, Brought by Gawain
 
 ##### Acquisition of the spatial data in PDB files
- In proteins, structure and function are tightly linked, such that biochemical understanding of the protein is often contingent on understanding the relationship between atoms in space. The spatial and atomic information stored in a PDB file is derived from crystallization and diffraction of the purified protein, followed by phase reconstruction and model refinement. Although there are other methods for obtaining spatial information about proteins, including NMR, SAXS and, more recently, electron cryo-microscopy, protein crystal diffraction remains the gold standard for atomic resolution of structure. Thus, the majority of PDB files deposited in the RCSB database were obtained by this method.
+
+In proteins, structure and function are tightly linked, such that biochemical understanding of the protein is often contingent on understanding the relationship between atoms in space. The spatial and atomic information stored in a PDB file is derived from crystallization and diffraction of the purified protein, followed by phase reconstruction and model refinement. Although there are other methods for obtaining spatial information about proteins, including NMR, SAXS and, more recently, electron cryo-microscopy, protein crystal diffraction remains the gold standard for atomic resolution of structure. Thus, the majority of PDB files deposited in the RCSB database were obtained by this method.
+
+> I would describe more about structure of PDB file. Please also give some example of PDB databases besides RCSB.
 
 ##### Calculating the distance between alpha carbons
 	
- Here, we generate a tool which can identify the distance between any two alpha carbons in a protein. We ask the user to input the PDB file of interest and the indices of the alpha carbons. These indices correspond to the residue number of the alpha carbon's associated amino acid in the primary sequence of the protein. After extracting the x,y,z coordinates for two given alpha carbons from the PDB file, we use the following formula to calculate the distance between them:
+Here, we generate a tool which can identify the distance between any two alpha carbons in a protein. We ask the user to input the PDB file of interest and the indices of the alpha carbons. These indices correspond to the residue number of the alpha carbon's associated amino acid in the primary sequence of the protein. After extracting the x,y,z coordinates for two given alpha carbons from the PDB file, we use the following formula to calculate the distance between them:
 
 ![Image of distance formula](https://i.imgsafe.org/98da76c.png)
+
+> This is pretty straightforward and looks sufficient.
 
 This output, given in angstroms, is useful in several ways. First, it provides general information about where two carbons are, relative to each other in space. More importantly, this distance can be used to determine whether certain forces and interactions between the atoms are relevant. For example, we can use the calculated distance in coarse-grained models where we only consider interactions between amino acid residues within a certain radius of each other. These models, termed elastic network models, treat proteins like a network of alpha carbons in which each alpha carbon is connected by virtual springs to every other alpha carbon within a distance cutoff [1]. Because of their simplicity, elastic network models and other distance-cutoff models can be used to model protein flexibility in molecular dynamics simulation without requiring excessive computational power.
 
@@ -32,6 +44,9 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 
 [1] Yang, L-W. & Chng, C-P. Coarse-Grained Models Reveal Functional Dynamics - I. Elastic Network Models – Theories, Comparisons and Perspectives. Bioinform Biol Insights, 2, 25-45 (2008). 
 
+> Good. I would mostly work on formatting a little more.
+
+---
 
 ### Sub-Project 2: calculate the Lennard-Jones potential based on the input of a PDB file consisting of just alpha carbons and a query point’s xyz coordinates
 
@@ -40,7 +55,7 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 
 
 #### R Card, Brought by Gawain
-See repository at: https://github.com/graceliu2016/Final-Project-4.2
+Placeholder repository at: https://github.com/graceliu2016/Final-Project-4.2
 
 #### English Card, Brought by Nathan
 
