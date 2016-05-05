@@ -86,7 +86,7 @@ Figure 1: Visualization of co-expression network. Cytoscape was run on output fi
 #### Python Card, Brought by ELK
 
 
-#### R Card, Brought by Julian
+#### [R Card](https://github.com/jqz752/cbb752_3.2_R), Brought by Julian
 
 
 #### English Card, Brought by Edmond Dantes
