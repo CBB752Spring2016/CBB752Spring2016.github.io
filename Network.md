@@ -12,7 +12,11 @@ weight: 3
 
 #### [Python Card](https://github.com/dspak/CBB752_Final_Project_3.1/blob/master/GCT_to_net.py), Brought by ELK
 
+> This is mostly a comment about formatting. I saw usage note within the code. It is preferred to put readme.md at your repository and put a short description about the program, on how to run, what parameters to take, sample input and output. In this way, you can put a link to git repo instead. Otherwise, great work.
+
 #### [R Card](https://github.com/CBB752Spring2016/CBB752Spring2016.github.io/blob/master/Networks/GCT_to_net.R), Brought by Dan
+
+> This is mostly a comment about formatting. I saw usage note within the code. It is preferred to put readme.md at your repository and put a short description about the program, on how to run, what parameters to take, sample input and output. In this way, you can put a link to git repo instead. Otherwise, great work.
 
 #### English Card, Brought by Aparna
 
