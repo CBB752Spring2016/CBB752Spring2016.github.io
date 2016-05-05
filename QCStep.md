@@ -22,15 +22,13 @@ See project repository: https://github.com/peter-mm-williams/CBB752_Final_Projec
 
 #### R Card, Brought by Dan
 
-
 #### English Card, Brought by Aparna
 
+---
 
 ~~### Sub-Project 2: trim reads based on quality score from FastQ file~~
 
-
 > This is a temporary title. Remove "Sub-Project X" and assign a proper title.
-
 
 ## Sequence Read Trimming
 
@@ -77,11 +75,12 @@ This tool will be a quick asset in organizing biological data for further assemb
 
 > Maybe a survey of existing tools and existing methods for removing low quality reads is missing.
 
-#### [Sample Python Code] (https://github.com/dspak/CBB752_Final_Project_1.3.git)
+#### [Sample Python Code](https://github.com/dspak/CBB752_Final_Project_1.3.git)
 
 > I see that both R and Pyhton code are in the same repository. It would be preferred to have a seperate repository for Python and R.
 
 ~~#### R Card, Brought by Dan~~
+
 #### [Sample R Code](https://github.com/dspak/CBB752_Final_Project_1.3.git)
 
 #### References
