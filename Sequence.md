@@ -40,10 +40,14 @@ Below we propose two tools that allow the calculation of TPM from given SAM and 
 
 ## [R Card](https://github.com/jqz752/cbb752_2.2_R), Brought by Julian
 
+> This is mostly a comment on formatting, but very good job on detailed usage information. I would just assign this project a unified name and change the title on readme.
+
 ## Python Card, Brought by Kevin
 Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 
-> This is mostly a comment on formatting, but very good job on detailed usage information. I would just assign this project a unified name and change the title on readme.
+> Good job on general description about methodology, however I would put more information about usage information of your python code. Currently, its minimal and simple, but sample input and expected output format and parameter information would be useful here.
+
+---
 
 # Sub-Project 2: calculate differentially expressed genes from GCT file of gene expressions
 
@@ -57,7 +61,7 @@ Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 
 
 
-# Assessing k-mer Enrichment of FASTA Sequences
+# Assessing k-mer Enrichment of FASTA Sequence(s) Using Empirical p-values
 
 ## Python Card, Brought by ELK
 
