@@ -29,6 +29,7 @@ See project repository: https://github.com/peter-mm-williams/CBB752_Final_Projec
 
 
 ~~### Sub-Project 2: trim reads based on quality score from FastQ file~~
+
 > This is a temporary title. Remove "Sub-Project X" and assign a proper title.
 
 ## Sequence Read Trimming
@@ -41,6 +42,7 @@ See project repository: https://github.com/peter-mm-williams/CBB752_Final_Projec
 
 ~~#### Python Card, Brought by Heather~~
 ~~See project repository: https://github.com/dspak/CBB752_Final_Project_1.3.git~~
+
 > It should ALWAYS start by documentation first, followed by python and R examples, then referece at the end.
 
 ~~#### English Card, Brought by Nathan~~
