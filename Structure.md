@@ -52,7 +52,7 @@ See repository at https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.
 
 #### English Card, Brought by Gawain
 
-#### Protein Backbone Dihedral Angles
+##### Protein Backbone Dihedral Angles
 The phi and psi protein backbone dihedral angles define the two degrees of freedom of the backbone and sterically determine much of the protein’s local folding structure. Because dihedral angles characterize the angle of rotation between two planes, they are defined by four spatial points. The phi angle measures the angle around the N-Cα bond in the consecutive sequence C’-N-Cα-C. The first C’ in this definition comes from the prior amino acid residue. The psi angle measures the angle around the Cα-C bond in the sequence N-Cα-C-N’, where the last N’ comes from the next amino acid residue. The final possible dihedral angle is omega (Cα’-C’-N-Cα), the peptide bond, which is fixed at (0, 180°) because the partial double bond character of the peptide bond does not allow rotation around the C’-N bond. 
 
 ![Dihedral angles schematic](https://i.imgsafe.org/1527d6a.png)
@@ -61,9 +61,19 @@ Phi and psi dihedral angles are restricted to certain values, because many angle
 
 ![Ramachandran plot](https://i.imgsafe.org/af879a9.png)
 
-#### Calculating Dihedral Angles
+##### Calculating Dihedral Angles
 
-TBC
+Given the spatial coordinates (x,y,z) of the four points which define two planes, we can calculate the angle between them (theta) in two ways. First, we can find the normal vectors for each plane, n1 and n2, such that each vector is perpendicular to the plane. For two planes with the following Cartesian definition, the normal vectors are n1 = (a1, b1, c1) and n2 = (a2, b2, c2):
+
+![planes definition](http://i.imgsafe.org/b513c1e.png)
+
+The cosine of the dihedral angle theta is defined as the dot product of the normal vectors n1 and n2. For a Cartesian definition, this is extremely simple to calculate: 
+
+![cosines definition](http://i.imgsafe.org/408dc73.png)
+
+In vector notation, however, TBC
+
+![Atan2 definition](https://upload.wikimedia.org/math/4/2/d/42d30262c5209765eebba1a0fb04105e.png)
 
 ##### References
 
