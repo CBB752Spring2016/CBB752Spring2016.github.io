@@ -30,9 +30,7 @@ Below we propose two tools that allow the calculation of TPM from given SAM and 
 
 3) Li, B., & Dewey, C. N. (2011). RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome. BMC Bioinformatics, 12, 323. http://doi.org/10.1186/1471-2105-12-323
 
-## R Card, Brought by Julian
-
-Source code and readme file available [here](https://github.com/jqz752/cbb752_2.2_R).
+## [R Card](https://github.com/jqz752/cbb752_2.2_R), Brought by Julian
 
 ## Python Card, Brought by Kevin
 Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
