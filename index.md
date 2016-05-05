@@ -32,7 +32,7 @@ About the Final Project
     (expect for the TAs), we want to encourage the innovative generation of
     products that could potentially benefit the bioinformatics community.
 
--   **When:** Released at April 14th, and will be due at 11:59pm May 5th.
+-   **When:** Released at April 14th, and will be due at 11:59pm May 9th.
 
 -   **How:** Each student will coorporate with classmates to work on three (or
     four for extra credits) different projects. The generated codes and
