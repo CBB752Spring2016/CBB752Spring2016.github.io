@@ -20,13 +20,13 @@ For this reason, TPM offers a net advantage over FPKM because the TPM values are
 
 [tpm]: https://s0.wp.com/latex.php?latex=%5Ctext%7BTPM%7D_i+%3D+%5Cdfrac%7BX_i%7D%7B%5Cwidetilde%7Bl%7D_i%7D+%5Ccdot+%5Cleft%28+%5Cdfrac%7B1%7D%7B%5Csum_j+%5Cdfrac%7BX_j%7D%7B%5Cwidetilde%7Bl%7D_j%7D%7D+%5Cright%29+%5Ccdot+10%5E6&bg=ffffff&fg=000000&s=0 "Formula for TPM"
 
-$X_i$ and $X_j$ represent the counts for both the feature of interest, and the overall sample (1).
-$L_i$ and $L_j$ represent the effective lengths for both the feature of interest, and the overall sample (1).
+X_i and X_j represent the counts for both the feature of interest, and the overall sample (1).
+L_i and L_j represent the effective lengths for both the feature of interest, and the overall sample (1).
 
 Below we propose two tools that allow the calculation of TPM from given SAM and GTF files in both Python and R.
 
 
-> Can you give a little bit more introduction in the SAM file and GTF file format?
+> Can you give a little bit more introduction in the SAM file and GTF file format? I think it would be useful to the readers.
 
 
 ### References
