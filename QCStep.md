@@ -5,8 +5,17 @@ group: navigation
 weight: 1
 ---
 
+## Table of Contents
+**[Quality Statistics](#quality-statistics)**  
+**[Sequence Read Trimming](#sequence-read-trimming)**  
 
-### Sub-Project 1: generates “quality control statistics” from FastQ file
+---
+
+~~### Sub-Project 1: generates “quality control statistics” from FastQ file~~
+
+> This is a temporary title. Remove "Sub-Project X" and assign a proper title.
+
+## Quality Statistics
 
 #### Python Card, Brought by Peter
 See project repository: https://github.com/peter-mm-williams/CBB752_Final_Project_1.2
