@@ -94,7 +94,7 @@ Figure 1: Visualization of co-expression network. Cytoscape was run on output fi
 
 # Calculating Centrality for Proteins from MITAB2.5 PPI Files
 
-#### Python Card, Brought by ELK
+#### [Python Card](https://github.com/EdKong/CBB752_3.2_centrality), Brought by ELK
 
 #### [R Card](https://github.com/jqz752/cbb752_3.2_R), Brought by Julian
 
