@@ -20,7 +20,7 @@ weight: 1
 #### Python Card, Brought by Peter
 See project repository: https://github.com/peter-mm-williams/CBB752_Final_Project_1.2
 
-#### R Card, Brought by Dan
+#### [R Card](https://github.com/dspak/CBB752_Final_Project_1.2), Brought by Dan
 
 #### English Card, Brought by Aparna
 
