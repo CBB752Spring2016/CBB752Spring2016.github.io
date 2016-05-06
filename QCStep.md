@@ -53,13 +53,10 @@ FastQ file is a text file with the FASTQ format, designed to contain a nucleotid
 
 #### What is quality score?
 
-In the ASCII encoding scheme, a set of characters are put into order to denote quality, for example“!” is the lowest quality score and “~” is the highest. Quality is determined by the PHRED software, in which the quality score Q = -10*log(10)*P (Edwing, et al. 1998). The score correlates with the probability of getting the incorrect base call, for example a quality score of 10 means the probability of base call will be incorrect 1 in 10, while a score of 60 means the probability 1 in 1000000 will be incorrect.
+In the ASCII encoding scheme, a set of characters are put into order to denote quality, for example“!” is the lowest quality score and “~” is the highest. Quality is determined by the PHRED software, in which the quality score Q = -10*log(10)*P (Edwing, et al. 1998). The score correlates with the probability of getting the incorrect base call, for example a quality score of 10 means the probability of base call will be incorrect 1 in 10, while a score of 60 means the probability 1 in 1000000 will be incorrect.The basis of this base-calling algorithm our tool will utilize consists of predicting peak locations, identifying observed peaks, matching predicted peaks to observed peaks, and find missed peaks. Illumina FASTQ format starts with “@” followed by the record identifier and sequence length, after that is a nucleotide sequence. The next line starts with the “+” followed by the optional title, then after that is the quality line for the above nucleotide sequence.
 
 > There are different quality score metrics used for different sequencing platform. This type of information is actually quite useful. Maybe you can use this section to explain more. For example, there are Illumina Q+64 and Sanger Q+33, for more information, http://www.somewhereville.com/?p=1508#more-1508
 
-#### How does the algorithm works?
-
-The basis of this base-calling algorithm consists of predicting peak locations, identifying observed peaks, matching predicted peaks to observed peaks, and find missed peaks. Illumina FASTQ format starts with “@” followed by the record identifier and sequence length, after that is a nucleotide sequence. The next line starts with the “+” followed by the optional title, then after that is the quality line for the above nucleotide sequence.
 
 > What's the use of peak calling in this read trimming tool? This is not a base-calling algorithm and this part needs to be updated with relavent information.
 
