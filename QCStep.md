@@ -36,7 +36,7 @@ See project repository: https://github.com/peter-mm-williams/CBB752_Final_Projec
 
 - Documentation: [Nathan](https://github.com/NathanNN)
 - Python: [Heather](https://github.com/wellshl)
-- R: [Dan](https://github.com/dspak)
+- [R](https://github.com/dspak/CBB752_Final_Project_1.3): [Dan](https://github.com/dspak)
 
 ~~#### Python Card, Brought by Heather~~
 
