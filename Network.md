@@ -10,7 +10,7 @@ weight: 3
 
 > Please carefully read through and follow the formatting guideline found in [Project 1.2](http://cbb752spring2016.github.io/QCStep)
 
-#### [Python Card](https://github.com/dspak/CBB752_Final_Project_3.1/blob/master/GCT_to_net.py), Brought by ELK
+#### [Python Card](https://github.com/EdKong/CBB752_Final_Project_3.1), Brought by ELK
 
 > This is mostly a comment about formatting. I saw usage note within the code. It is preferred to put readme.md at your repository and put a short description about the program, on how to run, what parameters to take, sample input and output. In this way, you can put a link to git repo instead. Otherwise, great work.
 
