@@ -68,7 +68,7 @@ The rationale for such a tool is that high-throughput sequencing have high quali
 
 #### What is the biological relevance for this tool?
 
-This tool will be a quick asset in organizing biological data for further assembly or research. The test file we are using for our tool includes the genome read of a fungus. The reason for testing this genome is because it has relevance in assembly. These sequences are half of a paired-end read, as such quality is low in the middle region where assembly of two sequences happens (Shaw, et al., 2015). By using this tool we can filter out paired-end sequences with low quality at their 3’ ends and therefore prevent assembly. Only sequences with adequate quality will proceed to assembly of the genome.  
+This tool will be a quick asset in organizing biological data for further assembly or research. The test file we are using for our tool includes the genome read of a fungus. The reason for testing this genome is because it has relevance in assembly. These sequences are half of a paired-end read, as such quality is low in the middle region where assembly of two sequences happens (Shaw, et al., 2015). By using this tool we can filter out paired-end sequences with low quality at their 3’ ends and therefore prevent assembly. Only sequences with adequate quality will proceed to assembly of the genome. Some existing tools that remove low quality reads are Trimmomatic and Fastx. Trimmomatic is a trimming tool on the USAELLAB.org website (Bolger, et al., 2014). It can take in a file and remove low quality bases using a 4-base wide sliding window, dropping bases below quality score 15 and also ignore sequences that are less than 36 bases long. Fastx toolkit is available at the Hannon lab from Cold Spring Harbor Laboratory. The available tools allow users to convert FASTQ to FASTA files, find the reverse-complement of sequences, and filter sequences based on quality.        
 
 > Maybe a survey of existing tools and existing methods for removing low quality reads is missing.
 
@@ -91,3 +91,4 @@ This tool will be a quick asset in organizing biological data for further assemb
 
 3. Shaw, J. et al. 2015. Biosynthesis and genomic analysis of medium-chain hydrocarbon production by the endophytic fungal isolate Nigrograna mackinonnii E5202H. Appl Microbiol Biotechnol. 99(8): 3715-3728. 
 
+4. Bolger, A. et al. 2014. Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics. Btu170. 
