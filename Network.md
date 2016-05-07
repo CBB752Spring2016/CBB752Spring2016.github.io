@@ -111,6 +111,7 @@ CB is the general formula to determine betweenness centrality for a particular v
 
 
 References:
+
 1) Mascolo, C. (2015). University of Cambridge: Computer Laboratory. Social and Technological Network Analysis. Lecture 3: Centrality Measures. https://www.cl.cam.ac.uk/teaching/1415/L109/l109-lecture3.pdf
 
 2) Xia, J., Benner, M. J., & Hancock, R. E. W. (2014). NetworkAnalyst - Integrative approaches for protein-protein interaction network analysis and visual exploration. Nucleic Acids Research, 42(W1), 167–174. http://doi.org/10.1093/nar/gku443
