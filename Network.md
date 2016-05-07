@@ -100,6 +100,22 @@ Figure 1: Visualization of co-expression network. Cytoscape was run on output fi
 
 #### English Card, Brought by Edmond Dantes
 
+The analysis of the dynamic nature of gene networks holds remarkable potential in uncovering previously unknown biological phenomena. Protein to protein interactions or (PPIs) are of particular interest in the study of gene expression and proteomics(2).  PPIs are crucial to both the functional and structural roles of all biological processes(2). One can think of a PPI network as a collection of nodes interconnected by edges in various fashions(2). In PPIs, nodes represent proteins while edges represent the interaction between two connected proteins(2). Three steps are generally involved in the building of a PPI network, including: identification of genes of interest, using the input to search for interaction data on a PPI database, and the actual network analysis(2). A topological analysis of the resulting network can then help identify nodes that act as hubs and may be developed into biomarkers or therapeutic targets(2). Subsequently, one can break down the network into smaller units(modules) in order to identify areas with more activity(2).  Information derived from PPIs allows for the calculation of both degree centrality and betweenness centrality of co-expressed gene networks(2).   
+
+Degree centrality as well as betweenness centrality are core definitions of a network’s topology. Defining the centrality of a node/s allows one to identify the most highly connected nodes in a network(1). One can then infer the relative importance of a node based on how many nodes it is connected to(1). Nodes with a high degree of centrality will disproportionally affect the functioning of a network if they are altered which may lead to disease(1). In order to calculate degree centrality we divided the degree of a vertex by (n-1). Here the degree of a vertex referred to the number of edges connected to a vertex and n to the total number of vertices. 
+
+Betweenness centrality allows one to evaluate how many pairs of nodes would have to cross a particular node of interest in order to reach one another while minimizing the number of movements(1). We chose the Brandes algorithm to calculate betweenness centrality due to its faster execution(3).
+ (3)
+ 
+CB is the general formula to determine betweenness centrality for a particular vertex or ν(3). Where σst(ν) represents the number of shortest paths connecting s and t passing through ν(1). While σst represents the total number of shortest paths(1). 
+
+
+References:
+1) Mascolo, C. (2015). University of Cambridge: Computer Laboratory. Social and Technological Network Analysis. Lecture 3: Centrality Measures. https://www.cl.cam.ac.uk/teaching/1415/L109/l109-lecture3.pdf
+2) Xia, J., Benner, M. J., & Hancock, R. E. W. (2014). NetworkAnalyst - Integrative approaches for protein-protein interaction network analysis and visual exploration. Nucleic Acids Research, 42(W1), 167–174. http://doi.org/10.1093/nar/gku443
+3) Brandes, U. (2001). A faster algorithm for betweenness centrality*. The Journal of Mathematical Sociology, 25(2), 163–177. http://doi.org/10.1080/0022250X.2001.9990249
+
+
 ---
 
 ### Sub-Project 3: calculate enrichment level of gene expression data given pre-defined gene sets
