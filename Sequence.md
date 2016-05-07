@@ -15,14 +15,18 @@ weight: 2
 
 RNA-Seq is a relative measurement instead of an absolute one (1). Therefore, it is crucial to normalize samples in order for them to be comparable across experiments (1). Since features differ in length it is necessary to adjust for different lengths as this will affect the number of reads that are produced for different features (1). TPM gives us the number of transcripts of a certain type relative to the proportion of all the other transcripts present in the sample (2). The transcript fraction or (tau) is independent of the mean expressed transcript length (2). While the mean expressed transcript length is likely to vary from sample to sample (3). 
 
-For this reason, TPM offers a net advantage over FPKM because the TPM values are more comparable across species and between samples even if the transcript lengths differ whereas FPKM will offer different results (3). In order to calculate TPM we start by calculating the counts per base (1). We can observe that this rate is dependent on the number of fragments sequenced (1). In order to control for this we can divide this rate by the sum of all the rates recorded (1). This calculation will provide us with the proportion of transcripts in our sample (1). The proportion of transcripts in our sample can then be multiplied by a million to facilitate interpretation (2). 
+For this reason, TPM offers a net advantage over FPKM because the TPM values are more comparable across species and between samples even if the transcript lengths differ whereas FPKM will offer different results (3). In order to calculate TPM we start by calculating the counts per base (1). We can observe that this rate is dependent on the number of fragments sequenced (1). In order to control for this we can divide this rate by the sum of all the rates recorded (1). This calculation will provide us with the proportion of transcripts in our sample (1). The proportion of transcripts in our sample can then be multiplied by a million to facilitate interpretation (2). FPKM uses the same rate calculated for TPM but divides it by the total number of reads sequenced and then multiplies it by a billion (1).
 
 ![alt text][tpm]
 
 [tpm]: https://s0.wp.com/latex.php?latex=%5Ctext%7BTPM%7D_i+%3D+%5Cdfrac%7BX_i%7D%7B%5Cwidetilde%7Bl%7D_i%7D+%5Ccdot+%5Cleft%28+%5Cdfrac%7B1%7D%7B%5Csum_j+%5Cdfrac%7BX_j%7D%7B%5Cwidetilde%7Bl%7D_j%7D%7D+%5Cright%29+%5Ccdot+10%5E6&bg=ffffff&fg=000000&s=0 "Formula for TPM"
 
-X_i and X_j represent the counts for both the feature of interest, and the overall sample (1).
-L_i and L_j represent the effective lengths for both the feature of interest, and the overall sample (1).
+For TPM: X_i and X_j represent the counts for both the feature of interest, and the overall sample (1).
+         L_i and L_j represent the effective lengths for both the feature of interest, and the overall sample (1).
+         
+For FPKM: X_i represents the count of the feature of interest (1).
+          L_i represents the effective length of the feature of interest (1).
+          N represents the total number of reads sequenced (1). 
 
 > Your comparison of FPKM and TPM can be better conducted with the addition of FPKM's formular side by side with TPM formula. 
 
