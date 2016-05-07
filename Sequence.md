@@ -34,9 +34,9 @@ For FPKM: X_i represents the count of the feature of interest (1).
 
 Below we propose two tools that allow the calculation of TPM from given SAM and GTF files in both Python and R.
 
-SAM stands for "Sequence Alignment/Map". It is a standard, tab-delimited format produced by palignment software. Each alignment line in SAM has 11 mandatory fields for essential alignment information such as mapping position, and variable number of optional fields for flexible or aligner specific information. More details on SAM format specification can be found [here](http://samtools.github.io/hts-specs/SAMv1.pdf). Because of their usually large file sizes, SAM files are more commonly stored as BAM files, which are the machine-readable, binary version of SAM files, and can be converted using [Samtools](http://www.htslib.org/). 
+SAM stands for "Sequence Alignment/Map". It is a standard, tab-delimited format produced by palignment software. Each alignment line in SAM has 11 mandatory fields for essential alignment information such as mapping position, and variable number of optional fields for flexible or aligner specific information (4). More details on SAM format specification can be found [here](http://samtools.github.io/hts-specs/SAMv1.pdf). Because of their usually large file sizes, SAM files are more commonly stored as BAM files, which are the machine-readable, binary version of SAM files, and can be converted using [Samtools](http://www.htslib.org/). 
 
-GTF stands for "Gene Transfer Format". It is a standard, tab-delimited format commonly used for describing the structure of transcripts (introns, exons, start sites, UTRs, etc.) and how transcripts are related to the genes they encode. Each line in GTF has 9 mandatory fields: the first eight represent locations along the genome, information about how those regions were defined, and what they represent; and the last, "attributes" field contains information about the relationships between genes and their transcripts. More details on GTF format specification used in GENCODE can be found [here](http://www.gencodegenes.org/data_format.html).
+GTF stands for "Gene Transfer Format". It is a standard, tab-delimited format commonly used for describing the structure of transcripts (introns, exons, start sites, UTRs, etc.) and how transcripts are related to the genes they encode. Each line in GTF has 9 mandatory fields: the first eight represent locations along the genome, information about how those regions were defined, and what they represent; and the last, "attributes" field contains information about the relationships between genes and their transcripts (4). More details on GTF format specification used in GENCODE can be found [here](http://www.gencodegenes.org/data_format.html).
 
 Given a SAM file, which informs one the location in the genome to which each read is mapped, and a GTF file, which informs one the gene located at a given location in the genome, one could start calculating the read depth at each base position within the range of a given gene. 
 
@@ -47,6 +47,8 @@ Given a SAM file, which informs one the location in the genome to which each rea
 2) Li, B., Ruotti, V., Stewart, R. M., Thomson, J. A., & Dewey, C. N. (2009). RNA-Seq gene expression estimation with read mapping uncertainty. Bioinformatics, 26(4), 493–500. http://doi.org/10.1093/bioinformatics/btp692
 
 3) Li, B., & Dewey, C. N. (2011). RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome. BMC Bioinformatics, 12, 323. http://doi.org/10.1186/1471-2105-12-323
+
+4) Davis, S. File Formats and RNA-seq. Retrieved from http://watson.nci.nih.gov/~sdavis/tutorials/RNASeqBeginnerTutorial/RNASeqTutorial.html
 
 ## [R Card](https://github.com/jqz752/cbb752_2.2_R), Brought by Julian
 
