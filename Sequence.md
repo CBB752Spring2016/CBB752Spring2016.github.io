@@ -23,13 +23,14 @@ For this reason, TPM offers a net advantage over FPKM because the TPM values are
 
 For TPM: X_i and X_j represent the counts for both the feature of interest, and the overall sample (1).
          L_i and L_j represent the effective lengths for both the feature of interest, and the overall sample (1).
+
+![alt text][fpkm]
+
+[fpkm]: https://s0.wp.com/latex.php?latex=%5Ctext%7BFPKM%7D_i+%3D+%5Cdfrac%7BX_i%7D%7B+%5Cleft%28%5Cdfrac%7B%5Cwidetilde%7Bl%7D_i%7D%7B10%5E3%7D%5Cright%29+%5Cleft%28+%5Cdfrac%7BN%7D%7B10%5E6%7D+%5Cright%29%7D+%3D+%5Cdfrac%7BX_i%7D%7B%5Cwidetilde%7Bl%7D_i+N%7D+%5Ccdot+10%5E9++&bg=ffffff&fg=000000&s=0 "Formula for FPKM"
          
 For FPKM: X_i represents the count of the feature of interest (1).
           L_i represents the effective length of the feature of interest (1).
           N represents the total number of reads sequenced (1). 
-
-> Your comparison of FPKM and TPM can be better conducted with the addition of FPKM's formular side by side with TPM formula. 
-
 
 Below we propose two tools that allow the calculation of TPM from given SAM and GTF files in both Python and R.
 
