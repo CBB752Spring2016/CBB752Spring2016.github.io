@@ -69,7 +69,8 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 
 #### What is the Lennard-Jones potential and why is it useful in science?
 The Lennard-Jones potential is a force that describes the interaction between a pair of atoms [1]. The equation is: 
-V = 4 \epsilon \bigg[ \bigg(\frac{\sigma}{r}\bigg)^{12}  - \bigg(\frac{\sigma}{r}\bigg)^{6} \bigg]
+
+![Image of Lennard Jones potential equation](https://i.imgsafe.org/f9a94cd.png)
 
 V is the intermolecular potential. σ is the distance where V is 0. r is the distance between atoms. ε is the interaction strength/depth of potential well (eq from https://github.com/rasbt/pattern_classification/blob/master/resources/latex_equations.md#lennard-jones-potential).
 
