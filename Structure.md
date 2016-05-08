@@ -6,8 +6,8 @@ weight: 4
 ---
 
 ## Table of Contents
-**[Distance Between Alpha Carbons](#Calculating-distance-between-alpha-carbons-in-a-pdb-file)**  
-**[Lennard-Jones Potential](#Calculating-the-Lennard-Jones-Potential-from-a-Query-Point-and-a-PDB File)**  
+***[Distance Between Alpha Carbons](#Calculating-distance-between-alpha-carbons-in-a-pdb-file)***  
+***[Lennard-Jones Potential](#Calculating-the-Lennard-Jones-Potential-from-a-Query-Point-and-a-PDB File)***  
 
 ---
 ### Calculating Distance Between Alpha Carbons in a PDB File
