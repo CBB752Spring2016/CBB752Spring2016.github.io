@@ -5,7 +5,7 @@ group: navigation
 weight: 4
 ---
 
-Calculating Distance Between Alpha Carbons in a PDB File
+### Calculating Distance Between Alpha Carbons in a PDB File
 
 > You should assign a proper title
 > Please carefully read through and follow the formatting guideline found in [Project 1.2](http://cbb752spring2016.github.io/QCStep)
