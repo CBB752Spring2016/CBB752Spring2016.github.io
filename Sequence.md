@@ -85,12 +85,12 @@ Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 
 #### What is a k-mer and its purpose?  
 
-K-mer is a bioinformatics term which corresponds to the substring of length k in a string obtained from DNA sequencing (Pevzner, et al. 2001). Mathematically, the number of possible k-mers in a given string of length l is: l – k + 1. K-mer anlysis is often done along with De Brujin graphs for sequence assembly. The de Bruijn graph is composed of the nodes being (k – 1)-mers and the edges being the k-mers. Basically the graph is made and simplified such that contiguous regions of the genome are identified (Chikhi and Medvedev, 2014). K-mer algorithms are designed to better resolve genomic shotgun assembly. Previous algorithms designed to organize the assembly were inadequate in solving the “repeat problems” in finding the correct path to the graph. The current k-mer algorithm is widely used as a simpler and less error-prone way for large scale genomes assembly.  
+K-mer is a bioinformatics term which corresponds to the substring of length k in a string obtained from DNA sequencing [1]. Mathematically, the number of possible k-mers in a given string of length l is: l – k + 1. K-mer anlysis is often done along with De Brujin graphs for sequence assembly. The de Bruijn graph is composed of the nodes being (k – 1)-mers and the edges being the k-mers. Basically the graph is made and simplified such that contiguous regions of the genome are identified [2]. K-mer algorithms are designed to better resolve genomic shotgun assembly. Previous algorithms designed to organize the assembly were inadequate in solving the “repeat problems” in finding the correct path to the graph. The current k-mer algorithm is widely used as a simpler and less error-prone way for large scale genomes assembly.  
 
 
 #### How to find the k-mer size ideal for sequence assembly? 
 
-The de Brujin graph is constructed from a collection of sequencing reads without knowing the finished sequence. Pevzner et al., 2001 was able to correct the errors in reads and visualize the final sequences before making the graph by using the approximation that the sequence of a genome while unknown we can find the a set of tuples in this genome. In general, picking a smaller k-mer size for analysis will improve data management as edge counts of the de Brujin graph decrease (Zerbino and Birney, 2008). The tradeoff is potential for higher k-mer sequences overlap and more ambuigities when constructing the genome. Higher k-mer size will make working with de Brujin graph longer to process and possibility for non-overlapping. The advantage is constructing the final genome would be easier and lower possibility for repetition. 
+The de Brujin graph is constructed from a collection of sequencing reads without knowing the finished sequence. Pevzner et al., 2001 [1] was able to correct the errors in reads and visualize the final sequences before making the graph by using the approximation that the sequence of a genome while unknown we can find the a set of tuples in this genome. In general, picking a smaller k-mer size for analysis will improve data management as edge counts of the de Brujin graph decrease [3]. The tradeoff is potential for higher k-mer sequences overlap and more ambuigities when constructing the genome. Higher k-mer size will make working with de Brujin graph longer to process and possibility for non-overlapping. The advantage is constructing the final genome would be easier and lower possibility for repetition. 
 
 
 #### What algorithm our tool uses to define k-mer enrichment? 
@@ -99,8 +99,7 @@ Our tool answers the question “is a k-mer sequence being overrepresented in a 
 
 Reference:
 
-Pevzner, P. et al., 2001. An Eulerian path approach to DNA fragment assembly. Proc Natl Acad Sci U S A. 98(17): 9748-9753. 
+[1] Pevzner, P. et al., 2001. An Eulerian path approach to DNA fragment assembly. Proc Natl Acad Sci U S A. 98(17): 9748-9753. 
+[2] Chikhi, R. and Medvedev, P., 2014. Informed and automated k-mer size selection for genome assembly. Bioinformatics. 30(1):31-37.
 
-Chikhi, R. and Medvedev, P., 2014. Informed and automated k-mer size selection for genome assembly. Bioinformatics. 30(1):31-37.
-
-Zerbino, D. and Birney, E., 2008. Velvet: algorithms for de novo short read assembly using de Brujin graphs. Genome Research. 18(5):821-829.
+[3] Zerbino, D. and Birney, E., 2008. Velvet: algorithms for de novo short read assembly using de Brujin graphs. Genome Research. 18(5):821-829.
