@@ -48,12 +48,12 @@ See project repository: https://github.com/peter-mm-williams/CBB752_Final_Projec
 
 #### What is a FASTQ file? 
 
-FastQ file is a text file with the FASTQ format, designed to contain a nucleotide sequence and its associate quality score in the ASCII character-encoding scheme. This format is used as output data for high-throughput sequencing from companies like Illumina (Cock, et al. 2010). 
+FastQ file is a text file with the FASTQ format, designed to contain a nucleotide sequence and its associate quality score in the ASCII character-encoding scheme. This format is used as output data for high-throughput sequencing from companies like Illumina [1]. 
 
 
 #### What is quality score?
 
-In the ASCII encoding scheme, a set of characters are put into order to denote quality, for example“!” is the lowest quality score and “~” is the highest. Quality is determined by the PHRED software, in which the quality score Q = -10*log(10)*P (Edwing, et al. 1998). The score correlates with the probability of getting the incorrect base call, for example a quality score of 10 means the probability of base call will be incorrect 1 in 10, while a score of 60 means the probability 1 in 1000000 will be incorrect.The basis of this base-calling algorithm our tool will utilize consists of predicting peak locations, identifying observed peaks, matching predicted peaks to observed peaks, and find missed peaks. Illumina FASTQ format starts with “@” followed by the record identifier and sequence length, after that is a nucleotide sequence. The next line starts with the “+” followed by the optional title, then after that is the quality line for the above nucleotide sequence. There are several different quality score metrics, including Illumina Q+64 and Sanger Q+33. To get Q+64, one need to add Illumina 1.3+”Q+64” using ASCII characters 64-to-126 to score 0-to-62 on the P scale. For Q+33, one need to add the Probability values of Phred scores 0-to-93 with ASCII codes characters 33-to-126.    
+In the ASCII encoding scheme, a set of characters are put into order to denote quality, for example“!” is the lowest quality score and “~” is the highest. Quality is determined by the PHRED software, in which the quality score Q = -10*log(10)*P [2]. The score correlates with the probability of getting the incorrect base call, for example a quality score of 10 means the probability of base call will be incorrect 1 in 10, while a score of 60 means the probability 1 in 1000000 will be incorrect.The basis of this base-calling algorithm our tool will utilize consists of predicting peak locations, identifying observed peaks, matching predicted peaks to observed peaks, and find missed peaks. Illumina FASTQ format starts with “@” followed by the record identifier and sequence length, after that is a nucleotide sequence. The next line starts with the “+” followed by the optional title, then after that is the quality line for the above nucleotide sequence. There are several different quality score metrics, including Illumina Q+64 and Sanger Q+33. To get Q+64, one need to add Illumina 1.3+”Q+64” using ASCII characters 64-to-126 to score 0-to-62 on the P scale. For Q+33, one need to add the Probability values of Phred scores 0-to-93 with ASCII codes characters 33-to-126.    
 
 > There are different quality score metrics used for different sequencing platform. This type of information is actually quite useful. Maybe you can use this section to explain more. For example, there are Illumina Q+64 and Sanger Q+33, for more information, http://www.somewhereville.com/?p=1508#more-1508
 
@@ -68,7 +68,7 @@ The rationale for such a tool is that high-throughput sequencing have high quali
 
 #### What is the biological relevance for this tool?
 
-This tool will be a quick asset in organizing biological data for further assembly or research. The test file we are using for our tool includes the genome read of a fungus. The reason for testing this genome is because it has relevance in assembly. These sequences are half of a paired-end read, as such quality is low in the middle region where assembly of two sequences happens (Shaw, et al., 2015). By using this tool we can filter out paired-end sequences with low quality at their 3’ ends and therefore prevent assembly. Only sequences with adequate quality will proceed to assembly of the genome. Some existing tools that remove low quality reads are Trimmomatic and Fastx. Trimmomatic is a trimming tool on the USAELLAB.org website (Bolger, et al., 2014). It can take in a file and remove low quality bases using a 4-base wide sliding window, dropping bases below quality score 15 and also ignore sequences that are less than 36 bases long. Fastx toolkit is available at the Hannon lab from Cold Spring Harbor Laboratory. The available tools allow users to convert FASTQ to FASTA files, find the reverse-complement of sequences, and filter sequences based on quality.        
+This tool will be a quick asset in organizing biological data for further assembly or research. The test file we are using for our tool includes the genome read of a fungus. The reason for testing this genome is because it has relevance in assembly. These sequences are half of a paired-end read, as such quality is low in the middle region where assembly of two sequences happens [3]. By using this tool we can filter out paired-end sequences with low quality at their 3’ ends and therefore prevent assembly. Only sequences with adequate quality will proceed to assembly of the genome. Some existing tools that remove low quality reads are Trimmomatic and Fastx. Trimmomatic is a trimming tool on the USAELLAB.org website [4]. It can take in a file and remove low quality bases using a 4-base wide sliding window, dropping bases below quality score 15 and also ignore sequences that are less than 36 bases long. Fastx toolkit is available at the Hannon lab from Cold Spring Harbor Laboratory. The available tools allow users to convert FASTQ to FASTA files, find the reverse-complement of sequences, and filter sequences based on quality.        
 
 > Maybe a survey of existing tools and existing methods for removing low quality reads is missing.
 
@@ -85,10 +85,10 @@ This tool will be a quick asset in organizing biological data for further assemb
 
 > Reference should be numbered
 
-1. Cock, P. et al. 2010. The Sanger FASTQ file format for sequences with quality scores, and the Solexa/Illumina FASTQ variants. Nucleic Acids Res. 38(6): 1767–1771.
+[1] Cock, P. et al. 2010. The Sanger FASTQ file format for sequences with quality scores, and the Solexa/Illumina FASTQ variants. Nucleic Acids Res. 38(6): 1767–1771.
 
-2. Edwing, B. et al. 1998. Base-calling of automated sequencer traces using phred. Genomic Res. 8(3): 175-185.
+[2] Edwing, B. et al. 1998. Base-calling of automated sequencer traces using phred. Genomic Res. 8(3): 175-185.
 
-3. Shaw, J. et al. 2015. Biosynthesis and genomic analysis of medium-chain hydrocarbon production by the endophytic fungal isolate Nigrograna mackinonnii E5202H. Appl Microbiol Biotechnol. 99(8): 3715-3728. 
+[3] Shaw, J. et al. 2015. Biosynthesis and genomic analysis of medium-chain hydrocarbon production by the endophytic fungal isolate Nigrograna mackinonnii E5202H. Appl Microbiol Biotechnol. 99(8): 3715-3728. 
 
-4. Bolger, A. et al. 2014. Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics. Btu170. 
+[4] Bolger, A. et al. 2014. Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics. Btu170. 
