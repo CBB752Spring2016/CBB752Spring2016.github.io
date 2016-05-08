@@ -51,10 +51,10 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 
 #### References
 
-[1] http://www.rcsb.org/pdb/home/home.do
-[2] http://www.wwpdb.org/
-[3] http://www.ebi.ac.uk/pdbe/
-[4] http://pdbj.org/
+[1] http://www.rcsb.org/pdb/home/home.do  
+[2] http://www.wwpdb.org/  
+[3] http://www.ebi.ac.uk/pdbe/  
+[4] http://pdbj.org/  
 [5] Yang, L-W. & Chng, C-P. Coarse-Grained Models Reveal Functional Dynamics - I. Elastic Network Models – Theories, Comparisons and Perspectives. Bioinform Biol Insights, 2, 25-45 (2008). 
 
 ---
