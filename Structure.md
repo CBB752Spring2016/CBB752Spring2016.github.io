@@ -65,6 +65,37 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 - [Python](https://github.com/wellshl/Final-Project-4.2): [Heather](https://github.com/wellshl)
 - [R](https://github.com/graceliu2016/Final-Project-4.2): [Grace](https://github.com/graceliu2016)
 
+#### Documentation
+
+#### What is the Lennard-Jones potential and why is it useful in science?
+The Lennard-Jones potential is a force that describes the interaction between a pair of atoms (Lennard-Jones, 1924). The equation is: 
+V = 4 \epsilon \bigg[ \bigg(\frac{\sigma}{r}\bigg)^{12}  - \bigg(\frac{\sigma}{r}\bigg)^{6} \bigg]
+
+V is the intermolecular potential. σ is the distance where V is 0. r is the distance between atoms. ε is the interaction strength/depth of potential well (eq from https://github.com/rasbt/pattern_classification/blob/master/resources/latex_equations.md#lennard-jones-potential).
+
+
+This equation is useful in describing the stable conformations of molecules and polypeptides. This force is weakly attractive to uncharged particles, but if they get too close there will be a repulsive effect. The attractive force is a combination of Van der Waalsand ion-induced dipole dipole force, while the repulsive force is because atoms can’t squish each other. Below is a graph of two atoms’ Lennard-Jones potential as they experience repulsion from being very close to a mild attraction at a larger distance. (ref: http://atomsinmotion.com/book/chapter5/LennardJones.png)
+
+![Image of distance formula](http://atomsinmotion.com/book/chapter5/LennardJones.png)
+
+Lennard-Jones potential is used to study fundamental repulsion and attraction phenomenon at long distances in gases and liquids. When gases are compressed, the particles are more attracted to each other and will form liquids and solids when sufficiently condensed (Zeng and Oxtoby, 1990). In biology, Lennard-Jones potential can also be used to find the forces acting on specific atoms of the amino acid residues that make up a protein. Calculating these values for specific amino acid residues will help determine their most favorable conformations in a protein core which will contribute to the knowledge of protein structure and folding.     
+
+#### What is a PDB file?
+Program database (PDB) file format is used in biology to organize protein structures data solved by X-ray diffraction and NMR experiments. Information included in such a file include the protein’s name, the group the solved the structure, what resolution it was solved, and other general information. The PDB file is immensely important for our tool, as positions and relationships of specific atoms within amino acid residues of protein structures are determined accurately. PDB files are organized on the RCSB protein data bank as well as the Worldwide Protein Data Bank.    
+
+#### How will our tool calculate the Lennard-Jones potential?
+Our tool will calculate the Lennard-Jones potential by taking in a PDB file as input, where the coordinates x, y, and z of the atoms in the protein structure will be parsed into the tool in units of Angstroms. The default values for epsilon ε will be 1 kcal/mol, and the sigma σ will be 5 Angstroms. These values are chosen from Veitshans, et al. 1997. The tool extracts all the alpha carbons from the protein structure and categorize them into group of hydrophilic (ie: Arginine), hydrophobic (ie: Alanine), and neutral (ie: Glycine) proteins in accordance with the BLN model. This distinction is important as these three groups of residues have different interaction potentials. The distance from the query point to the alpha carbon will be calculated, then the Lennard-Jones potential can be calculated for all amino acid residues and summed up with respect to the query point.     
+
+
+Reference:
+
+[1] Lennard-Jones, J. 1924. On the Determination of Molecular Fields. Proc. R. Soc. Lond. A. 106 (738): 463–477.
+
+[2] Zeng, X. and Oxtoby, D. 1990. Gas-liquid nucleation in Lennard-Jones fluids. The Journal of Chemical Physics 94(6):4472-4478.
+
+[3] Veitshans, T. et al., 1997. Protein folding kinetics: timescales, pathways and energy landscapes in terms of sequence-dependent properties. Fold Des. 2(1):1-22.
+
+
 #### [Sample Python Code](https://github.com/wellshl/Final-Project-4.2)
 
 #### [Sample R Code](https://github.com/graceliu2016/Final-Project-4.2)
