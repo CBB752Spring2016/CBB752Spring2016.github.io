@@ -6,9 +6,9 @@ weight: 4
 ---
 
 ## Table of Contents
-**[Distance Between Alpha Carbons](#calculating-distance-between-alpha-carbons-in-a-pdb-file)**
-**[Lennard-Jones Potential](#calculating-the-lennard-jones-potential-from-a-query-point-and-a-pdb-file)**
-**[Dihedral Angles](#calculating-dihedral-angles)**
+**[Distance Between Alpha Carbons](#calculating-distance-between-alpha-carbons-in-a-pdb-file)** 
+**[Lennard-Jones Potential](#calculating-the-lennard-jones-potential-from-a-query-point-and-a-pdb-file)** 
+**[Dihedral Angles](#calculating-dihedral-angles)** 
 
 ---
 
