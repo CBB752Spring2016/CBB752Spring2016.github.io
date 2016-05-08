@@ -48,7 +48,7 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 
 ---
 
-### Calculating the Lennard-Jones potential
+### Calculating the Lennard-Jones Potential
 
 
 #### English Card, Brought by Nathan
