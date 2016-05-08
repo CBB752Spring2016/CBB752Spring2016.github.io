@@ -5,6 +5,11 @@ group: navigation
 weight: 4
 ---
 
+## Table of Contents
+**[Distance Between Alpha Carbons](#Calculating-distance-between-alpha-carbons-in-a-pdb-file)**  
+**[Lennard-Jones Potential](#Calculating-the-Lennard-Jones-Potential-from-a-Query-Point-and-a-PDB File)**  
+
+---
 ### Calculating Distance Between Alpha Carbons in a PDB File
 
 > You should assign a proper title
@@ -50,8 +55,6 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 
 ### Calculating the Lennard-Jones Potential from a Query Point and a PDB File
 
-#### English Card, Brought by Nathan
-
 - Documentation: [Nathan](https://github.com/NathanNN)
 - [Python](https://github.com/wellshl/Final-Project-4.2): [Heather](https://github.com/wellshl)
 - [R](https://github.com/graceliu2016/Final-Project-4.2): [Grace](https://github.com/graceliu2016)
@@ -61,7 +64,7 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 
 - Documentation: [Grace](https://github.com/graceliu2016)
 - [Python](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git): [Peter](https://github.com/peter-mm-williams)
-- [R](https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git): [Calvin](https://github.com/calvinrhodes)
+- [R]: [Kevin](https://github.com/kevkid)
 
 #### R Card, Brought by Kevin
 
