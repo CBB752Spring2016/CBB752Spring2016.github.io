@@ -105,12 +105,10 @@ The analysis of the dynamic nature of gene networks holds remarkable potential i
 Degree centrality as well as betweenness centrality are core definitions of a network’s topology. Defining the centrality of a node/s allows one to identify the most highly connected nodes in a network(1). One can then infer the relative importance of a node based on how many nodes it is connected to(1). Nodes with a high degree of centrality will disproportionally affect the functioning of a network if they are altered which may lead to disease(1). In order to calculate degree centrality we divided the degree of a vertex by (n-1). Here the degree of a vertex referred to the number of edges connected to a vertex and n to the total number of vertices. 
 
 Betweenness centrality allows one to evaluate how many pairs of nodes would have to cross a particular node of interest in order to reach one another while minimizing the number of movements(1). We chose the Brandes algorithm to calculate betweenness centrality due to its faster execution(3).
- CB: 
- ![alt text](/Users/michaelmengual/Desktop/CB.png)
- (3)
+
+![alt text](https://upload.wikimedia.org/math/4/c/c/4cc6eaa2dce9d504feeed5bd88b96d73.png "Betweenness centrality") (3)
  
 CB is the general formula to determine betweenness centrality for a particular vertex or ν(3). Where σst(ν) represents the number of shortest paths connecting s and t passing through ν(1). While σst represents the total number of shortest paths(1). 
-
 
 References:
 
