@@ -110,6 +110,8 @@ Betweenness centrality allows one to evaluate how many pairs of nodes would have
  
 CB is the general formula to determine betweenness centrality for a particular vertex or ν (3). Where σst(ν) represents the number of shortest paths connecting s and t passing through ν (1). While σst represents the total number of shortest paths (1). 
 
+The MITAB 2.5 format describes binary PPI data where each row corresponds to a pair of interactors (4). The columns are separated by tabulations (4). Unique identifiers for interactors A and B are represented in columns 1 and 2 (4). Alternative identifiers for protein A and B can be found in columns 3 and 4 (4). And aliases for interactors A and B can be found in columns 5 and 6 (4). The seventh column corresponds to the interaction detection method (4).  The eighth and ninth columns correspond to the first author and the identifier for the publication (4). The tenth and eleventh columns correspond to the NCBI taxonomy identifiers for interactors A and B (4). Column twelve corresponds to the interaction type (4). Column thirteen corresponds to the databases used as sources (4). Finally, columns fourteen and fifteen correspond to the interaction identifier and the confidence score (4). 
+
 References:
 
 1) Mascolo, C. (2015). University of Cambridge: Computer Laboratory. Social and Technological Network Analysis. Lecture 3: Centrality Measures. https://www.cl.cam.ac.uk/teaching/1415/L109/l109-lecture3.pdf
@@ -118,7 +120,7 @@ References:
 
 3) Brandes, U. (2001). A faster algorithm for betweenness centrality*. The Journal of Mathematical Sociology, 25(2), 163–177. http://doi.org/10.1080/0022250X.2001.9990249
 
-
+4) Google Code Archive. Psimi – PsimiTabFormat.wiki. https://code.google.com/archive/p/psimi/wikis/PsimiTabFormat.wiki
 ---
 
 ### Sub-Project 3: calculate enrichment level of gene expression data given pre-defined gene sets
