@@ -77,8 +77,6 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 - [Python](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git): [Peter](https://github.com/peter-mm-williams)
 - [R](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git): [Kevin](https://github.com/kevkid)
 
-#### R Card, Brought by Kevin
-
 #### Protein Backbone Dihedral Angles
 The phi and psi protein backbone dihedral angles define the two degrees of freedom of the backbone and sterically determine much of the protein’s local folding structure. Because dihedral angles characterize the angle of rotation between two planes, they are defined by four spatial points. The phi angle measures the angle around the N-Cα bond in the consecutive sequence C’-N-Cα-C. The first C’ in this definition comes from the prior amino acid residue. The psi angle measures the angle around the Cα-C bond in the sequence N-Cα-C-N’, where the last N’ comes from the next amino acid residue. The final possible dihedral angle is omega (Cα’-C’-N-Cα), the peptide bond, which is fixed at (0, 180°) because the partial double bond character of the peptide bond does not allow rotation around the C’-N bond. 
 
