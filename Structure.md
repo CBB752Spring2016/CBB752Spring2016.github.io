@@ -31,13 +31,9 @@ See repository at: https://github.com/peter-mm-williams/CBB752_Final_Project_4.1
 
 > Good use of example, instructions on input parameters. Ideally, it would be preferred to have a seperate repository for R (for cleaner look), but this is minor and debatable. I would also work on formatting of readme a little more.
 
-I would make a minor edit on formatting. Give a project unified name and use it in your readme section.
-
 #### Acquisition of the spatial data in PDB files
 
 In proteins, structure and function are tightly linked, such that biochemical understanding of the protein is often contingent on understanding the relationship between atoms in space. The spatial and atomic information stored in a PDB file is derived from crystallization and diffraction of the purified protein, followed by phase reconstruction and model refinement. Although there are other methods for obtaining spatial information about proteins, including NMR, SAXS and, more recently, electron cryo-microscopy, protein crystal diffraction remains the gold standard for atomic resolution of structure. Thus, the majority of PDB files deposited in the RCSB database were obtained by this method.
-
-> I would describe more about structure of PDB file. Please also give some example of PDB databases besides RCSB.
 
 #### Calculating the distance between alpha carbons
 	
