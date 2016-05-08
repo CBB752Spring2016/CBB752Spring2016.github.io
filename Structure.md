@@ -33,7 +33,9 @@ See repository at: https://github.com/peter-mm-williams/CBB752_Final_Project_4.1
 
 #### Acquisition of the spatial data in PDB files
 
-In proteins, structure and function are tightly linked, such that biochemical understanding of the protein is often contingent on understanding the relationship between atoms in space. The spatial and atomic information stored in a PDB file is derived from crystallization and diffraction of the purified protein, followed by phase reconstruction and model refinement. Although there are other methods for obtaining spatial information about proteins, including NMR, SAXS and, more recently, electron cryo-microscopy, protein crystal diffraction remains the gold standard for atomic resolution of structure. Thus, the majority of PDB files deposited in the RCSB database were obtained by this method.
+In proteins, structure and function are tightly linked, such that biochemical understanding of the protein is often contingent on understanding the relationship between atoms in space. The spatial and atomic information stored in a PDB file is derived from crystallization and diffraction of the purified protein, followed by phase reconstruction and model refinement. Although there are other methods for obtaining spatial information about proteins, including NMR, SAXS and, more recently, electron cryo-microscopy, protein crystal diffraction remains the gold standard for atomic resolution of structure. Thus, the majority of PDB files deposited in various databases were obtained by this method. These databases include RCSB [1], the central wwPDB archive [2], and national PDB archives (PDBe and PDBj) [3,4], which allow users to search for and visualize structures.
+
+The first few lines of the PDB file define the HEADER, TITLE, and AUTHOR in order to provide information about the protein, the method used to obtain the structure, and the structure depositors. Further annotations about the protein are found in the REMARK section. SEQRES defines the sequences of the individual protein chains within the larger structure, using the three-letter amino acid abbreviation code. Lines labeled ATOM provide information about the individual atoms within the protein. Columns 2 through 11 within the ATOM records describe, respectively: atom index number, atom type (i.e. N, C, CA, etc.), amino acid identity using the three-letter code, chain identity, the x, y, and z coordinates in angstroms, occupancy, temperature factor, and element identity. In the tool below, we use the coordinates in the ATOM records to calculate the distances between atoms. If there are atoms which are not part of the protein molecule in the structure, those heteroatoms are recorded on HETATM lines.
 
 #### Calculating the distance between alpha carbons
 	
@@ -41,7 +43,7 @@ Here, we generate a tool which can identify the distance between any two alpha c
 
 ![Image of distance formula](https://i.imgsafe.org/98da76c.png)
 
-This output, given in angstroms, is useful in several ways. First, it provides general information about where two carbons are, relative to each other in space. More importantly, this distance can be used to determine whether certain forces and interactions between the atoms are relevant. For example, we can use the calculated distance in coarse-grained models where we only consider interactions between amino acid residues within a certain radius of each other. These models, termed elastic network models, treat proteins like a network of alpha carbons in which each alpha carbon is connected by virtual springs to every other alpha carbon within a distance cutoff [1]. Because of their simplicity, elastic network models and other distance-cutoff models can be used to model protein flexibility in molecular dynamics simulation without requiring excessive computational power.
+This output, given in angstroms, is useful in several ways. First, it provides general information about where two carbons are, relative to each other in space. More importantly, this distance can be used to determine whether certain forces and interactions between the atoms are relevant. For example, we can use the calculated distance in coarse-grained models where we only consider interactions between amino acid residues within a certain radius of each other. These models, termed elastic network models, treat proteins like a network of alpha carbons in which each alpha carbon is connected by virtual springs to every other alpha carbon within a distance cutoff [5]. Because of their simplicity, elastic network models and other distance-cutoff models can be used to model protein flexibility in molecular dynamics simulation without requiring excessive computational power.
 
 #### [Sample Python Code](https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git)
 
@@ -49,7 +51,11 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 
 #### References
 
-[1] Yang, L-W. & Chng, C-P. Coarse-Grained Models Reveal Functional Dynamics - I. Elastic Network Models – Theories, Comparisons and Perspectives. Bioinform Biol Insights, 2, 25-45 (2008). 
+[1] http://www.rcsb.org/pdb/home/home.do
+[2] http://www.wwpdb.org/
+[3] http://www.ebi.ac.uk/pdbe/
+[4] http://pdbj.org/
+[5] Yang, L-W. & Chng, C-P. Coarse-Grained Models Reveal Functional Dynamics - I. Elastic Network Models – Theories, Comparisons and Perspectives. Bioinform Biol Insights, 2, 25-45 (2008). 
 
 ---
 
