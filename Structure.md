@@ -33,13 +33,13 @@ See repository at: https://github.com/peter-mm-williams/CBB752_Final_Project_4.1
 
 I would make a minor edit on formatting. Give a project unified name and use it in your readme section.
 
-##### Acquisition of the spatial data in PDB files
+#### Acquisition of the spatial data in PDB files
 
 In proteins, structure and function are tightly linked, such that biochemical understanding of the protein is often contingent on understanding the relationship between atoms in space. The spatial and atomic information stored in a PDB file is derived from crystallization and diffraction of the purified protein, followed by phase reconstruction and model refinement. Although there are other methods for obtaining spatial information about proteins, including NMR, SAXS and, more recently, electron cryo-microscopy, protein crystal diffraction remains the gold standard for atomic resolution of structure. Thus, the majority of PDB files deposited in the RCSB database were obtained by this method.
 
 > I would describe more about structure of PDB file. Please also give some example of PDB databases besides RCSB.
 
-##### Calculating the distance between alpha carbons
+#### Calculating the distance between alpha carbons
 	
 Here, we generate a tool which can identify the distance between any two alpha carbons in a protein. We ask the user to input the PDB file of interest and the indices of the alpha carbons. These indices correspond to the residue number of the alpha carbon's associated amino acid in the primary sequence of the protein. After extracting the x,y,z coordinates for two given alpha carbons from the PDB file, we use the following formula to calculate the distance between them:
 
@@ -47,7 +47,11 @@ Here, we generate a tool which can identify the distance between any two alpha c
 
 This output, given in angstroms, is useful in several ways. First, it provides general information about where two carbons are, relative to each other in space. More importantly, this distance can be used to determine whether certain forces and interactions between the atoms are relevant. For example, we can use the calculated distance in coarse-grained models where we only consider interactions between amino acid residues within a certain radius of each other. These models, termed elastic network models, treat proteins like a network of alpha carbons in which each alpha carbon is connected by virtual springs to every other alpha carbon within a distance cutoff [1]. Because of their simplicity, elastic network models and other distance-cutoff models can be used to model protein flexibility in molecular dynamics simulation without requiring excessive computational power.
 
-##### References
+#### [Sample Python Code](https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git)
+
+#### [Sample R Code](https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git)
+
+#### References
 
 [1] Yang, L-W. & Chng, C-P. Coarse-Grained Models Reveal Functional Dynamics - I. Elastic Network Models – Theories, Comparisons and Perspectives. Bioinform Biol Insights, 2, 25-45 (2008). 
 
@@ -61,17 +65,21 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 - [Python](https://github.com/wellshl/Final-Project-4.2): [Heather](https://github.com/wellshl)
 - [R](https://github.com/graceliu2016/Final-Project-4.2): [Grace](https://github.com/graceliu2016)
 
+#### [Sample Python Code](https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git)
 
-### Calculating Dihedral Angles
+#### [Sample R Code](https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git)
+
+---
+
+### Calculating Dihedral Angles from PDB-format Coordinates
 
 - Documentation: [Grace](https://github.com/graceliu2016)
 - [Python](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git): [Peter](https://github.com/peter-mm-williams)
-- [R]: [Kevin](https://github.com/kevkid)
+- [R](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git): [Kevin](https://github.com/kevkid)
 
 #### R Card, Brought by Kevin
 
-
-##### Protein Backbone Dihedral Angles
+#### Protein Backbone Dihedral Angles
 The phi and psi protein backbone dihedral angles define the two degrees of freedom of the backbone and sterically determine much of the protein’s local folding structure. Because dihedral angles characterize the angle of rotation between two planes, they are defined by four spatial points. The phi angle measures the angle around the N-Cα bond in the consecutive sequence C’-N-Cα-C. The first C’ in this definition comes from the prior amino acid residue. The psi angle measures the angle around the Cα-C bond in the sequence N-Cα-C-N’, where the last N’ comes from the next amino acid residue. The final possible dihedral angle is omega (Cα’-C’-N-Cα), the peptide bond, which is fixed at (0, 180°) because the partial double bond character of the peptide bond does not allow rotation around the C’-N bond. 
 
 ![Dihedral angles schematic](https://i.imgsafe.org/1527d6a.png)
@@ -80,7 +88,7 @@ Phi and psi dihedral angles are restricted to certain values, because many angle
 
 ![Ramachandran plot](https://i.imgsafe.org/af879a9.png)
 
-##### Calculating Dihedral Angles
+#### Calculating Dihedral Angles
 
 Given the spatial coordinates (x,y,z) of the four points which define two planes, we can calculate the angle between them (theta) in two ways. First, we can find the normal vectors for each plane, n1 and n2, such that each vector is perpendicular to the plane. For two planes with the following Cartesian definition, the normal vectors are n1 = (a1, b1, c1) and n2 = (a2, b2, c2):
 
@@ -98,7 +106,11 @@ In vector notation, because the arccosine and arccsine functions are limited in 
 
 ![Atan2 definition](https://upload.wikimedia.org/math/c/8/1/c81848e82ad6e45e9e14f81cb38895a2.png)
 
-##### References
+#### [Sample Python Code](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git)
+
+#### [Sample R Code](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git)
+
+#### References
 
 [1] Zhou, AQ, O'Hern, CS, Regan, L (2011). Revisiting the Ramachandran plot from a new angle. Protein Sci., 20, 7:1166-71
 [2] Zhou, AQ, O'Hern CS, and Regan, L (2014). Predicting the side-chain dihedral angle distributions of non-polar, aromatic, and polar amino acids using hard-sphere models. Proteins: Structure, Function, and Bioinformatics, 82, 2574.
