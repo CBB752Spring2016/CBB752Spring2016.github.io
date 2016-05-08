@@ -5,10 +5,14 @@ group: navigation
 weight: 4
 ---
 
-~~### Sub-Project 1: calculate distance between two alpha carbons from a PDB file~~
+Calculating Distance Between Alpha Carbons in a PDB File
 
 > You should assign a proper title
 > Please carefully read through and follow the formatting guideline found in [Project 1.2](http://cbb752spring2016.github.io/QCStep)
+
+- Documentation: [Grace](https://github.com/graceliu2016)
+- [Python](https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git): [Peter](https://github.com/peter-mm-williams)
+- [R](https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git): [Calvin](https://github.com/calvinrhodes)
 
 #### Python Card, Brought by Peter
 See repository at: https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git
@@ -22,8 +26,6 @@ See repository at: https://github.com/peter-mm-williams/CBB752_Final_Project_4.1
 
 I would make a minor edit on formatting. Give a project unified name and use it in your readme section.
 
-#### English Card, Brought by Gawain
-
 ##### Acquisition of the spatial data in PDB files
 
 In proteins, structure and function are tightly linked, such that biochemical understanding of the protein is often contingent on understanding the relationship between atoms in space. The spatial and atomic information stored in a PDB file is derived from crystallization and diffraction of the purified protein, followed by phase reconstruction and model refinement. Although there are other methods for obtaining spatial information about proteins, including NMR, SAXS and, more recently, electron cryo-microscopy, protein crystal diffraction remains the gold standard for atomic resolution of structure. Thus, the majority of PDB files deposited in the RCSB database were obtained by this method.
@@ -36,8 +38,6 @@ Here, we generate a tool which can identify the distance between any two alpha c
 
 ![Image of distance formula](https://i.imgsafe.org/98da76c.png)
 
-> This is pretty straightforward and looks sufficient.
-
 This output, given in angstroms, is useful in several ways. First, it provides general information about where two carbons are, relative to each other in space. More importantly, this distance can be used to determine whether certain forces and interactions between the atoms are relevant. For example, we can use the calculated distance in coarse-grained models where we only consider interactions between amino acid residues within a certain radius of each other. These models, termed elastic network models, treat proteins like a network of alpha carbons in which each alpha carbon is connected by virtual springs to every other alpha carbon within a distance cutoff [1]. Because of their simplicity, elastic network models and other distance-cutoff models can be used to model protein flexibility in molecular dynamics simulation without requiring excessive computational power.
 
 ##### References
@@ -48,8 +48,7 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 
 ---
 
-### Calculating the Lennard-Jones Potential
-
+### Calculating the Lennard-Jones Potential from a Query Point and a PDB File
 
 #### English Card, Brought by Nathan
 
@@ -58,15 +57,14 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 - [R](https://github.com/graceliu2016/Final-Project-4.2): [Grace](https://github.com/graceliu2016)
 
 
-### Sub-Project 3: calculate the dihedral angle based on the input of four points’ xyz coordinates in PDB format
+### Calculating Dihedral Angles
 
-#### Python Card, Brought by Peter
-See repository at https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git
+- Documentation: [Grace](https://github.com/graceliu2016)
+- [Python](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git): [Peter](https://github.com/peter-mm-williams)
+- [R](https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git): [Calvin](https://github.com/calvinrhodes)
 
 #### R Card, Brought by Kevin
 
-
-#### English Card, Brought by Gawain
 
 ##### Protein Backbone Dihedral Angles
 The phi and psi protein backbone dihedral angles define the two degrees of freedom of the backbone and sterically determine much of the protein’s local folding structure. Because dihedral angles characterize the angle of rotation between two planes, they are defined by four spatial points. The phi angle measures the angle around the N-Cα bond in the consecutive sequence C’-N-Cα-C. The first C’ in this definition comes from the prior amino acid residue. The psi angle measures the angle around the Cα-C bond in the sequence N-Cα-C-N’, where the last N’ comes from the next amino acid residue. The final possible dihedral angle is omega (Cα’-C’-N-Cα), the peptide bond, which is fixed at (0, 180°) because the partial double bond character of the peptide bond does not allow rotation around the C’-N bond. 
