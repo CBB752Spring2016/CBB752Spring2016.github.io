@@ -65,9 +65,9 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 - [Python](https://github.com/wellshl/Final-Project-4.2): [Heather](https://github.com/wellshl)
 - [R](https://github.com/graceliu2016/Final-Project-4.2): [Grace](https://github.com/graceliu2016)
 
-#### [Sample Python Code](https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git)
+#### [Sample Python Code](https://github.com/wellshl/Final-Project-4.2)
 
-#### [Sample R Code](https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git)
+#### [Sample R Code](https://github.com/graceliu2016/Final-Project-4.2)
 
 ---
 
