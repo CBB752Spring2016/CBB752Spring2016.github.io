@@ -48,18 +48,14 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 
 ---
 
-### Sub-Project 2: calculate the Lennard-Jones potential based on the input of a PDB file consisting of just alpha carbons and a query point’s xyz coordinates
+### Calculating the Lennard-Jones potential using a query point and a PDB input file
 
-#### Python Card, Brought by Heather
-
-
-
-#### R Card, Brought by Gawain
-Placeholder repository at: https://github.com/graceliu2016/Final-Project-4.2
 
 #### English Card, Brought by Nathan
 
-
+- Documentation: [Nathan](https://github.com/NathanNN)
+- [Python](https://github.com/wellshl/Final-Project-4.2): [Heather](https://github.com/wellshl)
+- [R](https://github.com/graceliu2016/Final-Project-4.2): [Grace](https://github.com/graceliu2016)
 
 
 ### Sub-Project 3: calculate the dihedral angle based on the input of four points’ xyz coordinates in PDB format
