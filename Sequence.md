@@ -100,6 +100,7 @@ Our tool answers the question “is a k-mer sequence being overrepresented in a 
 Reference:
 
 [1] Pevzner, P. et al., 2001. An Eulerian path approach to DNA fragment assembly. Proc Natl Acad Sci U S A. 98(17): 9748-9753. 
+
 [2] Chikhi, R. and Medvedev, P., 2014. Informed and automated k-mer size selection for genome assembly. Bioinformatics. 30(1):31-37.
 
 [3] Zerbino, D. and Birney, E., 2008. Velvet: algorithms for de novo short read assembly using de Brujin graphs. Genome Research. 18(5):821-829.
