@@ -48,7 +48,7 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 
 ---
 
-### Calculating the Lennard-Jones potential using a query point and a PDB input file
+### Calculating the Lennard-Jones potential
 
 
 #### English Card, Brought by Nathan
