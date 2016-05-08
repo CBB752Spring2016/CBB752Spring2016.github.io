@@ -51,8 +51,6 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 
 [1] Yang, L-W. & Chng, C-P. Coarse-Grained Models Reveal Functional Dynamics - I. Elastic Network Models – Theories, Comparisons and Perspectives. Bioinform Biol Insights, 2, 25-45 (2008). 
 
-> Good. I would mostly work on formatting a little more.
-
 ---
 
 ### Calculating the Lennard-Jones Potential from a Query Point and a PDB File
