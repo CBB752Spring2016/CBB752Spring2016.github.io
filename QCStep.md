@@ -17,12 +17,73 @@ weight: 1
 
 ## Quality Statistics
 
+#### English Card, Brought by Aparna
+
+##### Background
+
+###### Phred quality scores
+
+DNA sequencing offers incredibly information-rich output. In addition to the reads, another crucial piece of information is the quality of the reads. Given the massive size of next-gen sequencing data, it is necessary for users to be able to receive quality scores in a format that permits rapid, automated discrimination between high and low quality reads.
+Phred quality scores were developed to address this issue. First described in a 1998 paper, they were originally designed for ABI sequencers and have gone through multiple incarnations as sequencing technology has advanced.[1] Initially, Phred scores were calculated for Sanger sequencing data by comparing “ideal peaks” (predicted with Fourier methods) to the actual peaks in the chromatogram, generated from fluorescence analysis of a gel with the ddNTP-extended fragments. From this comparison, error probabilities (P) are calculated based on the spacing, resolution, and relative sizes of called and uncalled peaks. Lower P values indicate higher quality reads.
+The actual Phred quality score (Q) is calculated for each base as Q = -10log(P). By this equation, if a base has Q = 20, then its P = 10e-2, so there’s a 1% chance the base is an error, or 99% probability that the base is correct. (This is a typical 1% significance threshold that we will revisit as an upper bound for low quality reads.) Higher quality reads have lower P values that translate to higher Q values.
+With the advent of next-gen sequencing, the method of calculating Phred scores has not changed significantly. Rather than using peak comparison with chromatograms, instead quality score tables are generated based on parameters measured from a dataset with known accuracy. P values are still measured based on the difference between the theoretical and experimental values, and Q values are calculated using the same logarithmic relationship.
+Studies have shown that Phred scores are a reliable measure of base accuracy, even when there is variable quality between bases within the same read, and they often predict an error rate higher than the actual rate.[2]
+
+###### FASTQ files
+
+FASTQ is a file format that provides detailed read quality information.[3] It was designed to be compatible with Phred scores, which can each be stored base-by-base as single characters in a FASTQ file. The ASCII character (A) for a given Phred score (Q) is A = Q + 33. Thus, a sequence of bases can be represented as a string of ASCII characters. Most sequencing platforms are compatible with this type of quality scoring, with the exception of Solexa, which uses a modified logarithmic relationship between Q and P. However, Solexa quality scores are ultimately indistinguishable from Phred quality scores.[3]
+FASTQ files are structured with four lines for each read. Each line contains a specific type of information.
+1. Title line: @Title and description (description is optional)
+2. Sequence line: sequence of bases in read
+3. Repeated title line (optional): +Title and description
+4. Quality line: ASCII character string representing quality of each base
+The title lines begin with @ (if the first title line) or + (for all following title lines) in order to identify them. With the information encoded in FASTQ format, the user is able to differentiate between high and low quality sequences, and the structured format allows this to be done in an automated fashion.
+
+###### FastQC
+
+FastQC is one of a multitude of softwares that are designed to parse FASTQ files for their quality scores and return relevant statistics and charts.[4] FastQC takes a variety of common file formats as input, including FASTQ, SAM, and BAM. The program is composed of a series of modules, each of which carries out a different quality control measurement. Since FASTQ is available as either an interactive or non-interactive (higher throughput) version, the output statistics and charts for each module are either presented in an interactive browser or in a static HTML file.
+There are 12 analysis modules included in FastQC: Basic Statistics, Per Base Sequence Quality, Per Sequence Quality Scores, Per Base Sequence Content, Per Sequence GC Content, Per Base N Content, Sequence Length Distribution, Duplicate Sequences, Overrepresented Sequences, Adapter Content, Kmer Content, and Per Tile Sequence Quality. Each module has quality thresholds for which the program issues a warning or a failure. Based on which modules are low quality, you can infer what issues may have occurred in your library preparation or sequencing method. For example, high adapter content may indicate that adapters must be trimmed more stringently. Lower quality scores for specific tiles is a sign of a bubble or obstruction in part of the flowcell, while low overall quality results from an overloaded flowcell.
+
+##### Our Software
+
+We have designed quality control software that performs a limited but effective series of quality control tests in order to offer feedback on the reliability of sequencing data and point the user toward potential sources of bias. There are Python and R versions of the program, which both analyze sequencing data in FASTQ format.
+
+###### Input
+
+The program takes in a FASTQ file as its input. This file contains sequence reads and their corresponding Phred quality scores (represented as ASCII character strings). The input file is parsed in four-line blocks, and the last line of each block is interpreted as the quality score line. All the quality score lines are stored in an array where each row represents a read, and the number of columns equals the length of the longest read. This array is then used as the basis for calculating further quality control statistics.
+
+###### Modules
+
+We designed the program to carry out a subset of the quality control measurements used in FastQC. Specifically, our program’s modules are:
+
+1.) Sequence Length Distribution:
+As the program processes the FASTQ entry for each read, it also calculates the read length. These values are then expressed as a histogram. Different patterns of read lengths are expected for different forms of sequencing technology, so this graph should be interpreted with some nuance. For Illumina sequencing, for example, reads should all be of equal length. If the distribution or magnitudes of sequence lengths stray from the expectation, this could indicate a problem with the sequencing or base calling processes.
+
+2.) Per Base Sequence Quality: 
+The program calculates statistics to describe the distribution of Phred quality scores at each position in the read. Mean-based and median-based metrics are both used to better describe both the center and spread of the scores. For each read position, there is one boxplot centered at the mean with the box extending one standard deviation in either direction, and there is another boxplot centered at the median with the box extending from the 25th to 75th percentiles. It is expected that quality scores will decrease toward the end of the read, as the risk of base mismatch increases, but this graph allows the user to determine when this decline begins and how quickly it occurs. Based on the thresholds established in FastQC, the user should be wary if a position’s 25th percentile has a quality score below 10 or if its median is less than 25. The user should consider the data to be low quality if any position’s 25th percentile has a quality score below 5 or if its median is less than 20.[4]
+
+3.) Per Sequence Mean Quality Distribution
+This final module calculates the distribution of mean Phred quality scores for reads (average of Phred scores for all bases in read). The program generates a histogram of mean scores. Higher scores are preferred, and FastQC considers a most frequent score of less than 27 (0.2% error rate) to be a threshold for caution and less than 20 (1% error rate) as a threshold for rejection.[4] If there is a second cluster of mean Phred scores with high frequencies, this may indicate that these reads were somehow sequenced differently (with higher or lower quality, depending on their relative Phred scores in comparison to the modal Phred score.)
+
+Our program also informally provides some of the information from the Basic Statistics module: specifically, filename and number of sequences. These were two important pieces of information that were worth including even if they weren’t part of a formal module. Some of the other information from the Basic Statistics module (the items related to sequence length) can be determined from our Sequence Length Distribution module.
+These modules were chosen from the 12 offered by FastQC because these three provide the most basic measures of quality that are relevant to all datasets. Specifically, these metrics are informative even if the data is high-quality. Many of the modules in FastQC have specific quality thresholds, and if the module’s score dips below that value, the user is informed that their reads are lacking in quality in at least one way. However, if the reads are good, these metrics are not particularly helpful because they can offer no other information to guide future analyses.
+The three statistics that we selected are able to discern between high and low quality reads, as detailed above in the description of each of their functions. FastQC defines thresholds for each of them. However, they can still be valuable tools even if there are no significant biases in the data. Even if the sequence length distribution for reads follows the expected trend (e.g., all the same length, following a normal distribution, etc.), it is useful to know what length the reads actually are, or what their median is. Per base sequence quality provides crucial information about the spread of quality scores and allows users to visualize how quality scores drop off toward the ends of reads. And per sequence mean quality distribution may reveal a cluster of reads with low quality scores that merit further inspection.
+
+###### Output
+
+The program provides a primary output in the form of a text file containing the input filename and the number of reads it contains. Then, it contains the filename for each module’s output graph. Each module produces one graph, saved as an image file — a histogram for modules 1 and 3, and a boxplot graph for module 2. These graphs visually present important quality control statistics. If the graphs show that the data is high quality, then the information in the graphs can just be used to inform future analyses of the sequencing data by understanding minor biases and notable trends. If the graphs reveal significant loss of quality due to biases in the sequencing method or human error, further analysis is required to pinpoint the source of the error. The other FastQC modules may come in handy for this task, as they are each more closely linked to one particular error-prone aspect of the sequencing process.
+
 #### Python Card, Brought by Peter
 See project repository: https://github.com/peter-mm-williams/CBB752_Final_Project_1.2
 
 #### [R Card](https://github.com/dspak/CBB752_Final_Project_1.2), Brought by Dan
 
-#### English Card, Brought by Aparna
+#### References
+
+1. Ewing, B., Hillier, L., Wendl, M.C., & Green, P. Base-Calling of Automated Sequencer Traces Using Phred. Genome Res 8(3), 175-94 (1998).
+2. Richterich, P. Estimation of Errors in “Raw” DNA Sequences: A Validation Study. Genome Res 8(3), 251-259 (1998).
+3. Cock, P.J.A., Fields, C.J., Goto, N., Heuer, M.L., & Rice, P.M. The Sanger FASTQ file format for sequences with quality scores, and the Solexa/Illumina FASTQ variants. Nucleic Acids Res 38(6), 1767-71 (2010).
+4. Andrews, S. FastQC. Babraham Bioinformatics, (2016). http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
 ---
 
