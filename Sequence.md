@@ -71,12 +71,9 @@ The analysis of genome wide transcription information derived from microarray an
 
 Where XD is the average of the differences(4). SD is the standard deviation(4). uo is the mean difference between paired samples under the null hypothesis(4). And N is the number of samples(4). 
 
-# Multiple Permutations
+# Multiple Permutations and GCT file format
 
 Our permutation test then allows us to make no assumption of distribution values while preserving gene to gene correlations(2).The high number of comparisons done simultaneously increases the chance of detecting false positives(2). Therefore, we used the Benjamini-Hochberg method to account for multiple comparisons and adjust the false discover rate (FDR) accordingly(3). 
-
-GCT file format
-
 GCT files are tab delimited datasets of gene expression(5). The rows correspond to the set of probes used in the experiment(5). The first Column identifies the names of all the probes used(5). The second column corresponds to a description of the row(5). The third column and each column following correspond to a separate sample(5). 
 
 References:
