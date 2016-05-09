@@ -121,6 +121,7 @@ References:
 3) Brandes, U. (2001). A faster algorithm for betweenness centrality*. The Journal of Mathematical Sociology, 25(2), 163–177. http://doi.org/10.1080/0022250X.2001.9990249
 
 4) Google Code Archive. Psimi – PsimiTabFormat.wiki. https://code.google.com/archive/p/psimi/wikis/PsimiTabFormat.wiki
+
 ---
 
 ### Sub-Project 3: calculate enrichment level of gene expression data given pre-defined gene sets
