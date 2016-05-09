@@ -14,9 +14,6 @@ weight: 4
 
 ### Calculating Distance Between Alpha Carbons in a PDB File
 
-> You should assign a proper title
-> Please carefully read through and follow the formatting guideline found in [Project 1.2](http://cbb752spring2016.github.io/QCStep)
-
 - Documentation: [Grace](https://github.com/graceliu2016)
 - [Python](https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git): [Peter](https://github.com/peter-mm-williams)
 - [R](https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git): [Calvin](https://github.com/calvinrhodes)
@@ -142,5 +139,5 @@ In vector notation, because the arccosine and arccsine functions are limited in 
 
 #### References
 
-[1] Zhou, AQ, O'Hern, CS, Regan, L (2011). Revisiting the Ramachandran plot from a new angle. Protein Sci., 20, 7:1166-71
+[1] Zhou, AQ, O'Hern, CS, Regan, L (2011). Revisiting the Ramachandran plot from a new angle. Protein Sci., 20, 7:1166-71  
 [2] Zhou, AQ, O'Hern CS, and Regan, L (2014). Predicting the side-chain dihedral angle distributions of non-polar, aromatic, and polar amino acids using hard-sphere models. Proteins: Structure, Function, and Bioinformatics, 82, 2574.
