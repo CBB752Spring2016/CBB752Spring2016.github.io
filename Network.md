@@ -96,7 +96,7 @@ Figure 1: Visualization of co-expression network. Cytoscape was run on output fi
 
 #### English Card, Brought by Edmond Dantes
 
-# Netwrork Centrality
+# Network Centrality
 
 The analysis of the dynamic nature of gene networks holds remarkable potential in uncovering previously unknown biological phenomena. Protein to protein interactions or (PPIs) are of particular interest in the study of gene expression and proteomics (2).  PPIs are crucial to both the functional and structural roles of all biological processes (2). One can think of a PPI network as a collection of nodes interconnected by edges in various fashions (2). In PPIs, nodes represent proteins while edges represent the interaction between two connected proteins (2). Three steps are generally involved in the building of a PPI network, including: identification of genes of interest, using the input to search for interaction data on a PPI database, and the actual network analysis (2). A topological analysis of the resulting network can then help identify nodes that act as hubs and may be developed into biomarkers or therapeutic targets (2). Subsequently, one can break down the network into smaller units(modules) in order to identify areas with more activity (2).  Information derived from PPIs allows for the calculation of both degree centrality and betweenness centrality of co-expressed gene networks (2).   
 
@@ -114,7 +114,7 @@ CB is the general formula to determine betweenness centrality for a particular v
 
 The MITAB 2.5 format describes binary PPI data where each row corresponds to a pair of interactors (4). The columns are separated by tabulations (4). Unique identifiers for interactors A and B are represented in columns 1 and 2 (4). Alternative identifiers for protein A and B can be found in columns 3 and 4 (4). And aliases for interactors A and B can be found in columns 5 and 6 (4). The seventh column corresponds to the interaction detection method (4).  The eighth and ninth columns correspond to the first author and the identifier for the publication (4). The tenth and eleventh columns correspond to the NCBI taxonomy identifiers for interactors A and B (4). Column twelve corresponds to the interaction type (4). Column thirteen corresponds to the databases used as sources (4). Finally, columns fourteen and fifteen correspond to the interaction identifier and the confidence score (4). 
 
-# R and Python cards for dentrality calculations from a MITAB 2.5 file
+# R and Python Cards for Centrality Calculations from a MITAB 2.5 File
 
 #### [Python Card](https://github.com/EdKong/CBB752_3.2_centrality), Brought by ELK
 
