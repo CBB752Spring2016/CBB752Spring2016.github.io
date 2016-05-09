@@ -94,13 +94,13 @@ Figure 1: Visualization of co-expression network. Cytoscape was run on output fi
 
 # Calculating Centrality for Proteins from MITAB2.5 PPI Files
 
-#### [Python Card](https://github.com/EdKong/CBB752_3.2_centrality), Brought by ELK
-
-#### [R Card](https://github.com/jqz752/cbb752_3.2_R), Brought by Julian
-
 #### English Card, Brought by Edmond Dantes
 
+# Netwrork Centrality
+
 The analysis of the dynamic nature of gene networks holds remarkable potential in uncovering previously unknown biological phenomena. Protein to protein interactions or (PPIs) are of particular interest in the study of gene expression and proteomics (2).  PPIs are crucial to both the functional and structural roles of all biological processes (2). One can think of a PPI network as a collection of nodes interconnected by edges in various fashions (2). In PPIs, nodes represent proteins while edges represent the interaction between two connected proteins (2). Three steps are generally involved in the building of a PPI network, including: identification of genes of interest, using the input to search for interaction data on a PPI database, and the actual network analysis (2). A topological analysis of the resulting network can then help identify nodes that act as hubs and may be developed into biomarkers or therapeutic targets (2). Subsequently, one can break down the network into smaller units(modules) in order to identify areas with more activity (2).  Information derived from PPIs allows for the calculation of both degree centrality and betweenness centrality of co-expressed gene networks (2).   
+
+# Degree and Betweenness Centrality
 
 Degree centrality as well as betweenness centrality are core definitions of a network’s topology. Defining the centrality of a node/s allows one to identify the most highly connected nodes in a network (1). One can then infer the relative importance of a node based on how many nodes it is connected to (1). Nodes with a high degree of centrality will disproportionally affect the functioning of a network if they are altered which may lead to disease (1). In order to calculate degree centrality we divided the degree of a vertex by (n-1). Here the degree of a vertex referred to the number of edges connected to a vertex and n to the total number of vertices. 
 
@@ -110,9 +110,17 @@ Betweenness centrality allows one to evaluate how many pairs of nodes would have
  
 CB is the general formula to determine betweenness centrality for a particular vertex or ν (3). Where σst(ν) represents the number of shortest paths connecting s and t passing through ν (1). While σst represents the total number of shortest paths (1). 
 
+# MITAB 2.5 File Format
+
 The MITAB 2.5 format describes binary PPI data where each row corresponds to a pair of interactors (4). The columns are separated by tabulations (4). Unique identifiers for interactors A and B are represented in columns 1 and 2 (4). Alternative identifiers for protein A and B can be found in columns 3 and 4 (4). And aliases for interactors A and B can be found in columns 5 and 6 (4). The seventh column corresponds to the interaction detection method (4).  The eighth and ninth columns correspond to the first author and the identifier for the publication (4). The tenth and eleventh columns correspond to the NCBI taxonomy identifiers for interactors A and B (4). Column twelve corresponds to the interaction type (4). Column thirteen corresponds to the databases used as sources (4). Finally, columns fourteen and fifteen correspond to the interaction identifier and the confidence score (4). 
 
-References:
+# R and Python cards for dentrality calculations from a MITAB 2.5 file
+
+#### [Python Card](https://github.com/EdKong/CBB752_3.2_centrality), Brought by ELK
+
+#### [R Card](https://github.com/jqz752/cbb752_3.2_R), Brought by Julian
+
+#References:
 
 1) Mascolo, C. (2015). University of Cambridge: Computer Laboratory. Social and Technological Network Analysis. Lecture 3: Centrality Measures. https://www.cl.cam.ac.uk/teaching/1415/L109/l109-lecture3.pdf
 
