@@ -63,6 +63,8 @@ Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 
 # Calculating differential gene expression from CGT files 
 
+## English Card, Brought by Edmond Dantes
+
 # Why calculate differential gene expression?
 
 The analysis of genome wide transcription information derived from microarray and RNA-seq experiments holds tremendous promise(4). The main purpose of these analyses is to try to identify differences in the expression of genes across samples differing by phenotype or treatment(1). The first step in analyzing the differential expression of genes is to identify the specific genes which allow one to distinguish between classes of samples(2). We then perform a pairwise t-test across classes to calculate the differential expression profiles as well as a p-value to assess significance(2). 
@@ -91,14 +93,17 @@ GCT files are tab delimited datasets of gene expression(5). The rows correspond 
 5) Reich M, Liefeld T, Gould J, Lerner J, Tamayo P, Mesirov JP (2006) GenePattern 
 	2.0. http://www.broadinstitute.org/cancer/software/genepattern/file-	formats-guide#GCT
 
+# Pyhton and R Cards to calculate differentially expressed genes from a GCT file
 
 ## Python Card, Brought by Heather
 
 
-## R Card, Brought by Calvin
+## R Card, Brought by Calvin: https://github.com/calvinrhodes/mbb752_2.5_R
 
 
-## English Card, Brought by Edmond Dantes
+
+
+
 
 
 
