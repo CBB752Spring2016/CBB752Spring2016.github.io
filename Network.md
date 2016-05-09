@@ -10,14 +10,6 @@ weight: 3
 
 > Please carefully read through and follow the formatting guideline found in [Project 1.2](http://cbb752spring2016.github.io/QCStep)
 
-#### [Python Card](https://github.com/EdKong/CBB752_Final_Project_3.1), Brought by ELK
-
-> This is mostly a comment about formatting. I saw usage note within the code. It is preferred to put readme.md at your repository and put a short description about the program, on how to run, what parameters to take, sample input and output. In this way, you can put a link to git repo instead. Otherwise, great work.
-
-#### [R Card](https://github.com/dspak/CBB752_Final_Project_3.1), Brought by Dan
-
-> This is mostly a comment about formatting. I saw usage note within the code. It is preferred to put readme.md at your repository and put a short description about the program, on how to run, what parameters to take, sample input and output. In this way, you can put a link to git repo instead. Otherwise, great work.
-
 #### English Card, Brought by Aparna
 
 ##### Background
@@ -69,6 +61,14 @@ Even when the unweighted WGCNA method is used, there are some differences in the
 Another difference is the scope of the two softwares. As a package, WGCNA is able to carry out a wider range of functions, many of which help visualize the network, identify clusters, analyze connections, and draw biological conclusions. Even though our software does not have this expanded functionality, it has been designed to be modular (accepting widely-used GCT files and producing output files that are easily used by other softwares), so it is likely that ancillary functions could be developed to form more thorough gene co-expression analysis pipelines.
 
 > Very good background and comparison with exisitng software package! Good use of references as well. I would just work more on overall formatting of the project.
+
+#### [Python Card](https://github.com/EdKong/CBB752_Final_Project_3.1), Brought by ELK
+
+> This is mostly a comment about formatting. I saw usage note within the code. It is preferred to put readme.md at your repository and put a short description about the program, on how to run, what parameters to take, sample input and output. In this way, you can put a link to git repo instead. Otherwise, great work.
+
+#### [R Card](https://github.com/dspak/CBB752_Final_Project_3.1), Brought by Dan
+
+> This is mostly a comment about formatting. I saw usage note within the code. It is preferred to put readme.md at your repository and put a short description about the program, on how to run, what parameters to take, sample input and output. In this way, you can put a link to git repo instead. Otherwise, great work.
 
 ~~##### References~~
 
