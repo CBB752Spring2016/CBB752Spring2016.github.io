@@ -205,8 +205,7 @@ Additionally, identifiers need to be the same across all three files. This may r
 Since Subramanian et al.’s method requires an ordered list, the first step is to sort the list of genes identified in the expression data. The genes are sorted based on the p-values resulting from a t-test. We identify the genes at the intersection of this ordered list and the inputted list of gene set elements. P-values are weighted so that they are relative to the sum of all p-values.
 Then, the program walks through the ordered list to build the cumulative ES. For every gene marked as being in the gene set, the weighted p-value is added to a running-sum and stored as the current value of Phit. For every gene not in the gene set, a “miss” value is added to a separate running sum, which is stored as Pmiss. The miss value is calculated as the reciprocal of the difference in the sizes of the ordered list and the gene set, multiplied by the number of genes that have been encountered in the ordered list so far that were not in the gene set. The formal definitions of Phit and Pmiss from Subramanian et al. are included below:
 
-![alt text](https://upload.wikimedia.org/math/4/c/c/4cc6eaa2dce9d504feeed5bd88b96d73.png "Betweenness centrality")
-![alt text] (http://i.imgur.com/aqYa4SV.png "Algorithm")
+![alt text](http://i.imgur.com/aqYa4SV.png "Algorithm")
 
 where S is a gene set, i is the index in the ordered list, |rj|p is a weighted p-value (p is an arbitrary exponent selected to scale this value), NR is the sum of the weighted p-values for all genes in S, and NH is the number of genes in S.
 After the program has iterated through the entire ordered list, it conducts a pairwise comparison of the Phit and Pmiss values at each index to determine the maximum absolute difference between the two values. This difference is returned as the enrichment score.
