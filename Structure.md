@@ -19,10 +19,6 @@ weight: 4
 - [R](https://github.com/calvinrhodes/mbb752_4.1_R): [Calvin](https://github.com/calvinrhodes)
 
 
-> Good use of example, instructions on input parameters. I would make a minor edit on formatting. Give a project unified name and use it in your readme section.
-
-> Good use of example, instructions on input parameters. Ideally, it would be preferred to have a seperate repository for R (for cleaner look), but this is minor and debatable. I would also work on formatting of readme a little more.
-
 #### Acquisition of the spatial data in PDB files
 
 In proteins, structure and function are tightly linked, such that biochemical understanding of the protein is often contingent on understanding the relationship between atoms in space. The spatial and atomic information stored in a PDB file is derived from crystallization and diffraction of the purified protein, followed by phase reconstruction and model refinement. Although there are other methods for obtaining spatial information about proteins, including NMR, SAXS and, more recently, electron cryo-microscopy, protein crystal diffraction remains the gold standard for atomic resolution of structure. Thus, the majority of PDB files deposited in various databases were obtained by this method. These databases include RCSB [1], the central wwPDB archive [2], and national PDB archives (PDBe and PDBj) [3,4], which allow users to search for and visualize structures.
