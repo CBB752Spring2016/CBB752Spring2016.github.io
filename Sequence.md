@@ -99,12 +99,12 @@ GCT files are tab delimited datasets of gene expression(5). The rows correspond 
 
 # Pyhton and R Cards to calculate differentially expressed genes from a GCT file
 
-## Python Card, Brought by Heather
+## [Python](https://github.com/wellshl/mbb752_2.5_R): [Heather] (https://github.com/wellshl)
 
 
-## R Card, Brought by Calvin: 
+## [R](https://github.com/calvinrhodes/mbb752_2.5_R): [Calvin] (https://github.com/calvinrhodes) 
 
-https://github.com/calvinrhodes/mbb752_2.5_R
+
 
 
 
