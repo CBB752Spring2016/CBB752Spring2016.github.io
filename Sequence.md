@@ -67,7 +67,7 @@ Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 
 # Calculating differential gene expression from GCT files 
 
-## English Card, Brought by Edmond Dantes
+### English Card, Brought by Edmond Dantes
 
 ## Why calculate differential gene expression?
 
@@ -83,8 +83,8 @@ Our permutation test then allows us to make no assumption of distribution values
 GCT files are tab delimited datasets of gene expression(5). The rows correspond to the set of probes used in the experiment(5). The first Column identifies the names of all the probes used(5). The second column corresponds to a description of the row(5). The third column and each column following correspond to a separate sample(5). 
 
 ## Sample Code  
-[Python](https://github.com/wellshl/mbb752_2.5_R): [Heather](https://github.com/wellshl)  
-[R](https://github.com/calvinrhodes/mbb752_2.5_R): [Calvin](https://github.com/calvinrhodes) 
+### [Python](https://github.com/wellshl/mbb752_2.5_R): [Heather](https://github.com/wellshl)  
+### [R](https://github.com/calvinrhodes/mbb752_2.5_R): [Calvin](https://github.com/calvinrhodes) 
 
 ## References:
 
