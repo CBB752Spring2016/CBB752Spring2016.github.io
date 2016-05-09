@@ -76,7 +76,8 @@ Where XD is the average of the differences(4). SD is the standard deviation(4). 
 Our permutation test then allows us to make no assumption of distribution values while preserving gene to gene correlations(2).The high number of comparisons done simultaneously increases the chance of detecting false positives(2). Therefore, we used the Benjamini-Hochberg method to account for multiple comparisons and adjust the false discover rate (FDR) accordingly(3). 
 GCT files are tab delimited datasets of gene expression(5). The rows correspond to the set of probes used in the experiment(5). The first Column identifies the names of all the probes used(5). The second column corresponds to a description of the row(5). The third column and each column following correspond to a separate sample(5). 
 
-References:
+
+# References:
 
 1) Kuehn, H., Liberzon, A., Reich, M., & Mesirov, J. P. (2008). Using genepattern for gene expression analysis. Current Protocols in Bioinformatics. http://doi.org/10.1002/0471250953.bi0712s22
 
