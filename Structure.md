@@ -85,18 +85,17 @@ Program database (PDB) file format is used in biology to organize protein struct
 Our tool will calculate the Lennard-Jones potential by taking in a PDB file as input, where the coordinates x, y, and z of the atoms in the protein structure will be parsed into the tool in units of Angstroms. The default values for epsilon ε will be 1 kcal/mol, and the sigma σ will be 5 Angstroms. These values are chosen from Veitshans, et al. 1997 [3]. The tool extracts all the alpha carbons from the protein structure and categorize them into group of hydrophilic (ie: Arginine), hydrophobic (ie: Alanine), and neutral (ie: Glycine) proteins in accordance with the BLN model. This distinction is important as these three groups of residues have different interaction potentials. The distance from the query point to the alpha carbon will be calculated, then the Lennard-Jones potential can be calculated for all amino acid residues and summed up with respect to the query point.     
 
 
-Reference:
+#### [Sample Python Code](https://github.com/wellshl/Final-Project-4.2)
+
+#### [Sample R Code](https://github.com/graceliu2016/Final-Project-4.2)
+
+#### References:
 
 [1] Lennard-Jones, J. 1924. On the Determination of Molecular Fields. Proc. R. Soc. Lond. A. 106 (738): 463–477.
 
 [2] Zeng, X. and Oxtoby, D. 1990. Gas-liquid nucleation in Lennard-Jones fluids. The Journal of Chemical Physics 94(6):4472-4478.
 
 [3] Veitshans, T. et al., 1997. Protein folding kinetics: timescales, pathways and energy landscapes in terms of sequence-dependent properties. Fold Des. 2(1):1-22.
-
-
-#### [Sample Python Code](https://github.com/wellshl/Final-Project-4.2)
-
-#### [Sample R Code](https://github.com/graceliu2016/Final-Project-4.2)
 
 ---
 
