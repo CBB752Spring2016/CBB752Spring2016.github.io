@@ -86,7 +86,7 @@ Another difference is the scope of the two softwares. As a package, WGCNA is abl
 
 Figure 1: Visualization of co-expression network. Cytoscape was run on output file (output_coexpression.csv) yielded by running pre-processed input file (all_aml_train.preprocessed.gct) through Python version of software.
 
-![Figure 1](https://github.com/CBB752Spring2016/CBB752Spring2016.github.io/blob/master/assets/images/output_coexpressed.jpeg "Figure 1")
+![Figure 1](https://github.com/CBB752Spring2016/CBB752Spring2016.github.io/blob/master/assets/images/output_coexpressed.png "Figure 1")
 
 > figure is not showing from [final project website](http://cbb752spring2016.github.io/Network) can you check?
 
