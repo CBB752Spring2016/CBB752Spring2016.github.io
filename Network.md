@@ -222,3 +222,10 @@ Our software offers a condensed version of the GSEA method and provides the enri
 #### Python Card, Brought by Kevin. Code found [here](https://github.com/kevkid/cbb752_3.3_py).
 
 #### R Card, Brought by Calvin
+
+#### References
+
+1. Nam, D. & Kim, S. Gene-set approach for expression pattern analysis. Brief Bioinform 9(3), 189-97 (2008).
+2. Subramanian, A., Tamayo, P., Mootha, V.K., Mukherjee, S., Ebert, B.L, Cillette, M.A., Paulovich, A., Pomeroy, S.L., Golub, T.R, Lander, E.S., & Mesirov, J.P. Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles. Proc Nat Acad Sci 102(43), 15545-50 (2005).
+3. Maciejewski, H. Gene set analysis methods: statistical models and methodological differences. Brief Bioinform 15(4), 504-18 (2013).
+4. Kuehn, H., Liberzon, A., Reich, M. & Mesirov, J.P. Using GenePattern for Gene Expression Analysis. Current Protocols in Bioinformatics 22, 7.12.1–7.12.39 (2008)
