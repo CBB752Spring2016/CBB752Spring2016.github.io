@@ -39,7 +39,7 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 
 #### [Sample Python Code](https://github.com/peter-mm-williams/Python_Distance_Calculation.git)
 
-#### [Sample R Code](https://github.com/peter-mm-williams/R_Distance_Calculation.git)
+#### [Sample R Code](https://github.com/calvinrhodes/mbb752_4.1_R)
 
 #### References
 
