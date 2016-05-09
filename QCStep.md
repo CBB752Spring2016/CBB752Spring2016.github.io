@@ -72,7 +72,7 @@ This tool will be a quick asset in organizing biological data for further assemb
 
 > Maybe a survey of existing tools and existing methods for removing low quality reads is missing.
 
-#### [Sample Python Code](https://github.com/dspak/CBB752_Final_Project_1.3.git)
+#### [Sample Python Code](https://github.com/wellshl/CBB752_Final_Project_1.3)
 
 > I see that both R and Pyhton code are in the same repository. It would be preferred to have a seperate repository for Python and R.
 > Please work on formatting of readme a little more. Also, it would be nice to have a sample output of Python code for example shown.
