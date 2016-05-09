@@ -125,7 +125,7 @@ References:
 
 ### Sub-Project 3: calculate enrichment level of gene expression data given pre-defined gene sets
 
-#### Python Card, Brought by Kevin
+#### Python Card, Brought by Kevin. Code found [here](https://github.com/kevkid/cbb752_3.3_py).
 
 #### R Card, Brought by Calvin
 
