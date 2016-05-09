@@ -134,8 +134,91 @@ The MITAB 2.5 format describes binary PPI data where each row corresponds to a p
 
 ### Sub-Project 3: calculate enrichment level of gene expression data given pre-defined gene sets
 
+#### English Card, Brought by Aparna
+
+##### Background
+
+###### Gene sets
+
+While many traditional methods have been developed for bioinformaticians to quantify the enrichment of a gene, recent studies have been moving away from this single gene approach and toward gene set analysis. 
+In conventional single-gene approaches — or individual gene analysis (IGA) — the differential expression of certain genes is measured between two phenotypes. A threshold is used to determine which genes have significant enrichment, and then, these genes are compared against ontologies and pathways to determine their functions. However, this method is flawed because it relies on an arbitrary threshold and often misses somewhat significant enrichment across multiple related genes in favor of significant enrichment in one gene.[1] There also might not be any biological theme to support a more meaningful analysis.[2]
+Gene sets are groups of related genes identified based on prior biological knowledge of pathways and ontologies.[1] A gene set may include all the genes in a pathway, or all the genes on a chromosome. This offers a richer picture of enrichment and differential expression, because even if there isn’t one very significantly enriched gene, there may be less significant enrichment across a gene set.[3] 
+
+##### Gene set enrichment analysis
+
+One method in particular has been developed for identifying differential expression of gene sets. Gene set enrichment analysis (GSEA) involves determining whether the differential expression of elements of a gene set is random or enriched in a specific way.[2] There are many ways to implement GSEA, but we will focus on Subramanian et al.’s procedure. The genes in the samples are ordered in a list based on their degree of differential expression (positively enriched genes at the top, negatively enriched genes at the bottom), and then we analyze the distribution of elements of the gene set throughout this list. The degree of overrepresentation is quantified by an enrichment score (ES), which is then tested for statistical significance. We also identify a subset of the gene set called the “leading-edge subset.” The ES is calculated by cumulatively adding and subtracting when a gene in the list is or isn’t in the gene set, respectively. The amount added or subtracted is based on how significant the differential expression is. 
+From this method, we can also construct a subset of the gene set called the “leading-edge subset.” As the ES is calculated, there will be a maximum |ES| at some point; after that point, the ES will trend more toward 0. The leading-edge subset is the genes that are encountered before this maximum |ES| is achieved, and they are the main enriched genes.
+
+##### Our Software
+
+We have used the GSEA approach to develop a program that identifies enriched genes from a gene set in gene expression data. There are Python and R versions of the program.
+
+###### Input
+
+This program requires three inputs;
+1.) GCT file with expression data: often the result of a microarray experiment, and contains the expression level of each gene in each sample.
+Ex:
+```
+#1.2																																							
+7129	38																																						
+Name	Description	ALL_19769_B-cell	ALL_23953_B-cell	ALL_28373_B-cell ...
+AFFX-BioB-5_at	AFFX-BioB-5_at (endogenous control)	-214	-135	-106 ...
+AFFX-BioB-M_at	AFFX-BioB-M_at (endogenous control)	-153	-114	-125 ...
+AFFX-BioB-3_at	AFFX-BioB-3_at (endogenous control)	-58	265	-76 ...
+AFFX-BioC-5_at	AFFX-BioC-5_at (endogenous control)	88	12	168 ...
+...
+...
+...
+```
+2.) CLS file with class label data: provides the names of the phenotypes being compared, and matches samples to their correct class.
+Ex:
+```
+38 2 1
+# ALL AML
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1
+```
+3.)	Gene set: category name followed by list of names of genes in set
+Ex:
+```
+HALLMARK_ADIPOGENESIS
+> Genes up-regulated during adipocyte differentiation (adipogenesis).
+ABCA1
+ABCB8
+ACAA2
+ACADL
+ACADM
+ACADS
+ACLY
+ACO2
+ACOX1
+ADCY6
+ADIG
+ADIPOQ
+...
+```
+
+If the expression data is not pre-processed, some pre-processing is required to ensure that only high quality expression data is used and that identifiers from the three files are compatible. Standard pre-processing via GenePattern’s PreprocessDataset module is sufficient.[4] The resulting expression data will be restricted to certain thresholds, normalized, and filtered for proper sampling and high-quality measurements.
+Additionally, identifiers need to be the same across all three files. This may require removing prefixes or suffixes added to gene names for experiment-specific purposes.
+
+###### Method
+
+Since Subramanian et al.’s method requires an ordered list, the first step is to sort the list of genes identified in the expression data. The genes are sorted based on the p-values resulting from a t-test. We identify the genes at the intersection of this ordered list and the inputted list of gene set elements. P-values are weighted so that they are relative to the sum of all p-values.
+Then, the program walks through the ordered list to build the cumulative ES. For every gene marked as being in the gene set, the weighted p-value is added to a running-sum and stored as the current value of Phit. For every gene not in the gene set, a “miss” value is added to a separate running sum, which is stored as Pmiss. The miss value is calculated as the reciprocal of the difference in the sizes of the ordered list and the gene set, multiplied by the number of genes that have been encountered in the ordered list so far that were not in the gene set. The formal definitions of Phit and Pmiss from Subramanian et al. are included below:
+
+![Algorithm]
+(http://i.imgur.com/aqYa4SV.png)
+
+where S is a gene set, i is the index in the ordered list, |rj|p is a weighted p-value (p is an arbitrary exponent selected to scale this value), NR is the sum of the weighted p-values for all genes in S, and NH is the number of genes in S.
+After the program has iterated through the entire ordered list, it conducts a pairwise comparison of the Phit and Pmiss values at each index to determine the maximum absolute difference between the two values. This difference is returned as the enrichment score.
+
+###### Output
+
+The program outputs the calculated enrichment score. This value is representative of the overall degree of enrichment of genes in this gene set, and a high enrichment score indicates that the given gene set is differentially expressed between the two phenotypes, so the biological process that unites these genes might contribute to the disease phenotype in question.
+
+###### Further steps
+
+Our software offers a condensed version of the GSEA method and provides the enrichment score, which is the minimum amount of useful information required for a user to make judgments about the enrichment of a particular gene set. However, there are still more functionalities that can be easily incorporated into this program. For example, a permutation test can be added to determine the statistical significance of the ES. Depending on the user’s needs, the ES can be modified to accommodate multiple hypotheses. We could also keep track of the leading-edge subset for further investigation in downstream analyses. These functionalities, while not in this version of the program, can easily be added in a modular fashion so that interested users can include them in their individual pipelines.
+
 #### Python Card, Brought by Kevin. Code found [here](https://github.com/kevkid/cbb752_3.3_py).
 
 #### R Card, Brought by Calvin
-
-#### English Card, Brought by Aparna
