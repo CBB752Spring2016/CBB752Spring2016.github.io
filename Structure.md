@@ -99,10 +99,10 @@ Our tool will calculate the Lennard-Jones potential by taking in a PDB file as i
 
 ---
 
-### Calculating Dihedral Angles from PDB-format Coordinates
+### Calculating Dihedral Angles from PDB file
 
 - Documentation: [Grace](https://github.com/graceliu2016)
-- [Python](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git): [Peter](https://github.com/peter-mm-williams)
+- [Python](https://github.com/peter-mm-williams/Dihedral_Angle_Calc.git): [Peter](https://github.com/peter-mm-williams)
 - [R](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git): [Kevin](https://github.com/kevkid)
 
 #### Protein Backbone Dihedral Angles
