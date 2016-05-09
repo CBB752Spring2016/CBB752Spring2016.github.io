@@ -24,7 +24,7 @@ See repository at: https://github.com/peter-mm-williams/CBB752_Final_Project_4.1
 > Good use of example, instructions on input parameters. I would make a minor edit on formatting. Give a project unified name and use it in your readme section.
 
 #### R Card, Brought by Cavin
-See repository at: https://github.com/peter-mm-williams/CBB752_Final_Project_4.1.git
+See repository at: https://github.com/calvinrhodes/mbb752_4.1_R
 
 > Good use of example, instructions on input parameters. Ideally, it would be preferred to have a seperate repository for R (for cleaner look), but this is minor and debatable. I would also work on formatting of readme a little more.
 
