@@ -69,7 +69,7 @@ Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 
 ## English Card, Brought by Edmond Dantes
 
-# Why calculate differential gene expression?
+## Why calculate differential gene expression?
 
 The analysis of genome wide transcription information derived from microarray and RNA-seq experiments holds tremendous promise(4). The main purpose of these analyses is to try to identify differences in the expression of genes across samples differing by phenotype or treatment(1). The first step in analyzing the differential expression of genes is to identify the specific genes which allow one to distinguish between classes of samples(2). We then perform a pairwise t-test across classes to calculate the differential expression profiles as well as a p-value to assess significance(2). 
 
@@ -77,13 +77,16 @@ The analysis of genome wide transcription information derived from microarray an
 
 Where XD is the average of the differences(4). SD is the standard deviation(4). uo is the mean difference between paired samples under the null hypothesis(4). And N is the number of samples(4). 
 
-# Multiple Permutations and GCT file format
+## Multiple Permutations and GCT file format
 
 Our permutation test then allows us to make no assumption of distribution values while preserving gene to gene correlations(2).The high number of comparisons done simultaneously increases the chance of detecting false positives(2). Therefore, we used the Benjamini-Hochberg method to account for multiple comparisons and adjust the false discover rate (FDR) accordingly(3). 
 GCT files are tab delimited datasets of gene expression(5). The rows correspond to the set of probes used in the experiment(5). The first Column identifies the names of all the probes used(5). The second column corresponds to a description of the row(5). The third column and each column following correspond to a separate sample(5). 
 
+## Sample Code  
+[Python](https://github.com/wellshl/mbb752_2.5_R): [Heather](https://github.com/wellshl)  
+[R](https://github.com/calvinrhodes/mbb752_2.5_R): [Calvin](https://github.com/calvinrhodes) 
 
-# References:
+## References:
 
 1) Kuehn, H., Liberzon, A., Reich, M., & Mesirov, J. P. (2008). Using genepattern for gene expression analysis. Current Protocols in Bioinformatics. http://doi.org/10.1002/0471250953.bi0712s22
 
@@ -96,21 +99,6 @@ GCT files are tab delimited datasets of gene expression(5). The rows correspond 
 
 5) Reich M, Liefeld T, Gould J, Lerner J, Tamayo P, Mesirov JP (2006) GenePattern 
 	2.0. http://www.broadinstitute.org/cancer/software/genepattern/file-	formats-guide#GCT
-
-# Pyhton and R Cards to calculate differentially expressed genes from a GCT file
-
-## [Python](https://github.com/wellshl/mbb752_2.5_R): [Heather](https://github.com/wellshl)
-
-
-## [R](https://github.com/calvinrhodes/mbb752_2.5_R): [Calvin](https://github.com/calvinrhodes) 
-
-
-
-
-
-
-
-
 
 
 # Assessing k-mer Enrichment of FASTA Sequences
