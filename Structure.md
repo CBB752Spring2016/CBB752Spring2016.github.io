@@ -132,7 +132,7 @@ In vector notation, because the arccosine and arccsine functions are limited in 
 
 ![Atan2 definition](https://upload.wikimedia.org/math/c/8/1/c81848e82ad6e45e9e14f81cb38895a2.png)
 
-#### [Sample Python Code](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git)
+#### [Sample Python Code](https://github.com/peter-mm-williams/Dihedral_Angle_Calc.git)
 
 #### [Sample R Code](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git)
 
