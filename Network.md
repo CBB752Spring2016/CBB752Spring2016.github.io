@@ -221,7 +221,7 @@ Our software offers a condensed version of the GSEA method and provides the enri
 
 #### Python Card, Brought by Kevin. Code found [here](https://github.com/kevkid/cbb752_3.3_py).
 
-#### R Card, Brought by Calvin
+#### [R Card](https://github.com/calvinrhodes/mbb752_3.3_R), Brought by [Calvin](https://github.com/calvinrhodes)
 
 #### References
 
