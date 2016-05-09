@@ -61,7 +61,38 @@ Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 
 ---
 
-# Sub-Project 2: calculate differentially expressed genes from GCT file of gene expressions
+# Calculating differential gene expression from CGT files 
+
+# Why calculate differential gene expression?
+
+The analysis of genome wide transcription information derived from microarray and RNA-seq experiments holds tremendous promise(4). The main purpose of these analyses is to try to identify differences in the expression of genes across samples differing by phenotype or treatment(1). The first step in analyzing the differential expression of genes is to identify the specific genes which allow one to distinguish between classes of samples(2). We then perform a pairwise t-test across classes to calculate the differential expression profiles as well as a p-value to assess significance(2). 
+
+ (4).
+
+Where XD is the average of the differences(4). SD is the standard deviation(4). uo is the mean difference between paired samples under the null hypothesis(4). And N is the number of samples(4). 
+
+# Multiple Permutations
+
+Our permutation test then allows us to make no assumption of distribution values while preserving gene to gene correlations(2).The high number of comparisons done simultaneously increases the chance of detecting false positives(2). Therefore, we used the Benjamini-Hochberg method to account for multiple comparisons and adjust the false discover rate (FDR) accordingly(3). 
+
+GCT file format
+
+GCT files are tab delimited datasets of gene expression(5). The rows correspond to the set of probes used in the experiment(5). The first Column identifies the names of all the probes used(5). The second column corresponds to a description of the row(5). The third column and each column following correspond to a separate sample(5). 
+
+References:
+
+1) Kuehn, H., Liberzon, A., Reich, M., & Mesirov, J. P. (2008). Using genepattern for gene expression analysis. Current Protocols in Bioinformatics. http://doi.org/10.1002/0471250953.bi0712s22
+
+2) Gould, J., Getz, G., Monti, S., Reich, M., & Mesirov, J. P. (2006). Comparative gene marker selection suite. Bioinformatics, 22(15), 1924–1925. http://doi.org/10.1093/bioinformatics/btl196
+
+3) Benjamini, Y., & Hochberg, Y. (1995). Controlling the False Discovery Rate : A Practical and Powerful Approach to Multiple Testing Author ( s ): Yoav Benjamini and Yosef Hochberg Source : Journal of the Royal Statistical Society . Series B ( Methodological ), Vol . 57 , No . 1 Published by : Journal of the Royal Statistical Society. Series B (Methodological), 57(1), 289–300.
+
+4) Reich M, Liefeld T, Gould J, Lerner J, Tamayo P, Mesirov JP (2006) GenePattern 
+	2.0.http://www.broadinstitute.org/cancer/software/genepattern/modules/	docs/ComparativeMarkerSelection/10
+
+5) Reich M, Liefeld T, Gould J, Lerner J, Tamayo P, Mesirov JP (2006) GenePattern 
+	2.0. http://www.broadinstitute.org/cancer/software/genepattern/file-	formats-guide#GCT
+
 
 ## Python Card, Brought by Heather
 
