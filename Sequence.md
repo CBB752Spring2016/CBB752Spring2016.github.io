@@ -61,7 +61,7 @@ Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 
 ---
 
-# Calculating differential gene expression from CGT files 
+# Calculating differential gene expression from GCT files 
 
 ## English Card, Brought by Edmond Dantes
 
@@ -98,7 +98,9 @@ GCT files are tab delimited datasets of gene expression(5). The rows correspond 
 ## Python Card, Brought by Heather
 
 
-## R Card, Brought by Calvin: https://github.com/calvinrhodes/mbb752_2.5_R
+## R Card, Brought by Calvin: 
+
+https://github.com/calvinrhodes/mbb752_2.5_R
 
 
 
