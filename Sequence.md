@@ -71,15 +71,11 @@ Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 
 ## Why calculate differential gene expression?
 
-The analysis of genome wide transcription information derived from microarray and RNA-seq experiments holds tremendous promise(4). The main purpose of these analyses is to try to identify differences in the expression of genes across samples differing by phenotype or treatment(1). The first step in analyzing the differential expression of genes is to identify the specific genes which allow one to distinguish between classes of samples(2). We then perform a pairwise t-test across classes to calculate the differential expression profiles as well as a p-value to assess significance(2). 
+The analysis of genome wide transcription information derived from microarray and RNA-seq experiments holds tremendous promise(4). The main purpose of these analyses is to try to identify differences in the expression of genes across samples differing by phenotype or treatment(1). The first step in analyzing the differential expression of genes is to identify the specific genes which allow one to distinguish between classes of samples(2). A permutation test can then be done to assess significance(4).
 
- (4).
+## Permutations, Multiple Comparisons, and the GCT file format
 
-Where XD is the average of the differences(4). SD is the standard deviation(4). uo is the mean difference between paired samples under the null hypothesis(4). And N is the number of samples(4). 
-
-## Multiple Permutations and GCT file format
-
-Our permutation test then allows us to make no assumption of distribution values while preserving gene to gene correlations(2).The high number of comparisons done simultaneously increases the chance of detecting false positives(2). Therefore, we used the Benjamini-Hochberg method to account for multiple comparisons and adjust the false discover rate (FDR) accordingly(3). 
+Our permutation test  allows us to make no assumption of distribution values while preserving gene to gene correlations(2). This permutation test further allowed us to calculate our p-values which then needed further adjustments(4). The number of permutations selected depends on the number of samples to be analyzed(4). One suggestion would be to use 10,000 permutations when dealing with classes that have at least 10 samples to obtain accurate p-values(4). The differences in results that will emerge from using a different number of permutations warrants careful attention to the chosen setting. The high number of comparisons done simultaneously increases the chance of detecting false positives(2). Therefore, we used the Benjamini-Hochberg method to account for multiple comparisons and adjust the false discover rate (FDR) accordingly(3). 
 GCT files are tab delimited datasets of gene expression(5). The rows correspond to the set of probes used in the experiment(5). The first Column identifies the names of all the probes used(5). The second column corresponds to a description of the row(5). The third column and each column following correspond to a separate sample(5). 
 
 ## Sample Code  
