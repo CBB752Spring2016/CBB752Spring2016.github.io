@@ -132,7 +132,7 @@ The MITAB 2.5 format describes binary PPI data where each row corresponds to a p
 
 ---
 
-### Sub-Project 3: calculate enrichment level of gene expression data given pre-defined gene sets
+### Gene Set Expression Enrichment Calculator
 
 #### English Card, Brought by Aparna
 
