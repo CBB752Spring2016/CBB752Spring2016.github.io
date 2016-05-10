@@ -33,9 +33,9 @@ Here, we generate a tool which can identify the distance between any two alpha c
 
 This output, given in angstroms, is useful in several ways. First, it provides general information about where two carbons are, relative to each other in space. More importantly, this distance can be used to determine whether certain forces and interactions between the atoms are relevant. For example, we can use the calculated distance in coarse-grained models where we only consider interactions between amino acid residues within a certain radius of each other. These models, termed elastic network models, treat proteins like a network of alpha carbons in which each alpha carbon is connected by virtual springs to every other alpha carbon within a distance cutoff [5]. Because of their simplicity, elastic network models and other distance-cutoff models can be used to model protein flexibility in molecular dynamics simulation without requiring excessive computational power.
 
-#### [Sample Python Code](https://github.com/peter-mm-williams/Python_Distance_Calculation.git)
+#### [Python Code](https://github.com/peter-mm-williams/Python_Distance_Calculation.git)
 
-#### [Sample R Code](https://github.com/calvinrhodes/mbb752_4.1_R)
+#### [R Code](https://github.com/calvinrhodes/mbb752_4.1_R)
 
 #### References
 
