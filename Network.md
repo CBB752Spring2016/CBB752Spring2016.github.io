@@ -120,7 +120,7 @@ The MITAB 2.5 format describes binary PPI data where each row corresponds to a p
 
 #### [R Card](https://github.com/jqz752/cbb752_3.2_R), Brought by Julian
 
-#References:
+# References:
 
 1) Mascolo, C. (2015). University of Cambridge: Computer Laboratory. Social and Technological Network Analysis. Lecture 3: Centrality Measures. https://www.cl.cam.ac.uk/teaching/1415/L109/l109-lecture3.pdf
 
