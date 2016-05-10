@@ -5,10 +5,6 @@ group: navigation
 weight: 2
 ---
 
-~~# Sub-Project 1: calculate FPKM from given SAM and GTF files~~
-
-> Please carefully read through and follow the formatting guideline found in [Project 1.2](http://cbb752spring2016.github.io/QCStep)
-
 # Quantifying RNA-seq Using RPKM/FPKM/TPM Based on SAM & GTF Files
 
 ## English Card, Brought by Edmond Dantes
@@ -56,12 +52,8 @@ Given a SAM file, which informs one the location in the genome to which each rea
 
 ## [R Card](https://github.com/jqz752/cbb752_2.2_R), Brought by Julian
 
-> This is mostly a comment on formatting, but very good job on detailed usage information. I would just assign this project a unified name and change the title on readme.
-
 ## Python Card, Brought by Kevin
 Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
-
-> Good job on general description about methodology, however I would put more information about usage information of your python code. Currently, its minimal and simple, but sample input and expected output format and parameter information would be useful here.
 
 ---
 
@@ -96,14 +88,13 @@ GCT files are tab delimited datasets of gene expression(5). The rows correspond 
 5) Reich M, Liefeld T, Gould J, Lerner J, Tamayo P, Mesirov JP (2006) GenePattern 
 	2.0. http://www.broadinstitute.org/cancer/software/genepattern/file-	formats-guide#GCT
 
+---
 
 # Assessing k-mer Enrichment of FASTA Sequences
 
 ## [Python Card](https://github.com/EdKong/2.6_kmer_enrichment), Brought by ELK
 
-
 ## [R Card](https://github.com/jqz752/cbb752_2.6_R), Brought by Julian
-
 
 ## English Card, Brought by Nathan
 
@@ -111,17 +102,15 @@ GCT files are tab delimited datasets of gene expression(5). The rows correspond 
 
 K-mer is a bioinformatics term which corresponds to the substring of length k in a string obtained from DNA sequencing [1]. Mathematically, the number of possible k-mers in a given string of length l is: l – k + 1. K-mer anlysis is often done along with De Brujin graphs for sequence assembly. The de Bruijn graph is composed of the nodes being (k – 1)-mers and the edges being the k-mers. Basically the graph is made and simplified such that contiguous regions of the genome are identified [2]. K-mer algorithms are designed to better resolve genomic shotgun assembly. Previous algorithms designed to organize the assembly were inadequate in solving the “repeat problems” in finding the correct path to the graph. The current k-mer algorithm is widely used as a simpler and less error-prone way for large scale genomes assembly.  
 
-
 #### How to find the k-mer size ideal for sequence assembly? 
 
 The de Brujin graph is constructed from a collection of sequencing reads without knowing the finished sequence. Pevzner et al., 2001 [1] was able to correct the errors in reads and visualize the final sequences before making the graph by using the approximation that the sequence of a genome while unknown we can find the a set of tuples in this genome. In general, picking a smaller k-mer size for analysis will improve data management as edge counts of the de Brujin graph decrease [3]. The tradeoff is potential for higher k-mer sequences overlap and more ambuigities when constructing the genome. Higher k-mer size will make working with de Brujin graph longer to process and possibility for non-overlapping. The advantage is constructing the final genome would be easier and lower possibility for repetition. 
-
 
 #### What algorithm our tool uses to define k-mer enrichment? 
 
 Our tool answers the question “is a k-mer sequence being overrepresented in a given l-length sequence?” The software will take in a FASTA file as input and a user specified k-mer string such as “CATTAG”. The output of this program will be the expected and actual counts of hits to this specific k-mer string, as well as the p-value for this binomial distribution. The program will first count all the bases A, C, G, T in the file, then it will scan the file to find the probability of seeing the specified k-mer. Since a base has the possibility to be one out of four bases, there will be 4^k possible sequences, and the probability for a single match of 2 random sequences is 1/(4^k). Our tool will utilize a scanning window to check for an exact match to the k-mer. The statistics we are using will be the Bernoulli distribution, where the expected counts of hits will be obtained from independent Bernoulli trials. The p-value is p = 1/(4^k), so the binomial distribution has parameters p = 1/(4^k) and n = L-k+1. 
 
-Reference:
+#### Reference:
 
 [1] Pevzner, P. et al., 2001. An Eulerian path approach to DNA fragment assembly. Proc Natl Acad Sci U S A. 98(17): 9748-9753. 
 
