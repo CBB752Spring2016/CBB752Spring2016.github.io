@@ -6,10 +6,6 @@ weight: 3
 ---
 
 
-~~### Sub-Project 1: calculate co-expressed gene network from GCT file of gene expressions~~
-
-> Please carefully read through and follow the formatting guideline found in [Project 1.2](http://cbb752spring2016.github.io/QCStep)
-
 #### English Card, Brought by Aparna
 
 ##### Background
@@ -60,17 +56,9 @@ First, the use of the threshold is one that differs between our software and WGC
 Even when the unweighted WGCNA method is used, there are some differences in the way the threshold is calculated. Our software extends the calculation of the correlation coefficient one step further to actually carry out a Student’s t-test and calculate the p-value. This determines the statistical significance of the correlation coefficient, and as an added benefit, the output file contains the correlation coefficient, t-statistic, and p-value, permitting further inspection of these values. WGCNA, on the other hand, does not assess statistical significance, and instead tries to build a scale-free network. The threshold is applied directly to sij (absolute value of correlation coefficient), but the user does not have to provide the threshold; instead, there are two functions pickSoftThreshold and pickHardThreshold that test various potential thresholds to determine which best fits a scale-free network topology. Studies have found that threshold selection based on network structure offers more biologically relevant results than selection methods based on probabilities, so this is an advantage of the WGCNA method.[5]
 Another difference is the scope of the two softwares. As a package, WGCNA is able to carry out a wider range of functions, many of which help visualize the network, identify clusters, analyze connections, and draw biological conclusions. Even though our software does not have this expanded functionality, it has been designed to be modular (accepting widely-used GCT files and producing output files that are easily used by other softwares), so it is likely that ancillary functions could be developed to form more thorough gene co-expression analysis pipelines.
 
-> Very good background and comparison with exisitng software package! Good use of references as well. I would just work more on overall formatting of the project.
-
 #### [Python Card](https://github.com/EdKong/CBB752_Final_Project_3.1), Brought by ELK
 
-> This is mostly a comment about formatting. I saw usage note within the code. It is preferred to put readme.md at your repository and put a short description about the program, on how to run, what parameters to take, sample input and output. In this way, you can put a link to git repo instead. Otherwise, great work.
-
 #### [R Card](https://github.com/dspak/CBB752_Final_Project_3.1), Brought by Dan
-
-> This is mostly a comment about formatting. I saw usage note within the code. It is preferred to put readme.md at your repository and put a short description about the program, on how to run, what parameters to take, sample input and output. In this way, you can put a link to git repo instead. Otherwise, great work.
-
-~~##### References~~
 
 #### References
 
@@ -80,15 +68,11 @@ Another difference is the scope of the two softwares. As a package, WGCNA is abl
 4. Shannon, P. et al. Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Research 13(11), 2498-504 (2003)
 5. Borate, B.R., Chesler, E.J., Langston, M.A., Saxton, A.M. & Voy, B.H. Comparison of threshold selection methods for microarray gene co-expression matrices. BMC Res Notes 2, 240 (2009)
 
-~~##### Figures~~
-
 #### Figures
 
 Figure 1: Visualization of co-expression network. Cytoscape was run on output file (output_coexpression.csv) yielded by running pre-processed input file (all_aml_train.preprocessed.gct) through Python version of software.
 
 ![Figure 1]({{site.url}}/assets/images/output_coexpressed.png "Figure 1")
-
-> figure is not showing from [final project website](http://cbb752spring2016.github.io/Network) can you check?
 
 ---
 
