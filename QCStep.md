@@ -11,13 +11,11 @@ weight: 1
 
 ---
 
-~~### Sub-Project 1: generates “quality control statistics” from FastQ file~~
-
-> This is a temporary title. Remove "Sub-Project X" and assign a proper title.
-
 ## Quality Statistics
 
-#### English Card, Brought by Aparna
+- Documentation: [Aparna](https://github.com/apnathan)
+- [Python](https://github.com/peter-mm-williams/CBB752_Final_Project_1.2.git): [Peter](https://github.com/peter-mm-williams)
+- [R](https://github.com/dspak/CBB752_Final_Project_1.2): [Dan](https://github.com/dspak)
 
 ##### Background
 
@@ -73,10 +71,9 @@ The three statistics that we selected are able to discern between high and low q
 
 The program provides a primary output in the form of a text file containing the input filename and the number of reads it contains. Then, it contains the filename for each module’s output graph. Each module produces one graph, saved as an image file — a histogram for modules 1 and 3, and a boxplot graph for module 2. These graphs visually present important quality control statistics. If the graphs show that the data is high quality, then the information in the graphs can just be used to inform future analyses of the sequencing data by understanding minor biases and notable trends. If the graphs reveal significant loss of quality due to biases in the sequencing method or human error, further analysis is required to pinpoint the source of the error. The other FastQC modules may come in handy for this task, as they are each more closely linked to one particular error-prone aspect of the sequencing process.
 
-#### Python Card, Brought by Peter
-See project repository: https://github.com/peter-mm-williams/CBB752_Final_Project_1.2
+#### [Sample Python Code](https://github.com/peter-mm-williams/CBB752_Final_Project_1.2.git)
 
-#### [R Card](https://github.com/dspak/CBB752_Final_Project_1.2), Brought by Dan
+#### [Sample R Code](https://github.com/dspak/CBB752_Final_Project_1.2)
 
 #### References
 
