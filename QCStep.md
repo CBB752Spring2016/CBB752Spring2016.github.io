@@ -74,9 +74,9 @@ The three statistics that we selected are able to discern between high and low q
 
 The program provides a primary output in the form of a text file containing the input filename and the number of reads it contains. Then, it contains the filename for each module’s output graph. Each module produces one graph, saved as an image file — a histogram for modules 1 and 3, and a boxplot graph for module 2. These graphs visually present important quality control statistics. If the graphs show that the data is high quality, then the information in the graphs can just be used to inform future analyses of the sequencing data by understanding minor biases and notable trends. If the graphs reveal significant loss of quality due to biases in the sequencing method or human error, further analysis is required to pinpoint the source of the error. The other FastQC modules may come in handy for this task, as they are each more closely linked to one particular error-prone aspect of the sequencing process.
 
-#### [Sample Python Code](https://github.com/peter-mm-williams/CBB752_Final_Project_1.2.git)
+#### [Python Code](https://github.com/peter-mm-williams/CBB752_Final_Project_1.2.git)
 
-#### [Sample R Code](https://github.com/dspak/CBB752_Final_Project_1.2)
+#### [R Code](https://github.com/dspak/CBB752_Final_Project_1.2)
 
 #### References
 
