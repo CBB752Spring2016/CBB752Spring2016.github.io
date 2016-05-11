@@ -139,64 +139,64 @@ points’ xyz coordinates in PDB format.(**[E:Gawain]({{site.url}}/Structure#cal
     <th class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Structure#calculating-dihedral-angles-from-pdb-file">4.3</a></th>
   </tr>
   <tr>
-    <td class="tg-yw4l">Julian</td>
+    <td class="tg-yw4l"><a href="https://github.com/jqz752">Julian</a></td>
     <td class="tg-yw4l">R</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">R</td>
+    <td class="tg-yw4l"><a href="https://github.com/jqz752/cbb752_2.2_R">R</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">R</td>
+    <td class="tg-yw4l"><a href="https://github.com/jqz752/cbb752_2.6_R">R</a></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">R</td>
+    <td class="tg-yw4l"><a href="https://github.com/jqz752/cbb752_3.2_R">R</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Kevin</td>
+    <td class="tg-yw4l"><a href="https://github.com/kevkid">Kevin</a></td>
     <td class="tg-yw4l">P/R</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">P</td>
+    <td class="tg-yw4l"><a href="https://github.com/kevkid/cbb752_2.2_py">P</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">P</td>
+    <td class="tg-yw4l"><a href="https://github.com/kevkid/cbb752_3.3_py">P</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">R</td>
+    <td class="tg-yw4l"><a href="https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git">R</a></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Edmond Dantes</td>
+    <td class="tg-yw4l"><a href="https://github.com/MichaelMengual">Edmond Dantes</a></td>
     <td class="tg-yw4l">E</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">E</td>
+    <td class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Sequence#quantifying-rnaseq">E</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">E</td>
+    <td class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Sequence#differential-gene-expression">E</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">E</td>
+    <td class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Network#network-centrality">E</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">ELK</td>
+    <td class="tg-yw4l"><a href="https://github.com/EdKong">ELK</a></td>
     <td class="tg-yw4l">P/E</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
@@ -206,19 +206,19 @@ points’ xyz coordinates in PDB format.(**[E:Gawain]({{site.url}}/Structure#cal
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
-    <td class="tg-yw4l">P</td>
+    <td class="tg-yw4l"><a href="https://github.com/EdKong/2.6_kmer_enrichment">P</a></td>
+    <td class="tg-yw4l"><a href="https://github.com/EdKong/CBB752_Final_Project_3.1">P</a></td>
+    <td class="tg-yw4l"><a href="https://github.com/EdKong/CBB752_3.2_centrality">P</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Aparna</td>
+    <td class="tg-yw4l"><a href="https://github.com/apnathan">Aparna</a></td>
     <td class="tg-yw4l">E</td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">E</td>
+    <td class="tg-yw4l"><a href="http://cbb752spring2016.github.io/QCStep#quality-statistics">E</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
@@ -226,26 +226,26 @@ points’ xyz coordinates in PDB format.(**[E:Gawain]({{site.url}}/Structure#cal
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">E</td>
+    <td class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Network#coexpression-network">E</a></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">E</td>
+    <td class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Network#gene-set-enrichment-analysis">E</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Dan</td>
+    <td class="tg-yw4l"><a href="https://github.com/dspak">Dan</a></td>
     <td class="tg-yw4l">R</td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">R</td>
-    <td class="tg-yw4l">R</td>
+    <td class="tg-yw4l"><a href="https://github.com/dspak/CBB752_Final_Project_1.2">R</a></td>
+    <td class="tg-yw4l"><a href="https://github.com/dspak/CBB752_Final_Project_1.3">R</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">R</td>
+    <td class="tg-yw4l"><a href="https://github.com/dspak/CBB752_Final_Project_3.1">R</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
@@ -253,48 +253,48 @@ points’ xyz coordinates in PDB format.(**[E:Gawain]({{site.url}}/Structure#cal
     <td class="tg-yw4l"></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Nathan</td>
+    <td class="tg-yw4l"><a href="https://github.com/NathanNN">Nathan</a></td>
     <td class="tg-yw4l">E</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">E</td>
+    <td class="tg-yw4l"><a href="http://cbb752spring2016.github.io/QCStep#sequence-read-trimming">E</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">E</td>
+    <td class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Sequence#k-mer-enrichment">E</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">E</td>
+    <td class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Structure#calculating-the-lennard-jones-potential-from-a-query-point-and-a-pdb-file">E</a></td>
     <td class="tg-yw4l"></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Heather</td>
+    <td class="tg-yw4l"><a href="https://github.com/wellshl">Heather</a></td>
     <td class="tg-yw4l">P/E</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">P</td>
+    <td class="tg-yw4l"><a href="https://github.com/wellshl/CBB752_Final_Project_1.3">P</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">P</td>
+    <td class="tg-yw4l"><a href="https://github.com/wellshl/mbb752_2.5_R">P</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">P</td>
+    <td class="tg-yw4l"><a href="https://github.com/wellshl/Final-Project-4.2">P</a></td>
     <td class="tg-yw4l"></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Peter</td>
+    <td class="tg-yw4l"><a href="https://github.com/peter-mm-williams">Peter</a></td>
     <td class="tg-yw4l">P/E</td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">P</td>
+    <td class="tg-yw4l"><a href="https://github.com/peter-mm-williams/CBB752_Final_Project_1.2.git">P</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
@@ -305,12 +305,12 @@ points’ xyz coordinates in PDB format.(**[E:Gawain]({{site.url}}/Structure#cal
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">P</td>
+    <td class="tg-yw4l"><a href="https://github.com/peter-mm-williams/Python_Distance_Calculation.git">P</a></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">P</td>
+    <td class="tg-yw4l"><a href="https://github.com/peter-mm-williams/Dihedral_Angle_Calc.git">P</a></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Calvin</td>
+    <td class="tg-yw4l"><a href="https://github.com/calvinrhodes">Calvin</a></td>
     <td class="tg-yw4l">R/E</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
@@ -319,17 +319,17 @@ points’ xyz coordinates in PDB format.(**[E:Gawain]({{site.url}}/Structure#cal
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">R</td>
+    <td class="tg-yw4l"><a href="https://github.com/calvinrhodes/mbb752_2.5_R">R</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">R</td>
-    <td class="tg-yw4l">R</td>
+    <td class="tg-yw4l"><a href="https://github.com/calvinrhodes/mbb752_3.3_R">R</a></td>
+    <td class="tg-yw4l"><a href="https://github.com/calvinrhodes/mbb752_4.1_R">R</a></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Gawain</td>
+    <td class="tg-yw4l"><a href="https://github.com/graceliu2016">Gawain</a></td>
     <td class="tg-yw4l">R/E</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
@@ -343,9 +343,9 @@ points’ xyz coordinates in PDB format.(**[E:Gawain]({{site.url}}/Structure#cal
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">E</td>
-    <td class="tg-yw4l">R</td>
-    <td class="tg-yw4l">E</td>
+    <td class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Structure#calculating-distance-between-alpha-carbons-in-a-pdb-file">E</a></td>
+    <td class="tg-yw4l"><a href="https://github.com/graceliu2016/Final-Project-4.2">R</a></td>
+    <td class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Structure#calculating-dihedral-angles-from-pdb-file">E</a></td>
   </tr>
 </table>
 
