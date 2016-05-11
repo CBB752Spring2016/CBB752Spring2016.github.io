@@ -20,7 +20,7 @@ weight: 2
 #### Contributed By
 
 
-- Documentation: Edmond Dantes
+- Documentation: [Edmond Dantes](https://github.com/MichaelMengual)
 - [Python](https://github.com/kevkid/cbb752_2.2_py): [Kevin](https://github.com/kevkid)
 - [R](https://github.com/jqz752/cbb752_2.2_R): [Julian](https://github.com/jqz752)
 
@@ -84,7 +84,7 @@ Given a SAM file, which informs one the location in the genome to which each rea
 #### Contributed By
 
 
-- Documentation: Edmond Dantes
+- Documentation: [Edmond Dantes](https://github.com/MichaelMengual)
 - [Python](https://github.com/wellshl/mbb752_2.5_R): [Heather](https://github.com/wellshl)  
 - [R](https://github.com/calvinrhodes/mbb752_2.5_R): [Calvin](https://github.com/calvinrhodes) 
 
@@ -125,7 +125,7 @@ GCT files are tab delimited datasets of gene expression(5). The rows correspond 
 #### Contributed By
 
 
-- Documentation: Nathan
+- Documentation: [Nathan](https://github.com/NathanNN)
 - [Python](https://github.com/EdKong/2.6_kmer_enrichment): [ELK](https://github.com/EdKong)  
 - [R](https://github.com/jqz752/cbb752_2.6_R): [Julian](https://github.com/jqz752) 
 
