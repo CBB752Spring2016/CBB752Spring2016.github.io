@@ -60,7 +60,7 @@ About the Final Project
 
 1.2 Propose a tool that generates “quality control statistics” from FastQ file. (**[E:Aparna]({{site.url}}/QCStep#quality-statistics), [P:Peter](https://github.com/peter-mm-williams/CBB752_Final_Project_1.2.git), [R:Dan](https://github.com/dspak/CBB752_Final_Project_1.2)**)
 
-1.3 Propose a tool that trims reads based on quality score from FastQ file. (**[E:Nathan]({{site.url}}/QCStep#sequence read trimming), [P:Heather](https://github.com/wellshl/CBB752_Final_Project_1.3), [R:Dan](https://github.com/dspak/CBB752_Final_Project_1.3)**)
+1.3 Propose a tool that trims reads based on quality score from FastQ file. (**[E:Nathan]({{site.url}}/QCStep#sequence-read-trimming), [P:Heather](https://github.com/wellshl/CBB752_Final_Project_1.3), [R:Dan](https://github.com/dspak/CBB752_Final_Project_1.3)**)
 
 #### 2. [Sequence Analysis]({{site.url}}/Sequence)
 
@@ -96,14 +96,14 @@ given pre-defined gene sets
 #### 4. [Structure Analysis]({{site.url}}/Structure)
 
 4.1 Propose a tool that calculate distance between two alpha carbons from a PDB
-file. (The program should output a distance between two atoms in angstroms) (**[E:Gawain]({{site.url}}/Structure#distance-between-alpha-carbons), [P:Peter](https://github.com/peter-mm-williams/Python_Distance_Calculation.git), [R:Cavin](https://github.com/calvinrhodes/mbb752_4.1_R)**)
+file. (The program should output a distance between two atoms in angstroms) (**[E:Gawain]({{site.url}}/Structure#calculating-distance-between-alpha-carbons-in-a-pdb-file), [P:Peter](https://github.com/peter-mm-williams/Python_Distance_Calculation.git), [R:Cavin](https://github.com/calvinrhodes/mbb752_4.1_R)**)
 
 4.2 Propose a tool that calculate the Lennard-Jones potential based on the input
 of a PDB file consisting of just alpha carbons and a query point’s xyz
-coordinates. (**[E:Nathan]({{site.url}}/Structure#lennard-jones-potential), [P:Heather](https://github.com/wellshl/Final-Project-4.2), [R:Gawain](https://github.com/graceliu2016/Final-Project-4.2)**)
+coordinates. (**[E:Nathan]({{site.url}}/Structure#calculating-the-lennard-jones-potential-from-a-query-point-and-a-pdb-file), [P:Heather](https://github.com/wellshl/Final-Project-4.2), [R:Gawain](https://github.com/graceliu2016/Final-Project-4.2)**)
 
 4.3 Propose a tool that calculate the dihedral angle based on the input of four
-points’ xyz coordinates in PDB format.(**[E:Gawain]({{site.url}}/Structure#dihedral-angles), [P:Peter](https://github.com/peter-mm-williams/Dihedral_Angle_Calc.git), [R:Kevin](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git)**)
+points’ xyz coordinates in PDB format.(**[E:Gawain]({{site.url}}/Structure#calculating-dihedral-angles-from-pdb-file), [P:Peter](https://github.com/peter-mm-williams/Dihedral_Angle_Calc.git), [R:Kevin](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git)**)
 
 
 
