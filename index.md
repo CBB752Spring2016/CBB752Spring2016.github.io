@@ -123,20 +123,20 @@ points’ xyz coordinates in PDB format.(**[E:Gawain]({{site.url}}/Structure#cal
     <th class="tg-yw4l">Name</th>
     <th class="tg-yw4l">Primary</th>
     <th class="tg-yw4l">1.1</th>
-    <th class="tg-yw4l">1.2</th>
-    <th class="tg-yw4l">1.3</th>
+    <th class="tg-yw4l"><a href="http://cbb752spring2016.github.io/QCStep#quality-statistics">1.2</a></th>
+    <th class="tg-yw4l"><a href="http://cbb752spring2016.github.io/QCStep#sequence-read-trimming">1.3</a></th>
     <th class="tg-yw4l">2.1</th>
-    <th class="tg-yw4l">2.2</th>
+    <th class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Sequence#quantifying-rnaseq">2.2</a></th>
     <th class="tg-yw4l">2.3</th>
     <th class="tg-yw4l">2.4</th>
-    <th class="tg-yw4l">2.5</th>
-    <th class="tg-yw4l">2.6</th>
-    <th class="tg-yw4l">3.1</th>
-    <th class="tg-yw4l">3.2</th>
-    <th class="tg-yw4l">3.3</th>
-    <th class="tg-yw4l">4.1</th>
-    <th class="tg-yw4l">4.2</th>
-    <th class="tg-yw4l">4.3</th>
+    <th class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Sequence#differential-gene-expression">2.5</a></th>
+    <th class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Sequence#k-mer-enrichment">2.6</a></th>
+    <th class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Network#coexpression-network">3.1</a></th>
+    <th class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Network#network-centrality">3.2</a></th>
+    <th class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Network#gene-set-enrichment-analysis">3.3</a></th>
+    <th class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Structure#calculating-distance-between-alpha-carbons-in-a-pdb-file">4.1</a></th>
+    <th class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Structure#calculating-the-lennard-jones-potential-from-a-query-point-and-a-pdb-file">4.2</a></th>
+    <th class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Structure#calculating-dihedral-angles-from-pdb-file">4.3</a></th>
   </tr>
   <tr>
     <td class="tg-yw4l">Julian</td>
@@ -353,8 +353,5 @@ points’ xyz coordinates in PDB format.(**[E:Gawain]({{site.url}}/Structure#cal
 
 
 
-Feel free to contact the TAs if you have any concerns about the assignment!   
 
-
-Otherwise start garthering your group members and having your first discussion!!!
 
