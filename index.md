@@ -10,6 +10,8 @@ About the Course
 
 -   **Instructor:** [Gerstein, Mark](<http://www.gersteinlab.org>)
 
+-   **TAs**: [Huang, Xiu](http://xiu-huang.com) & [Lee, Donghoon](http://hoondy.github.io)
+
 -   **Introduction:** Bioinformatics encompasses the analysis of gene sequences,
     macromolecular structures, and functional genomics data on a large scale. It
     represents a major practical application for modern techniques in data
