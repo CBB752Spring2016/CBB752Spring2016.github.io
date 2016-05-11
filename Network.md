@@ -93,11 +93,10 @@ Figure 1: Visualization of co-expression network. Cytoscape was run on output fi
 
 ## Network Centrality
 
-#### English Card, Brought by Edmond Dantes
 
 #### Contributed By
 
-- Documentation: Edmond Dantes
+- Documentation: [Edmond Dantes](https://github.com/MichaelMengual)
 - [Python](https://github.com/EdKong/CBB752_3.2_centrality): [ELK](https://github.com/EdKong)
 - [R](https://github.com/jqz752/cbb752_3.2_R): [Julian](https://github.com/jqz752)
 
