@@ -42,7 +42,7 @@ About the Final Project
 -   **What:** Project topics are as following. Students can choose three to four
     favorite projects to work on.
 
-### For all sub-projects, your group will have to provide
+### For all sub-projects, the group should provide
 
 1.  R card: sample input, source code in R, sample output, and documentation on
     how to execute your code
@@ -54,7 +54,7 @@ About the Final Project
 
 ### Topics and Grouping Assignment
 
-#### 1. QC steps
+#### 1. [QC steps]({{site.url/QCStep}})
 
 1.1 ~~Propose a tool that removes barcode or sequence identifier from FastQ file~~.(**Discard**)
 
@@ -62,7 +62,7 @@ About the Final Project
 
 1.3 Propose a tool that trims reads based on quality score from FastQ file. (**E:Nathan, P:Heather, R:Dan**)
 
-#### 2. Sequence Analysis
+#### 2. [Sequence Analysis]({{site.url/Sequence}})
 
 2.1 ~~Propose a tool that generates pileup format from SAM file~~.(**Discard**)
 
@@ -80,7 +80,7 @@ of gene expressions.(**E:Edmond Dantes, P:Heather, R:Calvin**)
 2.6 Propose a tool that finds k-mer motif enrichment from a given nucleotide
 sequence.(**E:Nathan, R:Julian, P:ELK**)
 
-#### 3. Network Analysis
+#### 3. [Network Analysis]({{site.url/Network}})
 
 3.1 Propose a tool that calculates co-expressed gene network from GCT file of
 gene expressions.(**R:Dan, P:ELK, E:Aparna**)
@@ -93,7 +93,7 @@ and InAct databases.(**E:Edmond Dantes, R:Julian, P:ELK**)
 given pre-defined gene sets
 ([http://software.broadinstitute.org/gsea/msigdb](<https://urldefense.proofpoint.com/v2/url?u=http-3A__software.broadinstitute.org_gsea_msigdb&d=AwMFaQ&c=-dg2m7zWuuDZ0MUcV7Sdqw&r=PnTFVO2L44pkkv9ojQ0IMDygcpAI3ijI-U1aZXdN85Y&m=0qYw2y8MqbEaBguyXvxmBwvTb67SzblG5ILDT9kuscI&s=ah6gw5_TiY43zaFez-Xxusu-JRdMKObrVsokKQOUCyw&e=>)).(**P:Kevin, R:Calvin, E:Aparna**)
 
-#### 4. Structure Analysis
+#### 4. [Structure Analysis]({{site.url/Structure}})
 
 4.1 Propose a tool that calculate distance between two alpha carbons from a PDB
 file. (The program should output a distance between two atoms in angstroms) (**P:Peter, R:Cavin, E:Gawain**)
