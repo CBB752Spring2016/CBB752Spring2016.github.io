@@ -5,11 +5,28 @@ group: navigation
 weight: 2
 ---
 
-# Quantifying RNA-seq Using RPKM/FPKM/TPM Based on SAM & GTF Files
 
-## English Card, Brought by Edmond Dantes
+## Table of Contents
+**[Quantifying RNASeq](#quantifying-rnaseq)**  
+**[Differential Gene Expression](#differential-gene-expression)**  
+**[K-mer Enrichment](#k-mer-enrichment)**
 
-# TPM versus FPKM
+---
+
+
+## Quantifying RNASeq
+
+
+#### Contributed By
+
+
+- Documentation: Edmond Dantes
+- [Python](https://github.com/kevkid/cbb752_2.2_py): [Kevin](https://github.com/kevkid)
+- [R](https://github.com/jqz752/cbb752_2.2_R): [Julian](https://github.com/jqz752)
+
+
+
+##### TPM versus FPKM
 
 RNA-Seq is a relative measurement instead of an absolute one (1). Therefore, it is crucial to normalize samples in order for them to be comparable across experiments (1). Since features differ in length it is necessary to adjust for different lengths as this will affect the number of reads that are produced for different features (1). TPM gives us the number of transcripts of a certain type relative to the proportion of all the other transcripts present in the sample (2). The transcript fraction or (tau) is independent of the mean expressed transcript length (2). While the mean expressed transcript length is likely to vary from sample to sample (3). 
 
@@ -30,7 +47,7 @@ For FPKM: X_i represents the count of the feature of interest (1).
           L_i represents the effective length of the feature of interest (1).
           N represents the total number of reads sequenced (1). 
 
-# SAM and GTF File Formats
+##### SAM and GTF File Formats
 
 SAM stands for "Sequence Alignment/Map". It is a standard, tab-delimited format produced by alignment software. Each alignment line in SAM has 11 mandatory fields for essential alignment information such as mapping position, and variable number of optional fields for flexible or aligner specific information (4). More details on SAM format specification can be found [here](http://samtools.github.io/hts-specs/SAMv1.pdf). Because of their usually large file sizes, SAM files are more commonly stored as BAM files, which are the machine-readable, binary version of SAM files, and can be converted using [Samtools](http://www.htslib.org/). 
 
@@ -38,7 +55,14 @@ GTF stands for "Gene Transfer Format". It is a standard, tab-delimited format co
 
 Given a SAM file, which informs one the location in the genome to which each read is mapped, and a GTF file, which informs one the gene located at a given location in the genome, one could start calculating the read depth at each base position within the range of a given gene. 
 
-### References
+
+#### [Python Code](https://github.com/kevkid/cbb752_2.2_py)
+
+#### [R Code](https://github.com/jqz752/cbb752_2.2_R)
+
+
+
+#### References
 
 1) Pimentel, H. (2015). What the FPKM? A review of RNA-Seq expression units. Retrieved from https://haroldpimentel.wordpress.com/2014/05/08/what-the-fpkm-a-review-rna-seq-expression-units/
 
@@ -48,33 +72,36 @@ Given a SAM file, which informs one the location in the genome to which each rea
 
 4) Davis, S. File Formats and RNA-seq. Retrieved from http://watson.nci.nih.gov/~sdavis/tutorials/RNASeqBeginnerTutorial/RNASeqTutorial.html
 
-# Python and R Cards to Calculate TPM Given SAM and GTF Files 
 
-## [R Card](https://github.com/jqz752/cbb752_2.2_R), Brought by Julian
-
-## Python Card, Brought by Kevin
-Source code and readme file [here](https://github.com/kevkid/cbb752_2.2_py)
 
 ---
 
-# Calculating differential gene expression from GCT files 
 
-### English Card, Brought by Edmond Dantes
 
-## Why calculate differential gene expression?
+## Differential Gene Expression
+
+
+#### Contributed By
+
+
+- Documentation: Edmond Dantes
+- [Python](https://github.com/wellshl/mbb752_2.5_R): [Heather](https://github.com/wellshl)  
+- [R](https://github.com/calvinrhodes/mbb752_2.5_R): [Calvin](https://github.com/calvinrhodes) 
+
+
+
+
+#### Why calculate differential gene expression?
 
 The analysis of genome wide transcription information derived from microarray and RNA-seq experiments holds tremendous promise(4). The main purpose of these analyses is to try to identify differences in the expression of genes across samples differing by phenotype or treatment(1). The first step in analyzing the differential expression of genes is to identify the specific genes which allow one to distinguish between classes of samples(2). A permutation test can then be done to assess significance(4).
 
-## Permutations, Multiple Comparisons, and the GCT file format
+#### Permutations, Multiple Comparisons, and the GCT file format
 
 Our permutation test  allows us to make no assumption of distribution values while preserving gene to gene correlations(2). This permutation test further allowed us to calculate our p-values which then needed further adjustments(4). The number of permutations selected depends on the number of samples to be analyzed(4). One suggestion would be to use 10,000 permutations when dealing with classes that have at least 10 samples to obtain accurate p-values(4). The differences in results that will emerge from using a different number of permutations warrants careful attention to the chosen setting. The high number of comparisons done simultaneously increases the chance of detecting false positives(2). Therefore, we used the Benjamini-Hochberg method to account for multiple comparisons and adjust the false discover rate (FDR) accordingly(3). 
 GCT files are tab delimited datasets of gene expression(5). The rows correspond to the set of probes used in the experiment(5). The first Column identifies the names of all the probes used(5). The second column corresponds to a description of the row(5). The third column and each column following correspond to a separate sample(5). 
 
-## Sample Code  
-## [Python](https://github.com/wellshl/mbb752_2.5_R): [Heather](https://github.com/wellshl)  
-## [R](https://github.com/calvinrhodes/mbb752_2.5_R): [Calvin](https://github.com/calvinrhodes) 
 
-## References:
+#### References:
 
 1) Kuehn, H., Liberzon, A., Reich, M., & Mesirov, J. P. (2008). Using genepattern for gene expression analysis. Current Protocols in Bioinformatics. http://doi.org/10.1002/0471250953.bi0712s22
 
@@ -88,15 +115,21 @@ GCT files are tab delimited datasets of gene expression(5). The rows correspond 
 5) Reich M, Liefeld T, Gould J, Lerner J, Tamayo P, Mesirov JP (2006) GenePattern 
 	2.0. http://www.broadinstitute.org/cancer/software/genepattern/file-	formats-guide#GCT
 
+
 ---
 
-# Assessing k-mer Enrichment of FASTA Sequences
 
-## [Python Card](https://github.com/EdKong/2.6_kmer_enrichment), Brought by ELK
+## K-mer Enrichment
 
-## [R Card](https://github.com/jqz752/cbb752_2.6_R), Brought by Julian
 
-## English Card, Brought by Nathan
+#### Contributed By
+
+
+- Documentation: Nathan
+- [Python](https://github.com/EdKong/2.6_kmer_enrichment): [ELK](https://github.com/EdKong)  
+- [R](https://github.com/jqz752/cbb752_2.6_R): [Julian](https://github.com/jqz752) 
+
+
 
 #### What is a k-mer and its purpose?  
 
