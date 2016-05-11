@@ -53,7 +53,6 @@ This output, given in angstroms, is useful in several ways. First, it provides g
 - [Python](https://github.com/wellshl/Final-Project-4.2): [Heather](https://github.com/wellshl)
 - [R](https://github.com/graceliu2016/Final-Project-4.2): [Grace](https://github.com/graceliu2016)
 
-#### Documentation
 
 #### What is the Lennard-Jones potential and why is it useful in science?
 The Lennard-Jones potential is a force that describes the interaction between a pair of atoms [1]. The equation is: 
