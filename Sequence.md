@@ -5,7 +5,6 @@ group: navigation
 weight: 2
 ---
 
-
 ## Table of Contents
 **[Quantifying RNASeq](#quantifying-rnaseq)**  
 **[Differential Gene Expression](#differential-gene-expression)**  
@@ -13,18 +12,13 @@ weight: 2
 
 ---
 
-
 ## Quantifying RNASeq
 
-
 #### Contributed By
-
 
 - Documentation: [Edmond Dantes](https://github.com/MichaelMengual)
 - [Python](https://github.com/kevkid/cbb752_2.2_py): [Kevin](https://github.com/kevkid)
 - [R](https://github.com/jqz752/cbb752_2.2_R): [Julian](https://github.com/jqz752)
-
-
 
 ##### TPM versus FPKM
 
@@ -60,8 +54,6 @@ Given a SAM file, which informs one the location in the genome to which each rea
 
 #### [R Code](https://github.com/jqz752/cbb752_2.2_R)
 
-
-
 #### References
 
 1) Pimentel, H. (2015). What the FPKM? A review of RNA-Seq expression units. Retrieved from https://haroldpimentel.wordpress.com/2014/05/08/what-the-fpkm-a-review-rna-seq-expression-units/
@@ -72,24 +64,15 @@ Given a SAM file, which informs one the location in the genome to which each rea
 
 4) Davis, S. File Formats and RNA-seq. Retrieved from http://watson.nci.nih.gov/~sdavis/tutorials/RNASeqBeginnerTutorial/RNASeqTutorial.html
 
-
-
 ---
-
-
 
 ## Differential Gene Expression
 
-
 #### Contributed By
-
 
 - Documentation: [Edmond Dantes](https://github.com/MichaelMengual)
 - [Python](https://github.com/wellshl/mbb752_2.5_R): [Heather](https://github.com/wellshl)  
 - [R](https://github.com/calvinrhodes/mbb752_2.5_R): [Calvin](https://github.com/calvinrhodes) 
-
-
-
 
 #### Why calculate differential gene expression?
 
@@ -100,6 +83,9 @@ The analysis of genome wide transcription information derived from microarray an
 Our permutation test  allows us to make no assumption of distribution values while preserving gene to gene correlations(2). This permutation test further allowed us to calculate our p-values which then needed further adjustments(4). The number of permutations selected depends on the number of samples to be analyzed(4). One suggestion would be to use 10,000 permutations when dealing with classes that have at least 10 samples to obtain accurate p-values(4). The differences in results that will emerge from using a different number of permutations warrants careful attention to the chosen setting. The high number of comparisons done simultaneously increases the chance of detecting false positives(2). Therefore, we used the Benjamini-Hochberg method to account for multiple comparisons and adjust the false discover rate (FDR) accordingly(3). 
 GCT files are tab delimited datasets of gene expression(5). The rows correspond to the set of probes used in the experiment(5). The first Column identifies the names of all the probes used(5). The second column corresponds to a description of the row(5). The third column and each column following correspond to a separate sample(5). 
 
+#### [Python Code](https://github.com/wellshl/mbb752_2.5_R)
+
+#### [R Code](https://github.com/calvinrhodes/mbb752_2.5_R)
 
 #### References:
 
@@ -115,21 +101,15 @@ GCT files are tab delimited datasets of gene expression(5). The rows correspond 
 5) Reich M, Liefeld T, Gould J, Lerner J, Tamayo P, Mesirov JP (2006) GenePattern 
 	2.0. http://www.broadinstitute.org/cancer/software/genepattern/file-	formats-guide#GCT
 
-
 ---
-
 
 ## K-mer Enrichment
 
-
 #### Contributed By
-
 
 - Documentation: [Nathan](https://github.com/NathanNN)
 - [Python](https://github.com/EdKong/2.6_kmer_enrichment): [ELK](https://github.com/EdKong)  
 - [R](https://github.com/jqz752/cbb752_2.6_R): [Julian](https://github.com/jqz752) 
-
-
 
 #### What is a k-mer and its purpose?  
 
@@ -142,6 +122,10 @@ The de Brujin graph is constructed from a collection of sequencing reads without
 #### What algorithm our tool uses to define k-mer enrichment? 
 
 Our tool answers the question “is a k-mer sequence being overrepresented in a given l-length sequence?” The software will take in a FASTA file as input and a user specified k-mer string such as “CATTAG”. The output of this program will be the expected and actual counts of hits to this specific k-mer string, as well as the p-value for this binomial distribution. The program will first count all the bases A, C, G, T in the file, then it will scan the file to find the probability of seeing the specified k-mer. Since a base has the possibility to be one out of four bases, there will be 4^k possible sequences, and the probability for a single match of 2 random sequences is 1/(4^k). Our tool will utilize a scanning window to check for an exact match to the k-mer. The statistics we are using will be the Bernoulli distribution, where the expected counts of hits will be obtained from independent Bernoulli trials. The p-value is p = 1/(4^k), so the binomial distribution has parameters p = 1/(4^k) and n = L-k+1. 
+
+#### [Python Code](https://github.com/EdKong/2.6_kmer_enrichment)
+
+#### [R Code](https://github.com/jqz752/cbb752_2.6_R)
 
 #### Reference:
 
