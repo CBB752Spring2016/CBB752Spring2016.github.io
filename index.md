@@ -22,10 +22,9 @@ About the Course
     networks, normalization of microarray data, mining of functional genomics
     data sets, and machine-learning approaches to data integration.
 
--   Check out our [awsome course website](<http://cbb752b16.gersteinlab.org>).
+-   Check out our awesome [course website](<http://cbb752b16.gersteinlab.org>).
 
--   Check out [this awsome post of related bioinformatics
-    topics](<{%post_url 2016-4-10-Categories-of-knowledge-for-bioinformatics-education %}>).
+-   Check out our [post on bioinformatics](<{% post_url 2016-4-10-Categories-of-knowledge-for-bioinformatics-education %}>).
 
 About the Final Project
 -----------------------
