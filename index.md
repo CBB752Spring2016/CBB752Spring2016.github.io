@@ -29,29 +29,33 @@ About the Course
 About the Final Project
 -----------------------
 
--   **Why:** Instead of generating papers or codes that nobody would ever read
-    (expect for the TAs), we want to encourage the innovative generation of
-    products that could potentially benefit the bioinformatics community.
+- **Why?**
 
--   **When:** Released at April 14th, and will be due at 11:59pm May 9th.
+   Instead of generating papers or codes that nobody would ever read (expect for the TAs), we want to encourage the innovative generation of products that could potentially benefit the bioinformatics community.
 
--   **How:** Each student will coorporate with classmates to work on three (or
-    four for extra credits) different projects. The generated codes and
-    documents will be published on this website to be resources for later
-    students and researches.
+- **When?**
 
--   **What:** Project topics are as following. Students can choose three to four
-    favorite projects to work on.
+    Released: April 14th
+    
+    Due: May 9th 11:59PM
 
-### For all sub-projects, the group should provide
+- **How?**
 
-1.  R card: sample input, source code in R, sample output, and documentation on
+    Each student will coorporate with classmates to work on three (or four for extra credits) different projects. The generated codes and documents will be published on this website to be resources for later students and researches.
+
+- **What?**
+
+    Project topics are as following. Students can choose three to four favorite projects to work on.
+
+### For each sub-project, a group of three people will work on:
+
+1.  **R card**: sample input, source code in R, sample output, and documentation on
     how to execute your code
 
-2.  Python card: sample input, source code in Python, sample output, and
+2.  **Python card**: sample input, source code in Python, sample output, and
     documentation on how to execute your code
 
-3.  English card: methodology and background introductory documentation
+3.  **English card**: methodology and background introductory documentation
 
 ### Topics and Grouping Assignment
 
