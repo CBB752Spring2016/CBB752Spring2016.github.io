@@ -10,7 +10,7 @@ About the Course
 
 -   **Instructor:** [Gerstein, Mark](<http://www.gersteinlab.org>)
 
--   **TAs**: [Huang, Xiu](http://xiu-huang.com) & [Lee, Donghoon](http://hoondy.github.io)
+-   **TAs**: [Huang, Xiu](http://xiu-huang.com) & [Lee, Donghoon](http://hoondy.com)
 
 -   **Introduction:** Bioinformatics encompasses the analysis of gene sequences,
     macromolecular structures, and functional genomics data on a large scale. It
@@ -52,7 +52,7 @@ About the Final Project
 2.  Python card: sample input, source code in Python, sample output, and
     documentation on how to execute your code
 
-3.  English card: methodology and background introduction
+3.  English card: methodology and background introductory documentation
 
 ### Topics and Grouping Assignment
 
@@ -107,12 +107,7 @@ coordinates. (**[E:Nathan]({{site.url}}/Structure#calculating-the-lennard-jones-
 4.3 Propose a tool that calculate the dihedral angle based on the input of four
 points’ xyz coordinates in PDB format.(**[E:Gawain]({{site.url}}/Structure#calculating-dihedral-angles-from-pdb-file), [P:Peter](https://github.com/peter-mm-williams/Dihedral_Angle_Calc.git), [R:Kevin](https://github.com/kevkid/CBB_Bioinformatics_FinalProject_4.3.git)**)
 
-
-
-
-
 ## Grouping Assignment Table
-
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -350,10 +345,3 @@ points’ xyz coordinates in PDB format.(**[E:Gawain]({{site.url}}/Structure#cal
     <td class="tg-yw4l"><a href="http://cbb752spring2016.github.io/Structure#calculating-dihedral-angles-from-pdb-file">E</a></td>
   </tr>
 </table>
-
-
-
-
-
-
-
