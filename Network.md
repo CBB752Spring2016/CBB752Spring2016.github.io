@@ -5,22 +5,20 @@ group: navigation
 weight: 3
 ---
 
-
 ## Table of Contents
 **[Coexpression Network](#coexpression-network)**  
 **[Network Centrality](#network-centrality)**  
 **[Gene Set Enrichment Analysis](#gene-set-enrichment-analysis)**
 
+---
 
 ## Coexpression Network
-
 
 #### Contributed By
 
 - Documentation: [Aparna](https://github.com/apnathan)
 - [Python](https://github.com/EdKong/CBB752_Final_Project_3.1): [ELK](https://github.com/EdKong)
 - [R](https://github.com/dspak/CBB752_Final_Project_3.1): [Dan](https://github.com/dspak)
-
 
 #### Background
 
@@ -90,17 +88,13 @@ Figure 1: Visualization of co-expression network. Cytoscape was run on output fi
 
 ---
 
-
 ## Network Centrality
-
 
 #### Contributed By
 
 - Documentation: [Edmond Dantes](https://github.com/MichaelMengual)
 - [Python](https://github.com/EdKong/CBB752_3.2_centrality): [ELK](https://github.com/EdKong)
 - [R](https://github.com/jqz752/cbb752_3.2_R): [Julian](https://github.com/jqz752)
-
-
 
 #### Network Centrality
 
@@ -120,12 +114,11 @@ CB is the general formula to determine betweenness centrality for a particular v
 
 The MITAB 2.5 format describes binary PPI data where each row corresponds to a pair of interactors (4). The columns are separated by tabulations (4). Unique identifiers for interactors A and B are represented in columns 1 and 2 (4). Alternative identifiers for protein A and B can be found in columns 3 and 4 (4). And aliases for interactors A and B can be found in columns 5 and 6 (4). The seventh column corresponds to the interaction detection method (4).  The eighth and ninth columns correspond to the first author and the identifier for the publication (4). The tenth and eleventh columns correspond to the NCBI taxonomy identifiers for interactors A and B (4). Column twelve corresponds to the interaction type (4). Column thirteen corresponds to the databases used as sources (4). Finally, columns fourteen and fifteen correspond to the interaction identifier and the confidence score (4). 
 
-
 #### [Python Code](https://github.com/EdKong/CBB752_3.2_centrality)
 
 #### [R Code](https://github.com/jqz752/cbb752_3.2_R)
 
-#### References:
+#### References
 
 1) Mascolo, C. (2015). University of Cambridge: Computer Laboratory. Social and Technological Network Analysis. Lecture 3: Centrality Measures. https://www.cl.cam.ac.uk/teaching/1415/L109/l109-lecture3.pdf
 
