@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CBB752Spring2016 Final Project
+title: CBB752 Spring 2016 Final Project
 ---
 
 About the Course
