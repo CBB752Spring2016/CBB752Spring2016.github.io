@@ -7,7 +7,11 @@ weight: 1
 
 ## Table of Contents
 **[Quality Statistics](#quality-statistics)**
+
+
 **[Sequence Read Trimming](#sequence-read-trimming)**
+
+
 
 ---
 

@@ -7,8 +7,14 @@ weight: 2
 
 ## Table of Contents
 **[Quantifying RNASeq](#quantifying-rnaseq)**
+
+
 **[Differential Gene Expression](#differential-gene-expression)**
+
+
 **[K-mer Enrichment](#k-mer-enrichment)**
+
+
 
 ---
 
