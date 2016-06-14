@@ -6,8 +6,8 @@ weight: 1
 ---
 
 ## Table of Contents
-**[Quality Statistics](#quality-statistics)**  
-**[Sequence Read Trimming](#sequence-read-trimming)**  
+**[Quality Statistics](#quality-statistics)**
+**[Sequence Read Trimming](#sequence-read-trimming)**
 
 ---
 
@@ -16,8 +16,8 @@ weight: 1
 #### Contributed By
 
 - Documentation: [Aparna](https://github.com/apnathan)
-- [Python](https://github.com/peter-mm-williams/CBB752_Final_Project_1.2.git): [Peter](https://github.com/peter-mm-williams)
-- [R](https://github.com/dspak/CBB752_Final_Project_1.2): [Dan](https://github.com/dspak)
+- [Python](https://github.com/CBB752Spring2016/CBB752_Final_Project_1.2.git): [Peter](https://github.com/peter-mm-williams)
+- [R](https://github.com/CBB752Spring2016/CBB752_Final_Project_1.2): [Dan](https://github.com/dspak)
 
 #### Background
 
@@ -59,7 +59,7 @@ We designed the program to carry out a subset of the quality control measurement
 1.) Sequence Length Distribution:
 As the program processes the FASTQ entry for each read, it also calculates the read length. These values are then expressed as a histogram. Different patterns of read lengths are expected for different forms of sequencing technology, so this graph should be interpreted with some nuance. For Illumina sequencing, for example, reads should all be of equal length. If the distribution or magnitudes of sequence lengths stray from the expectation, this could indicate a problem with the sequencing or base calling processes.
 
-2.) Per Base Sequence Quality: 
+2.) Per Base Sequence Quality:
 The program calculates statistics to describe the distribution of Phred quality scores at each position in the read. Mean-based and median-based metrics are both used to better describe both the center and spread of the scores. For each read position, there is one boxplot centered at the mean with the box extending one standard deviation in either direction, and there is another boxplot centered at the median with the box extending from the 25th to 75th percentiles. It is expected that quality scores will decrease toward the end of the read, as the risk of base mismatch increases, but this graph allows the user to determine when this decline begins and how quickly it occurs. Based on the thresholds established in FastQC, the user should be wary if a position’s 25th percentile has a quality score below 10 or if its median is less than 25. The user should consider the data to be low quality if any position’s 25th percentile has a quality score below 5 or if its median is less than 20.[4]
 
 3.) Per Sequence Mean Quality Distribution
@@ -73,9 +73,9 @@ The three statistics that we selected are able to discern between high and low q
 
 The program provides a primary output in the form of a text file containing the input filename and the number of reads it contains. Then, it contains the filename for each module’s output graph. Each module produces one graph, saved as an image file — a histogram for modules 1 and 3, and a boxplot graph for module 2. These graphs visually present important quality control statistics. If the graphs show that the data is high quality, then the information in the graphs can just be used to inform future analyses of the sequencing data by understanding minor biases and notable trends. If the graphs reveal significant loss of quality due to biases in the sequencing method or human error, further analysis is required to pinpoint the source of the error. The other FastQC modules may come in handy for this task, as they are each more closely linked to one particular error-prone aspect of the sequencing process.
 
-#### [Python Code](https://github.com/peter-mm-williams/CBB752_Final_Project_1.2.git)
+#### [Python Code](https://github.com/CBB752Spring2016/CBB752_Final_Project_1.2.git)
 
-#### [R Code](https://github.com/dspak/CBB752_Final_Project_1.2)
+#### [R Code](https://github.com/CBB752Spring2016/CBB752_Final_Project_1.2)
 
 #### References
 
@@ -91,17 +91,17 @@ The program provides a primary output in the form of a text file containing the 
 #### Contributed By
 
 - Documentation: [Nathan](https://github.com/NathanNN)
-- [Python](https://github.com/wellshl/CBB752_Final_Project_1.3): [Heather](https://github.com/wellshl)
-- [R](https://github.com/dspak/CBB752_Final_Project_1.3): [Dan](https://github.com/dspak)
+- [Python](https://github.com/CBB752Spring2016/CBB752_Final_Project_1.3): [Heather](https://github.com/wellshl)
+- [R](https://github.com/CBB752Spring2016/CBB752_Final_Project_1.3): [Dan](https://github.com/dspak)
 
-#### What is a FASTQ file? 
+#### What is a FASTQ file?
 
-FastQ file is a text file with the FASTQ format, designed to contain a nucleotide sequence and its associate quality score in the ASCII character-encoding scheme. This format is used as output data for high-throughput sequencing from companies like Illumina [1]. 
+FastQ file is a text file with the FASTQ format, designed to contain a nucleotide sequence and its associate quality score in the ASCII character-encoding scheme. This format is used as output data for high-throughput sequencing from companies like Illumina [1].
 
 
 #### What is quality score?
 
-In the ASCII encoding scheme, a set of characters are put into order to denote quality, for example“!” is the lowest quality score and “~” is the highest. Quality is determined by the PHRED software, in which the quality score Q = -10*log(10)*P [2]. The score correlates with the probability of getting the incorrect base call, for example a quality score of 10 means the probability of base call will be incorrect 1 in 10, while a score of 60 means the probability 1 in 1000000 will be incorrect.The basis of this base-calling algorithm our tool will utilize consists of predicting peak locations, identifying observed peaks, matching predicted peaks to observed peaks, and find missed peaks. Illumina FASTQ format starts with “@” followed by the record identifier and sequence length, after that is a nucleotide sequence. The next line starts with the “+” followed by the optional title, then after that is the quality line for the above nucleotide sequence. There are several different quality score metrics, including Illumina Q+64 and Sanger Q+33. To get Q+64, one need to add Illumina 1.3+”Q+64” using ASCII characters 64-to-126 to score 0-to-62 on the P scale. For Q+33, one need to add the Probability values of Phred scores 0-to-93 with ASCII codes characters 33-to-126.    
+In the ASCII encoding scheme, a set of characters are put into order to denote quality, for example“!” is the lowest quality score and “~” is the highest. Quality is determined by the PHRED software, in which the quality score Q = -10*log(10)*P [2]. The score correlates with the probability of getting the incorrect base call, for example a quality score of 10 means the probability of base call will be incorrect 1 in 10, while a score of 60 means the probability 1 in 1000000 will be incorrect.The basis of this base-calling algorithm our tool will utilize consists of predicting peak locations, identifying observed peaks, matching predicted peaks to observed peaks, and find missed peaks. Illumina FASTQ format starts with “@” followed by the record identifier and sequence length, after that is a nucleotide sequence. The next line starts with the “+” followed by the optional title, then after that is the quality line for the above nucleotide sequence. There are several different quality score metrics, including Illumina Q+64 and Sanger Q+33. To get Q+64, one need to add Illumina 1.3+”Q+64” using ASCII characters 64-to-126 to score 0-to-62 on the P scale. For Q+33, one need to add the Probability values of Phred scores 0-to-93 with ASCII codes characters 33-to-126.
 
 #### What is our implementation for trimming sequences based on quality scores?
 
@@ -109,11 +109,11 @@ The rationale for such a tool is that high-throughput sequencing have high quali
 
 #### What is the biological relevance for this tool?
 
-This tool will be a quick asset in organizing biological data for further assembly or research. The test file we are using for our tool includes the genome read of a fungus. The reason for testing this genome is because it has relevance in assembly. These sequences are half of a paired-end read, as such quality is low in the middle region where assembly of two sequences happens [3]. By using this tool we can filter out paired-end sequences with low quality at their 3’ ends and therefore prevent assembly. Only sequences with adequate quality will proceed to assembly of the genome. Some existing tools that remove low quality reads are Trimmomatic and Fastx. Trimmomatic is a trimming tool on the USAELLAB.org website [4]. It can take in a file and remove low quality bases using a 4-base wide sliding window, dropping bases below quality score 15 and also ignore sequences that are less than 36 bases long. Fastx toolkit is available at the Hannon lab from Cold Spring Harbor Laboratory. The available tools allow users to convert FASTQ to FASTA files, find the reverse-complement of sequences, and filter sequences based on quality.        
+This tool will be a quick asset in organizing biological data for further assembly or research. The test file we are using for our tool includes the genome read of a fungus. The reason for testing this genome is because it has relevance in assembly. These sequences are half of a paired-end read, as such quality is low in the middle region where assembly of two sequences happens [3]. By using this tool we can filter out paired-end sequences with low quality at their 3’ ends and therefore prevent assembly. Only sequences with adequate quality will proceed to assembly of the genome. Some existing tools that remove low quality reads are Trimmomatic and Fastx. Trimmomatic is a trimming tool on the USAELLAB.org website [4]. It can take in a file and remove low quality bases using a 4-base wide sliding window, dropping bases below quality score 15 and also ignore sequences that are less than 36 bases long. Fastx toolkit is available at the Hannon lab from Cold Spring Harbor Laboratory. The available tools allow users to convert FASTQ to FASTA files, find the reverse-complement of sequences, and filter sequences based on quality.
 
-#### [Python Code](https://github.com/wellshl/CBB752_Final_Project_1.3)
+#### [Python Code](https://github.com/CBB752Spring2016/CBB752_Final_Project_1.3)
 
-#### [R Code](https://github.com/dspak/CBB752_Final_Project_1.3.git)
+#### [R Code](https://github.com/CBB752Spring2016/CBB752_Final_Project_1.3.git)
 
 #### References
 
@@ -121,6 +121,6 @@ This tool will be a quick asset in organizing biological data for further assemb
 
 [2] Edwing, B. et al. 1998. Base-calling of automated sequencer traces using phred. Genomic Res. 8(3): 175-185.
 
-[3] Shaw, J. et al. 2015. Biosynthesis and genomic analysis of medium-chain hydrocarbon production by the endophytic fungal isolate Nigrograna mackinonnii E5202H. Appl Microbiol Biotechnol. 99(8): 3715-3728. 
+[3] Shaw, J. et al. 2015. Biosynthesis and genomic analysis of medium-chain hydrocarbon production by the endophytic fungal isolate Nigrograna mackinonnii E5202H. Appl Microbiol Biotechnol. 99(8): 3715-3728.
 
-[4] Bolger, A. et al. 2014. Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics. Btu170. 
+[4] Bolger, A. et al. 2014. Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics. Btu170.
